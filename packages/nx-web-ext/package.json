@@ -2,6 +2,26 @@
   "name": "@spaceribs/nx-web-ext",
   "version": "0.0.1",
   "main": "src/index.js",
+  "private": false,
   "generators": "./generators.json",
-  "executors": "./executors.json"
+  "executors": "./executors.json",
+  "description": "This nx-plugin allows you to build, test and deploy web extensions.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaceribs/spaceribs.git"
+  },
+  "keywords": [
+    "nx",
+    "plugin",
+    "web-ext"
+  ],
+  "author": "Spaceribs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spaceribs/spaceribs/issues"
+  },
+  "homepage": "https://github.com/spaceribs/spaceribs#readme"
 }
