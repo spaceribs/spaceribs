@@ -1,12 +1,19 @@
 import { createTreeWithEmptyWorkspace } from '@nrwl/devkit/testing';
-import { Tree, readProjectConfiguration } from '@nrwl/devkit';
+import { Tree } from '@nrwl/devkit';
 
 import generator from './generator';
 import { NxWebExtGeneratorSchema } from './schema';
 
+jest.mock('./sub-generators/angular');
+
+import { angularApp } from './sub-generators/angular';
+
 describe('nx-web-ext generator', () => {
   let appTree: Tree;
-  const options: NxWebExtGeneratorSchema = { name: 'test' };
+  const options: NxWebExtGeneratorSchema = {
+    name: 'test',
+    framework: 'angular',
+  };
 
   beforeEach(() => {
     appTree = createTreeWithEmptyWorkspace();
@@ -14,7 +21,6 @@ describe('nx-web-ext generator', () => {
 
   it('should run successfully', async () => {
     await generator(appTree, options);
-    const config = readProjectConfiguration(appTree, 'test');
-    expect(config).toBeDefined();
+    expect(angularApp).toHaveBeenCalled();
   });
 });

@@ -1,5 +1,5 @@
 export interface NxWebExtGeneratorSchema {
   name: string;
-  tags?: string;
-  directory?: string;
+  description?: string;
+  framework: 'angular';
 }
