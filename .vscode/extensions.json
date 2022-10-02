@@ -5,6 +5,7 @@
     "dbaeumer.vscode-eslint",
     "firsttris.vscode-jest-runner",
     "vivaxy.vscode-conventional-commits",
-    "GitHub.vscode-pull-request-github"
+    "github.vscode-pull-request-github",
+    "remcohaszing.schemastore"
   ]
 }

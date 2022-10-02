@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "NxWebExtApp",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "framework": {
+      "type": "string",
+      "default": "angular",
+      "enum": ["angular"],
+      "description": "The framework to use to generate the project."
+    },
+    "description": {
+      "type": "string",
+      "description": "A description of the extension."
+    }
+  },
+  "required": ["name", "framework"]
+}

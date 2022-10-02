@@ -17,7 +17,19 @@
     // Configure properties specific to VS Code.
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
-      "extensions": ["dbaeumer.vscode-eslint"]
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "remcohaszing.schemastore",
+        "nrwl.angular-console",
+        "Angular.ng-template",
+        "vivaxy.vscode-conventional-commits",
+        "ryanluker.vscode-coverage-gutters",
+        "GitHub.vscode-pull-request-github",
+        "rvest.vs-code-prettier-eslint",
+        "SimonTest.simontest",
+        "stylelint.vscode-stylelint",
+        "redhat.vscode-yaml"
+      ]
     }
   },
 
