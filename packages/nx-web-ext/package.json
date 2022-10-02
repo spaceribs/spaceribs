@@ -6,9 +6,6 @@
   "generators": "./generators.json",
   "executors": "./executors.json",
   "description": "This nx-plugin allows you to build, test and deploy web extensions.",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/spaceribs/spaceribs.git"
