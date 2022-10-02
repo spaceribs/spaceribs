@@ -48,9 +48,6 @@
   "scripts": {
     "commit": "git-cz"
   },
-  "workspaces": [
-    "packages/**"
-  ],
   "config": {
     "commitizen": {
       "path": "@commitlint/cz-commitlint"

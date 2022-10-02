@@ -14,6 +14,10 @@
       }
     }
   },
+  "workspaceLayout": {
+    "appsDir": "projects",
+    "libsDir": "packages"
+  },
   "targetDefaults": {
     "lint": {
       "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
