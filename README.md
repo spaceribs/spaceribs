@@ -1,4 +1,3 @@
-
 And was there anything of value in the car?
 
 > Oh, uh, yeah, uh… a tape deck, some Creedence tapes, and there was a, uh… uh, my briefcase.
