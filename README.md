@@ -1,16 +1,18 @@
-### Hi there 👋
 
-<!--
-**spaceribs/spaceribs** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+And was there anything of value in the car?
 
-Here are some ideas to get you started:
+> Oh, uh, yeah, uh… a tape deck, some Creedence tapes, and there was a, uh… uh, my briefcase.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+In the briefcase?
+
+> Uh, uh, papers, um, just papers, uh, you know, uh, my papers, business papers.
+
+And what do you do, sir?
+
+> I’m unemployed.
+
+---
+
+Hello, I'm a UI Architect.
+
+Contact: <https://keybase.io/spaceribs> | Monorepo: <https://github.com/spaceribs/spaceribs>
