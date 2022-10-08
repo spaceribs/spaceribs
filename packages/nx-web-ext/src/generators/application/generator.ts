@@ -8,6 +8,7 @@ import {
 import * as path from 'path';
 import type { NxWebExtGeneratorSchema } from './schema';
 import { angularApp } from './sub-generators/angular';
+import { reactApp } from './sub-generators/react';
 
 export interface NormalizedSchema extends NxWebExtGeneratorSchema {
   projectName: string;
@@ -45,9 +46,11 @@ export default async function (tree: Tree, options: NxWebExtGeneratorSchema) {
     case 'angular':
       await angularApp(tree, normalizedOptions);
       break;
+    case 'react':
+      await reactApp(tree, normalizedOptions);
+      break;
     default:
       throw new Error('This application target is not supported.');
-      break;
   }
 
   await formatFiles(tree);

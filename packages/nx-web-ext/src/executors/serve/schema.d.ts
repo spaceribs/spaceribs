@@ -32,6 +32,7 @@ export interface WebExtRunOptions {
 }
 
 export interface WebExtServeSchema {
-  browserTarget: string;
+  browserTarget?: string;
+  buildTarget?: string;
   webExtOptions: WebExtRunOptions;
 }

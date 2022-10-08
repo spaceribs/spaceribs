@@ -6,14 +6,24 @@ import { ExecutorContext, logger, runExecutor } from '@nrwl/devkit';
 
 interface BuildTargetResult {
   success: boolean;
-  outputPath: string;
+  outputPath?: string;
+  outfile?: string;
 }
 
 const runServe = async (
   options: WebExtServeSchema,
   context: ExecutorContext
 ) => {
-  const [project, target, configuration] = options.browserTarget.split(':');
+  let project: string;
+  let target: string;
+  let configuration: string;
+
+  if (options.browserTarget != null) {
+    [project, target, configuration] = options.browserTarget.split(':');
+  } else if (options.buildTarget != null) {
+    [project, target, configuration] = options.buildTarget.split(':');
+  }
+
   let runnerSub: Subscription;
 
   for await (const s of await runExecutor<BuildTargetResult>(
@@ -22,12 +32,12 @@ const runServe = async (
     context
   )) {
     if (s.success === true) {
-      console.log(s.outputPath);
-
       logger.info('Application built successfully.');
 
+      const outputPath = s.outputPath || s.outfile.replace('main.js', '');
+
       if (runnerSub == null) {
-        runnerSub = startWebExt(options.webExtOptions, s.outputPath).subscribe(
+        runnerSub = startWebExt(options.webExtOptions, outputPath).subscribe(
           () => {
             logger.info('WebExt started successfully.');
           },

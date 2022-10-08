@@ -16,7 +16,7 @@
     "framework": {
       "type": "string",
       "default": "angular",
-      "enum": ["angular"],
+      "enum": ["angular", "react"],
       "description": "The framework to use to generate the project."
     },
     "description": {
