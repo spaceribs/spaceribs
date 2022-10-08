@@ -1,0 +1,19 @@
+import { Route, Link, Routes } from 'react-router-dom';
+
+import styles from './action.module.scss';
+
+/* eslint-disable-next-line */
+export interface ActionProps {}
+
+export function Action(props: ActionProps) {
+  return (
+    <div className={styles['container']}>
+      <Routes>
+        <Route path="/" element={<div><Link to={'test'}>to test...</Link></div>} />
+        <Route path="/test" element={<div>This is the test route.</div>} />
+      </Routes>
+    </div>
+  );
+}
+
+export default Action;
