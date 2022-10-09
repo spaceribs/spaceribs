@@ -15,6 +15,15 @@
     "plugin",
     "web-ext"
   ],
+  "dependencies": {
+    "@nrwl/devkit": "^14.8.2",
+    "web-ext": "^6.8.0",
+    "rxjs": "^6.6.7"
+  },
+  "optionalDependencies": {
+    "@nrwl/react": "^14.8.2",
+    "@nrwl/angular": "^14.8.2"
+  },
   "author": "Spaceribs",
   "license": "MIT",
   "bugs": {
