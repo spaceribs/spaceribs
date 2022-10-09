@@ -5,6 +5,11 @@
       "implementation": "./src/executors/serve/executor",
       "schema": "./src/executors/serve/schema.json",
       "description": "Start web extension in web-ext cli"
+    },
+    "package": {
+      "implementation": "./src/executors/package/executor",
+      "schema": "./src/executors/package/schema.json",
+      "description": "Generate a packaged web extension ready for upload"
     }
   }
 }
