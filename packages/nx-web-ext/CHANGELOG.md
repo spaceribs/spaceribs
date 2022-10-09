@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.3.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-0.2.0...nx-web-ext-0.3.0) (2022-10-09)
+
+
+### Features
+
+* **nx-web-ext:** add package task ([8f5f9e4](https://github.com/spaceribs/spaceribs/commit/8f5f9e41e89ee6ea4da42306e2c3cfe03519d560))
+
 ## [0.2.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-0.1.0...nx-web-ext-0.2.0) (2022-10-09)
 
 
