@@ -17,7 +17,8 @@
       "type": "string",
       "default": "angular",
       "enum": ["angular", "react"],
-      "description": "The framework to use to generate the project."
+      "description": "The framework to use to generate the project.",
+      "x-prompt": "What framework would you like to use?"
     },
     "description": {
       "type": "string",
