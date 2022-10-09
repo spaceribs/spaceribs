@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.2.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-0.1.0...nx-web-ext-0.2.0) (2022-10-09)
+
+
+### Features
+
+* **nx-web-ext:** add react generator support ([d2ac627](https://github.com/spaceribs/spaceribs/commit/d2ac627ce1161b2c791010153f153bde019b8ff5))
+
 ## [0.1.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-0.0.1...nx-web-ext-0.1.0) (2022-10-02)
 
 
