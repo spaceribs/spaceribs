@@ -10,6 +10,7 @@ import { applicationGenerator } from '@nrwl/react';
 import { addFiles, NormalizedSchema } from '../../generator';
 import { Linter } from '@nrwl/linter';
 import { replaceFiles } from './replace-files';
+import { resolve } from 'path';
 
 export const reactApp = async (tree: Tree, options: NormalizedSchema) => {
   await applicationGenerator(tree, {
@@ -36,6 +37,16 @@ export const reactApp = async (tree: Tree, options: NormalizedSchema) => {
   }
 
   config.targets.serve.executor = '@spaceribs/nx-web-ext:serve';
+
+  const buildPath = config.targets.build.options.outputPath;
+  config.targets.package = {
+    executor: '@spaceribs/nx-web-ext:package',
+    dependsOn: ['build'],
+    options: {
+      sourceDir: config.targets.build.options.outputPath,
+      artifactsDir: resolve(buildPath, '..'),
+    },
+  };
 
   addFiles(tree, options, config.root);
 
