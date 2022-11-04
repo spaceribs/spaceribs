@@ -14,4 +14,4 @@ And what do you do, sir?
 
 Hello, I'm a UI Architect.
 
-Contact: <https://keybase.io/spaceribs> | Monorepo: <https://github.com/spaceribs/spaceribs>
+Contact: <https://keybase.io/spaceribs> | Monorepo: <https://github.com/spaceribs/spaceribs> | <a rel="me" href="https://indieweb.social/@spaceribs">Mastodon</a>
