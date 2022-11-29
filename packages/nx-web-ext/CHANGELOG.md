@@ -2,6 +2,17 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-0.3.1...nx-web-ext-1.0.0) (2022-11-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** plugins now require nx/nrwl 15
+
+### Build System
+
+* **deps:** upgrade to nx/nrwl 15 ([c3d79f2](https://github.com/spaceribs/spaceribs/commit/c3d79f23f316185878f679a8d945631bcb9119a8)), closes [#37](https://github.com/spaceribs/spaceribs/issues/37)
+
 ## [0.3.1](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-0.3.0...nx-web-ext-0.3.1) (2022-10-09)
 
 
