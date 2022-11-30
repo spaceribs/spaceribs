@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.1](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-1.0.0...nx-web-ext-1.0.1) (2022-11-30)
+
+
+### Bug Fixes
+
+* **nx-web-ext:** update dependency requirements ([d84a3a8](https://github.com/spaceribs/spaceribs/commit/d84a3a833afefb4cb07f23543b493567d7ec1586))
+
 ## [1.0.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-0.3.1...nx-web-ext-1.0.0) (2022-11-29)
 
 
