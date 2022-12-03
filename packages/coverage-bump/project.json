@@ -1,0 +1,91 @@
+{
+  "name": "coverage-bump",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/coverage-bump/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/coverage-bump",
+        "main": "packages/coverage-bump/src/index.ts",
+        "tsConfig": "packages/coverage-bump/tsconfig.lib.json",
+        "assets": [
+          "packages/coverage-bump/*.md",
+          {
+            "input": "./packages/coverage-bump/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/coverage-bump/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/coverage-bump",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/coverage-bump",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/coverage-bump/**/*.ts",
+          "packages/coverage-bump/generators.json",
+          "packages/coverage-bump/executors.json",
+          "packages/coverage-bump/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/coverage-bump/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional",
+        "postTargets": ["nx-web-ext:github", "nx-web-ext:npm"]
+      }
+    },
+    "github": {
+      "executor": "@jscutlery/semver:github",
+      "options": {
+        "tag": "${tag}",
+        "notes": "${notes}"
+      }
+    },
+    "npm": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public"
+      }
+    },
+    "dep-check": {
+      "executor": "nx-pwm:depcheck"
+    },
+    "version-check": {
+      "executor": "nx-pwm:version-check",
+      "options": {
+        "updateVersionsFiles": false,
+        "updateMigrations": true
+      }
+    }
+  },
+  "tags": []
+}

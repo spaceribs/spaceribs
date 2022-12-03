@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@spaceribs/coverage-bump": ["packages/coverage-bump/src/index.ts"],
       "@spaceribs/nx-web-ext": ["packages/nx-web-ext/src/index.ts"]
     }
   },
