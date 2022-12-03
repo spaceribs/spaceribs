@@ -5,6 +5,13 @@
   "affected": {
     "defaultBase": "main"
   },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": {},
+      "scripts": {}
+    }
+  },
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
@@ -15,7 +22,7 @@
     }
   },
   "workspaceLayout": {
-    "appsDir": "projects",
+    "appsDir": "examples",
     "libsDir": "packages"
   },
   "targetDefaults": {
