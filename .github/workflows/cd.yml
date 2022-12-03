@@ -24,7 +24,13 @@ jobs:
           git config user.name "GitHub Bot"
           git config user.email "gituser@example.com"
 
-      - run: npm ci
+      - name: NPM Token
+        uses: filipstefansson/set-npm-token-action@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+
+      - name: NPM Install
+        run: npm ci
 
       - name: Version
         shell: bash
