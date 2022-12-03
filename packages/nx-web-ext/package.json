@@ -1,6 +1,6 @@
 {
   "name": "@spaceribs/nx-web-ext",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "main": "src/index.js",
   "private": false,
   "generators": "./generators.json",
@@ -15,14 +15,16 @@
     "plugin",
     "web-ext"
   ],
+  "peerDependencies": {
+    "nx": "^15.0.0",
+    "@nrwl/devkit": "^15.0.0",
+    "@nrwl/linter": "^15.0.0",
+    "typescript": "^4.0.0"
+  },
   "dependencies": {
-    "nx": "^15.2.4",
-    "@nrwl/devkit": "^15.2.4",
-    "@nrwl/linter": "^15.2.4",
     "@phenomnomnominal/tsquery": "^5.0.0",
-    "web-ext": "^6.8.0",
-    "rxjs": "^7.5.7",
-    "typescript": "^4.9.3"
+    "rxjs": "^7.0.0",
+    "web-ext": "6.8.0"
   },
   "optionalDependencies": {
     "@nrwl/react": "^15.2.1",
