@@ -1,5 +1,16 @@
 # nx-web-ext
 
+## Supported Versions
+
+<a href="https://www.npmjs.com/package/@spaceribs/nx-web-ext" rel="nofollow">
+  <img src="https://badgen.net/npm/v/@spaceribs/nx-web-ext" alt="@spaceribs/nx-web-ext NPM package">
+</a>
+
+| Package Version | Nx Version | Supported          |
+| --------------- | ---------- | ------------------ |
+| 1.x             | 15.x       | :white_check_mark: |
+| 0.x             | 14.x       | :x:                |
+
 This library was generated with [Nx](https://nx.dev).
 
 ## Quick Start
