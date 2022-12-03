@@ -75,6 +75,16 @@
       "options": {
         "access": "public"
       }
+    },
+    "dep-check": {
+      "executor": "nx-pwm:depcheck"
+    },
+    "version-check": {
+      "executor": "nx-pwm:version-check",
+      "options": {
+        "updateVersionsFiles": false,
+        "updateMigrations": true
+      }
     }
   },
   "tags": []
