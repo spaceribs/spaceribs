@@ -22,7 +22,7 @@
     }
   },
   "workspaceLayout": {
-    "appsDir": "examples",
+    "appsDir": "projects",
     "libsDir": "packages"
   },
   "targetDefaults": {
