@@ -12,10 +12,7 @@ module.exports = {
       [
         'deps',
         'deps-dev',
-        ...(await getProjects(
-          ctx,
-          ({ name, projectType }) => !name.includes('e2e')
-        )),
+        ...(await getProjects(ctx, ({ name, projectType }) => name)),
       ],
     ],
   },
