@@ -13,13 +13,14 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
-      - run: npm install
+      - run: npm ci --legacy-peer-deps
       - uses: wagoid/commitlint-github-action@v5
 
   main:
     name: Nx Cloud - Main Job
     uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.10
     with:
+      install-commands: 'npm ci --legacy-peer-deps'
       number-of-agents: 3
       parallel-commands: |
         npx nx-cloud record -- npx nx workspace-lint
@@ -28,9 +29,12 @@ jobs:
         npx nx affected --target=lint --parallel=3
         npx nx affected --target=test --parallel=3 --ci --code-coverage
         npx nx affected --target=build --parallel=3
+        NX_CLOUD_DISTRIBUTED_EXECUTION=false npx nx affected --target=dep-check --parallel=3
+        NX_CLOUD_DISTRIBUTED_EXECUTION=false npx nx affected --target=version-check --parallel=3
 
   agents:
     name: Nx Cloud - Agents
     uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.10
     with:
-      number-of-agents: 3
+      install-commands: 'npm ci --legacy-peer-deps'
+      number-of-agents: 1

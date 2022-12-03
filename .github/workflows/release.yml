@@ -30,7 +30,7 @@ jobs:
           token: ${{ secrets.NPM_TOKEN }}
 
       - name: NPM Install
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       - name: Version
         shell: bash

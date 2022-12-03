@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/nx-pwm/config-schema.json",
+  "versionType": "independent",
+  "depcheck": {
+    "ignore": {
+      "discrepancies": {
+        "*": []
+      },
+      "missing": {
+        "nx-web-ext": ["@nrwl/angular", "@nrwl/react"]
+      }
+    }
+  },
+  "localRegistry": {
+    "verdaccioConfig": ".verdaccio/config.yml"
+  }
+}
