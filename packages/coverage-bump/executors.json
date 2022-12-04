@@ -1,4 +1,11 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "executors": {}
+  "executors": {
+    "bump-coverage": {
+      "implementation": "./src/executors/bump-coverage/executor",
+      "schema": "./src/executors/bump-coverage/schema.json",
+      "description": "bump-coverage executor",
+      "hasher": "./src/executors/bump-coverage/hasher"
+    }
+  }
 }

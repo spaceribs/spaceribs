@@ -1,0 +1,33 @@
+{
+  "displayName": "nx-web-ext",
+  "preset": "../../jest.preset.js",
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "<rootDir>/tsconfig.spec.json"
+    }
+  },
+  "transform": {
+    "^.+\\.[tj]s$": "ts-jest"
+  },
+  "testEnvironment": "node",
+  "moduleFileExtensions": [
+    "ts",
+    "js",
+    "html"
+  ],
+  "collectCoverage": true,
+  "coverageReporters": [
+    "json",
+    "lcov",
+    "json-summary"
+  ],
+  "coverageDirectory": "../../coverage/packages/nx-web-ext",
+  "coverageThreshold": {
+    "global": {
+      "statements": 89.47,
+      "branches": 100,
+      "lines": 88.88,
+      "functions": 66.66
+    }
+  }
+}

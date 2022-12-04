@@ -1,18 +1,16 @@
 import {
   formatFiles,
-  getWorkspaceLayout,
   names,
   readProjectConfiguration,
+  TargetConfiguration,
   Tree,
   updateProjectConfiguration,
 } from '@nrwl/devkit';
 import { AddGeneratorSchema } from './schema';
+import { addPropertyToJestConfig } from '@nrwl/jest';
 
 interface NormalizedSchema extends AddGeneratorSchema {
   projectName: string;
-  projectRoot: string;
-  projectDirectory: string;
-  parsedTags: string[];
 }
 
 function normalizeOptions(
@@ -20,22 +18,12 @@ function normalizeOptions(
   options: AddGeneratorSchema
 ): NormalizedSchema {
   const name = names(options.name).fileName;
-  const projectDirectory = options.directory
-    ? `${names(options.directory).fileName}/${name}`
-    : name;
 
-  const projectName = projectDirectory.replace(new RegExp('/', 'g'), '-');
-  const projectRoot = `${getWorkspaceLayout(tree).libsDir}/${projectDirectory}`;
-  const parsedTags = options.tags
-    ? options.tags.split(',').map((s) => s.trim())
-    : [];
+  const projectName = name;
 
   return {
     ...options,
     projectName,
-    projectRoot,
-    projectDirectory,
-    parsedTags,
   };
 }
 
@@ -47,11 +35,43 @@ export default async function (tree: Tree, options: AddGeneratorSchema) {
     normalizedOptions.projectName
   );
 
-  projectConfig.targets = {
-    'bump-coverage': {
-      executor: '@spaceribs/coverage-bump:bump-coverage',
-    },
+  projectConfig.targets['bump-coverage'] = {
+    executor: '@spaceribs/coverage-bump:bump-coverage',
   };
+
+  if (projectConfig.targets.test == null) {
+    throw new Error('Test target is not available.');
+  }
+
+  const testTarget: TargetConfiguration = projectConfig.targets.test;
+
+  addPropertyToJestConfig(
+    tree,
+    testTarget.options.jestConfig,
+    'collectCoverage',
+    true
+  );
+
+  addPropertyToJestConfig(
+    tree,
+    testTarget.options.jestConfig,
+    'coverageReporters',
+    ['json', 'text']
+  );
+
+  addPropertyToJestConfig(
+    tree,
+    testTarget.options.jestConfig,
+    'coverageThreshold',
+    {
+      global: {
+        branches: 0,
+        functions: 0,
+        lines: 0,
+        statements: 0,
+      },
+    }
+  );
 
   updateProjectConfiguration(
     tree,

@@ -61,6 +61,5 @@
         "linter": "eslint"
       }
     }
-  },
-  "defaultProject": "angular-example"
+  }
 }

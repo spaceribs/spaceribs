@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "version": 2,
+  "cli": "nx",
+  "title": "Bump Coverage",
+  "description": "Based on the last test report, bump coverage requirements up and commit.",
+  "type": "object",
+  "properties": {
+    "commit": {
+      "type": "boolean",
+      "description": "Commit the coverage bump if changes were made.",
+      "default": true
+    },
+    "commitMessage": {
+      "type": "string",
+      "description": "Set the commit message, which supports templating.",
+      "default": "chore(<%= projectName %>): update testing coverage requirements"
+    },
+    "coverageSummaryPath": {
+      "type": "string",
+      "description": "The path to the coverage summary file E.G. 'coverage/libs/project/coverage-summary.json'"
+    },
+    "margin": {
+      "type": "number",
+      "description": "The minimal threshold before updating coverage.",
+      "default": 1
+    }
+  },
+  "required": []
+}

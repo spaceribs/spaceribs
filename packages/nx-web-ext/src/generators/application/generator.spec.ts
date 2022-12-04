@@ -7,6 +7,7 @@ import { NxWebExtGeneratorSchema } from './schema';
 jest.mock('./sub-generators/angular', () => ({
   angularApp: jest.fn(),
 }));
+
 jest.mock('./sub-generators/react', () => ({
   reactApp: jest.fn(),
 }));
