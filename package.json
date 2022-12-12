@@ -38,7 +38,7 @@
     "@nrwl/angular": "15.2.4",
     "@nrwl/cli": "15.2.4",
     "@nrwl/devkit": "15.2.4",
-    "@nrwl/eslint-plugin-nx": "15.2.4",
+    "@nrwl/eslint-plugin-nx": "15.3.0",
     "@nrwl/jest": "15.2.4",
     "@nrwl/js": "15.2.4",
     "@nrwl/linter": "15.2.4",
