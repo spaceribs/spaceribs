@@ -13,5 +13,4 @@ export default {
   testEnvironment: 'node',
   moduleFileExtensions: ['ts', 'js', 'html'],
   coverageDirectory: '../../coverage/packages/nx-web-ext',
-  collectCoverageFrom: ['src/**/*.ts'],
 };
