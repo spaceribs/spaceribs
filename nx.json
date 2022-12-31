@@ -16,7 +16,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "cacheableOperations": ["build", "lint", "test", "e2e", "betterer"],
         "accessToken": "YjQ1ODI2NTMtOGQxMC00NTFjLWEyNDEtYzc4OTA4ZTI5MjU4fHJlYWQtd3JpdGU="
       }
     }
@@ -36,7 +36,7 @@
       "dependsOn": ["test"],
       "outputs": [
         "{projectRoot}/.betterer.results",
-        "{projectRoot}/.betterer.cache"
+        "tmp/{projectRoot}/.betterer.cache"
       ]
     }
   },

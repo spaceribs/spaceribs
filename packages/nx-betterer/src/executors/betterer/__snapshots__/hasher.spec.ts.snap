@@ -5,6 +5,6 @@ Object {
   "details": Object {
     "test": 123,
   },
-  "value": "test123",
+  "value": "hashed-task",
 }
 `;
