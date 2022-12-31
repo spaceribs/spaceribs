@@ -1,3 +1,17 @@
 const nxPreset = require('@nrwl/jest/preset').default;
 
-module.exports = { ...nxPreset };
+module.exports = {
+  ...nxPreset,
+  coverageReporters: ['html', 'lcov', 'json', 'json-summary'],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    './src/**',
+    '!./src/index.ts',
+    '!./src/main.ts',
+    '!./src/polyfills.ts',
+    '!./src/**/*.stories.ts',
+    '!./src/**/*.demo.ts',
+    '!./src/**/*.models.ts',
+    '!./src/**/*.model.ts',
+  ],
+};

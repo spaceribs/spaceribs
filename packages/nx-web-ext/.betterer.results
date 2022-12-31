@@ -1,0 +1,160 @@
+// BETTERER RESULTS V2.
+// 
+// If this file contains merge conflicts, use `betterer merge` to automatically resolve them:
+// https://phenomnomnominal.github.io/betterer/docs/results-file/#merge
+//
+exports[`stricter compilation`] = {
+  value: `{
+    "src/executors/package/executor.ts:1897279360": [
+      [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"]
+    ],
+    "src/executors/serve/executor.ts:1354903451": [
+      [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"],
+      [29, 6, 7, "Variable \'project\' is used before being assigned.", "1804496816"],
+      [29, 15, 6, "Variable \'target\' is used before being assigned.", "1741960948"],
+      [29, 23, 13, "Variable \'configuration\' is used before being assigned.", "806380341"],
+      [36, 41, 9, "Object is possibly \'undefined\'.", "316899760"],
+      [38, 10, 9, "Variable \'runnerSub\' is used before being assigned.", "3220025905"],
+      [44, 12, 9, "Type \'null\' is not assignable to type \'Subscription\'.", "3220025905"],
+      [54, 10, 9, "Variable \'runnerSub\' is used before being assigned.", "3220025905"],
+      [56, 8, 9, "Type \'null\' is not assignable to type \'Subscription\'.", "3220025905"],
+      [77, 13, 3, "Parameter \'res\' implicitly has an \'any\' type.", "193432417"],
+      [94, 14, 3, "Parameter \'err\' implicitly has an \'any\' type.", "193405824"]
+    ],
+    "src/generators/application/generator.spec.ts:952053433": [
+      [6, 0, 4, "Cannot find name \'jest\'.", "2088016109"],
+      [7, 14, 4, "Cannot find name \'jest\'.", "2088016109"],
+      [9, 0, 4, "Cannot find name \'jest\'.", "2088016109"],
+      [10, 12, 4, "Cannot find name \'jest\'.", "2088016109"],
+      [16, 0, 8, "Cannot find name \'describe\'. Do you need to install type definitions for a test runner? Try \`npm i --save-dev @types/jest\` or \`npm i --save-dev @types/mocha\` and then add \'jest\' or \'mocha\' to the types field in your tsconfig.", "1708261416"],
+      [23, 2, 10, "Cannot find name \'beforeEach\'.", "4185360627"],
+      [27, 2, 2, "Cannot find name \'it\'. Do you need to install type definitions for a test runner? Try \`npm i --save-dev @types/jest\` or \`npm i --save-dev @types/mocha\` and then add \'jest\' or \'mocha\' to the types field in your tsconfig.", "5861176"],
+      [29, 4, 6, "Cannot find name \'expect\'.", "1179768986"],
+      [32, 2, 2, "Cannot find name \'it\'. Do you need to install type definitions for a test runner? Try \`npm i --save-dev @types/jest\` or \`npm i --save-dev @types/mocha\` and then add \'jest\' or \'mocha\' to the types field in your tsconfig.", "5861176"],
+      [35, 4, 6, "Cannot find name \'expect\'.", "1179768986"],
+      [38, 2, 2, "Cannot find name \'it\'. Do you need to install type definitions for a test runner? Try \`npm i --save-dev @types/jest\` or \`npm i --save-dev @types/mocha\` and then add \'jest\' or \'mocha\' to the types field in your tsconfig.", "5861176"],
+      [40, 10, 6, "Cannot find name \'expect\'.", "1179768986"]
+    ],
+    "src/generators/application/sub-generators/angular/index.ts:2883537687": [
+      [26, 6, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [27, 4, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [32, 2, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [34, 20, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [35, 2, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [39, 17, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [46, 35, 11, "Argument of type \'string | undefined\' is not assignable to parameter of type \'string\'.\\n  Type \'undefined\' is not assignable to type \'string\'.", "868338854"]
+    ],
+    "src/generators/application/sub-generators/angular/use-hash.ts:2557890532": [
+      [6, 20, 28, "Object is possibly \'null\'.", "2958527246"]
+    ],
+    "src/generators/application/sub-generators/react/index.ts:3958230014": [
+      [32, 6, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [33, 4, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [38, 2, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [40, 20, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [41, 2, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [45, 17, 14, "Object is possibly \'undefined\'.", "998857859"],
+      [54, 35, 11, "Argument of type \'string | undefined\' is not assignable to parameter of type \'string\'.\\n  Type \'undefined\' is not assignable to type \'string\'.", "868338854"]
+    ],
+    "src/generators/application/sub-generators/react/use-hash.ts:3752904525": [
+      [4, 15, 23, "Object is possibly \'null\'.", "3269655774"]
+    ]
+  }`
+};
+
+exports[`increase per-file test coverage`] = {
+  value: `{
+  "src/executors/package/executor.ts": {
+    "lines": 7,
+    "statements": 7,
+    "functions": 1,
+    "branches": 1
+  },
+  "src/executors/package/schema.d.ts": {
+    "lines": 0,
+    "statements": 0,
+    "functions": 0,
+    "branches": 0
+  },
+  "src/executors/serve/executor.ts": {
+    "lines": 38,
+    "statements": 40,
+    "functions": 10,
+    "branches": 13
+  },
+  "src/executors/serve/schema.d.ts": {
+    "lines": 0,
+    "statements": 0,
+    "functions": 0,
+    "branches": 0
+  },
+  "src/generators/application/deps.ts": {
+    "lines": 4,
+    "statements": 6,
+    "functions": 2,
+    "branches": 0
+  },
+  "src/generators/application/generator.ts": {
+    "lines": 2,
+    "statements": 2,
+    "functions": 1,
+    "branches": 0
+  },
+  "src/generators/application/schema.d.ts": {
+    "lines": 0,
+    "statements": 0,
+    "functions": 0,
+    "branches": 0
+  },
+  "src/generators/application/sub-generators/angular/add-action.ts": {
+    "lines": 4,
+    "statements": 6,
+    "functions": 2,
+    "branches": 0
+  },
+  "src/generators/application/sub-generators/angular/index.ts": {
+    "lines": 19,
+    "statements": 21,
+    "functions": 2,
+    "branches": 1
+  },
+  "src/generators/application/sub-generators/angular/use-hash.ts": {
+    "lines": 12,
+    "statements": 13,
+    "functions": 2,
+    "branches": 1
+  },
+  "src/generators/application/sub-generators/react/add-action.ts": {
+    "lines": 3,
+    "statements": 5,
+    "functions": 2,
+    "branches": 0
+  },
+  "src/generators/application/sub-generators/react/index.ts": {
+    "lines": 22,
+    "statements": 24,
+    "functions": 2,
+    "branches": 1
+  },
+  "src/generators/application/sub-generators/react/replace-files.ts": {
+    "lines": 5,
+    "statements": 6,
+    "functions": 1,
+    "branches": 0
+  },
+  "src/generators/application/sub-generators/react/use-hash.ts": {
+    "lines": 5,
+    "statements": 6,
+    "functions": 1,
+    "branches": 0
+  }
+}
+`
+};
+
+exports[`increase total test coverage`] = {
+  value: `{
+  "total": { "lines": 121, "statements": 136, "functions": 26, "branches": 17 }
+}
+`
+};
