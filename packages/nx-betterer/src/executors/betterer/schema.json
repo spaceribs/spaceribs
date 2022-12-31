@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "version": 2,
+  "cli": "nx",
+  "title": "Betterer executor",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "ci": {
+      "type": "boolean"
+    },
+    "watch": {
+      "type": "boolean"
+    }
+  },
+  "required": []
+}

@@ -31,6 +31,13 @@
     },
     "test": {
       "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
+    },
+    "betterer": {
+      "dependsOn": ["test"],
+      "outputs": [
+        "{projectRoot}/.betterer.results",
+        "{projectRoot}/.betterer.cache"
+      ]
     }
   },
   "generators": {
