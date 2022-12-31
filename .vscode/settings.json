@@ -1,4 +1,5 @@
 {
   "eslint.validate": ["json"],
-  "jest.jestCommandLine": "npm run test --"
+  "jest.shell": "/bin/zsh",
+  "jest.jestCommandLine": "./node.sh node_modules/.bin/jest"
 }

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`bettererHasher should generate hash 1`] = `
+Object {
+  "details": Object {
+    "test": 123,
+  },
+  "value": "test123",
+}
+`;

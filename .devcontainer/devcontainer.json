@@ -28,7 +28,8 @@
         "rvest.vs-code-prettier-eslint",
         "SimonTest.simontest",
         "stylelint.vscode-stylelint",
-        "redhat.vscode-yaml"
+        "redhat.vscode-yaml",
+        "henrynguyen5-vsc.vsc-nvm"
       ]
     }
   },
