@@ -1,11 +1,11 @@
 {
-  "$schema": "https://json.schemastore.org/webextension.json",
-  "manifest_version": 2,
+  "$schema": "https://json.schemastore.org/chrome-manifest.json",
+  "manifest_version": 3,
   "name": "<%= name %>",
   "description": "<%= description %>",
   "version": "0.0.0",
   "permissions": [],
-  "browser_action": {
+  "action": {
     "browser_style": true,
     "default_icon": {
       "16": "assets/icons/16.png",
