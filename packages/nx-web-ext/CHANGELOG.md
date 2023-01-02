@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.1.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-1.0.6...nx-web-ext-1.1.0) (2023-01-02)
+
+
+### Features
+
+* **nx-web-ext:** move from manifest v2 to v3 for web extension schematic ([7c9616f](https://github.com/spaceribs/spaceribs/commit/7c9616f6d11ad023971201e4c5a245e154db945d)), closes [#67](https://github.com/spaceribs/spaceribs/issues/67)
+
 ## [1.0.6](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-1.0.5...nx-web-ext-1.0.6) (2023-01-02)
 
 
