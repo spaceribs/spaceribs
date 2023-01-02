@@ -7,6 +7,10 @@ export default async function runExecutor(
   options: BettererExecutorSchema,
   context: ExecutorContext
 ) {
+  if (context.projectName == null) {
+    throw new Error('No project name specified.');
+  }
+
   const project = context.workspace.projects[context.projectName];
   const projectRoot = path.resolve(context.root, project.root);
 
