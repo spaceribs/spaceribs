@@ -34,7 +34,7 @@ jobs:
 
       - name: Version
         shell: bash
-        run: npx nx affected --base=last-release --target=version --push
+        run: npx nx affected --base=last-release --parallel=1 --target=version --push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
