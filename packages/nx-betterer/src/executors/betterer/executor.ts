@@ -1,5 +1,12 @@
 import { BettererExecutorSchema } from './schema';
-import { betterer, BettererOptionsStart } from '@betterer/betterer';
+import {
+  betterer,
+  watch,
+  BettererOptionsStart,
+  BettererOptionsWatch,
+  BettererRunner,
+} from '@betterer/betterer';
+import { lastValueFrom, Observable } from 'rxjs';
 import { ExecutorContext } from '@nrwl/devkit';
 import * as path from 'path';
 
@@ -27,7 +34,43 @@ export default async function runExecutor(
     ),
   };
 
-  await betterer(config);
+  const watchConfig: BettererOptionsWatch = {
+    watch: true,
+    cwd: projectRoot,
+    tsconfigPath: './tsconfig.json',
+    cache: true,
+    cachePath: path.resolve(
+      context.root,
+      'tmp',
+      project.root,
+      '.betterer.cache'
+    ),
+  };
+
+  if (options.watch !== true) {
+    await betterer(config);
+  } else {
+    const bettererWatch = new Observable((observe) => {
+      let runner: BettererRunner;
+
+      watch(watchConfig)
+        .then((watchRunner) => {
+          runner = watchRunner;
+          observe.next(runner);
+        })
+        .catch((err) => {
+          observe.error(err);
+        });
+
+      return () => {
+        if (runner != null) {
+          runner.stop(true);
+        }
+      };
+    });
+
+    await lastValueFrom(bettererWatch);
+  }
 
   return {
     success: true,

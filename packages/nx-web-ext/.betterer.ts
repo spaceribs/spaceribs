@@ -11,7 +11,8 @@ module.exports = {
       .typescript('./tsconfig.lib.json', {
         strict: true,
       })
-      .include('./src/**/*.ts'),
+      .include('./src/**/*.ts')
+      .exclude(/\.spec\.ts/gi),
   'increase per-file test coverage': () => coverage.coverage(coverageSummary),
   'increase total test coverage': () => coverage.coverageTotal(coverageSummary),
   'no more debuggers': () =>

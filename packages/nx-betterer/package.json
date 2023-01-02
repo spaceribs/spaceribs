@@ -12,7 +12,9 @@
   },
   "peerDependencies": {
     "@betterer/betterer": "^5.4.0",
-    "@nrwl/devkit": "^15.4.2"
+    "@betterer/typescript": "^5.4.0",
+    "@nrwl/devkit": "^15.4.2",
+    "rxjs": "^7.5.7"
   },
   "author": "Spaceribs",
   "license": "MIT",

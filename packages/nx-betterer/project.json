@@ -85,6 +85,9 @@
         "updateVersionsFiles": false,
         "updateMigrations": true
       }
+    },
+    "betterer": {
+      "executor": "@spaceribs/nx-betterer:betterer"
     }
   },
   "tags": []
