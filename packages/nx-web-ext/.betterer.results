@@ -21,20 +21,6 @@ exports[`stricter compilation`] = {
       [77, 13, 3, "Parameter \'res\' implicitly has an \'any\' type.", "193432417"],
       [94, 14, 3, "Parameter \'err\' implicitly has an \'any\' type.", "193405824"]
     ],
-    "src/generators/application/generator.spec.ts:952053433": [
-      [6, 0, 4, "Cannot find name \'jest\'.", "2088016109"],
-      [7, 14, 4, "Cannot find name \'jest\'.", "2088016109"],
-      [9, 0, 4, "Cannot find name \'jest\'.", "2088016109"],
-      [10, 12, 4, "Cannot find name \'jest\'.", "2088016109"],
-      [16, 0, 8, "Cannot find name \'describe\'. Do you need to install type definitions for a test runner? Try \`npm i --save-dev @types/jest\` or \`npm i --save-dev @types/mocha\` and then add \'jest\' or \'mocha\' to the types field in your tsconfig.", "1708261416"],
-      [23, 2, 10, "Cannot find name \'beforeEach\'.", "4185360627"],
-      [27, 2, 2, "Cannot find name \'it\'. Do you need to install type definitions for a test runner? Try \`npm i --save-dev @types/jest\` or \`npm i --save-dev @types/mocha\` and then add \'jest\' or \'mocha\' to the types field in your tsconfig.", "5861176"],
-      [29, 4, 6, "Cannot find name \'expect\'.", "1179768986"],
-      [32, 2, 2, "Cannot find name \'it\'. Do you need to install type definitions for a test runner? Try \`npm i --save-dev @types/jest\` or \`npm i --save-dev @types/mocha\` and then add \'jest\' or \'mocha\' to the types field in your tsconfig.", "5861176"],
-      [35, 4, 6, "Cannot find name \'expect\'.", "1179768986"],
-      [38, 2, 2, "Cannot find name \'it\'. Do you need to install type definitions for a test runner? Try \`npm i --save-dev @types/jest\` or \`npm i --save-dev @types/mocha\` and then add \'jest\' or \'mocha\' to the types field in your tsconfig.", "5861176"],
-      [40, 10, 6, "Cannot find name \'expect\'.", "1179768986"]
-    ],
     "src/generators/application/sub-generators/angular/index.ts:2883537687": [
       [26, 6, 14, "Object is possibly \'undefined\'.", "998857859"],
       [27, 4, 14, "Object is possibly \'undefined\'.", "998857859"],

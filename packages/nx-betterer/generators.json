@@ -2,5 +2,11 @@
   "$schema": "http://json-schema.org/schema",
   "name": "nx-betterer",
   "version": "0.0.1",
-  "generators": {}
+  "generators": {
+    "add": {
+      "factory": "./src/generators/add/generator",
+      "schema": "./src/generators/add/schema.json",
+      "description": "Add betterer to an existing project"
+    }
+  }
 }

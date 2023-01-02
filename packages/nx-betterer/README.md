@@ -22,16 +22,35 @@ This library was generated with [Nx](https://nx.dev).
    $ yarn add @spaceribs/nx-betterer --dev
    ```
 
-3. Generate the betterer configuration in your project:
+2. Generate the betterer configuration in your project:
 
    ```bash
    $ nx g @spaceribs/nx-betterer:add my-project
 
-   >  NX  Generating @spaceribs/nx-betterer:application
+   >  NX  Generating @spaceribs/nx-betterer:init
    ```
 
-4. Open the blank rules configuration added to your project and follow
+3. Open the blank rules configuration added to your project and follow
    the guide at: <https://phenomnomnominal.github.io/betterer/docs/test-definition-file>.
+
+4. Run the executor to generate the initial results file.
+
+   ```bash
+   $ nx run my-project:betterer
+
+      \ | /     _         _   _
+    '-.ooo.-'  | |__  ___| |_| |_ ___ _ __ ___ _ __
+   ---ooooo--- | '_ \/ _ \ __| __/ _ \ '__/ _ \ '__|
+    .-'ooo'-.  | |_)|  __/ |_| ||  __/ | |  __/ |
+      / | \    |_.__/\___|\__|\__\___|_|  \___|_|
+
+   🎉 Betterer (1,078ms): 1 test done!
+   ✅ stricter compilation: "stricter compilation" has already met its goal! ✨
+   1 test got checked. 🤔
+   1 test met its goal! 🎉
+   ```
+
+5. Commit your changes.
 
 NOTE: Keep in mind that due to a lack of ESModule support in NxNrwl, you'll
 need to use CommonJS syntax.
