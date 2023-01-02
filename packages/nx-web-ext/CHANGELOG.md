@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.6](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-1.0.5...nx-web-ext-1.0.6) (2023-01-02)
+
+
+### Bug Fixes
+
+* **nx-web-ext:** update peer deps ([ad73052](https://github.com/spaceribs/spaceribs/commit/ad73052564267b94c0cf9e10eb57e691bc7ca709))
+
 ## [1.0.5](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-1.0.4...nx-web-ext-1.0.5) (2022-12-04)
 
 ## [1.0.4](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-1.0.3...nx-web-ext-1.0.4) (2022-12-03)
