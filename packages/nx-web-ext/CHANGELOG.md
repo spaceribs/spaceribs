@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.2.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-1.1.0...nx-web-ext-1.2.0) (2023-01-02)
+
+
+### Features
+
+* **nx-betterer:** add watch mode and initialize generator ([c33e8fd](https://github.com/spaceribs/spaceribs/commit/c33e8fdb1bca61368089573943d0e64c65a7414f))
+
 ## [1.1.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-1.0.6...nx-web-ext-1.1.0) (2023-01-02)
 
 
