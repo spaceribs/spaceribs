@@ -60,7 +60,7 @@
       "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "conventional",
-        "postTargets": ["nx-web-ext:github", "nx-web-ext:npm"]
+        "postTargets": ["nx-betterer:github", "nx-betterer:npm"]
       }
     },
     "github": {
