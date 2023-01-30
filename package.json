@@ -30,7 +30,7 @@
     "@angular-eslint/template-parser": "15.1.0",
     "@angular/cli": "~15.0.0",
     "@angular/compiler-cli": "15.0.4",
-    "@angular/language-service": "15.0.4",
+    "@angular/language-service": "15.1.2",
     "@betterer/cli": "^5.4.0",
     "@betterer/coverage": "^5.4.0",
     "@betterer/eslint": "^5.4.0",
