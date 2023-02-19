@@ -52,6 +52,7 @@
     "@nrwl/web": "15.6.3",
     "@nrwl/workspace": "15.6.3",
     "@phenomnomnominal/tsquery": "^5.0.0",
+    "@scullyio/init": "^2.1.41",
     "@testing-library/react": "13.4.0",
     "@types/firefox-webext-browser": "^94.0.1",
     "@types/jest": "28.1.1",
