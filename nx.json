@@ -1,4 +1,13 @@
 {
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e", "betterer"],
+        "accessToken": "YjQ1ODI2NTMtOGQxMC00NTFjLWEyNDEtYzc4OTA4ZTI5MjU4fHJlYWQtd3JpdGU="
+      }
+    }
+  },
   "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "npmScope": "spaceribs",
@@ -10,15 +19,6 @@
       "dependencies": "*",
       "devDependencies": {},
       "scripts": {}
-    }
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e", "betterer"],
-        "accessToken": "YjQ1ODI2NTMtOGQxMC00NTFjLWEyNDEtYzc4OTA4ZTI5MjU4fHJlYWQtd3JpdGU="
-      }
     }
   },
   "workspaceLayout": {
