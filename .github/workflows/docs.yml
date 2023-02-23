@@ -1,4 +1,7 @@
-name: Release
+name: Docs
+
+permissions:
+  contents: write
 
 on:
   - workflow_dispatch
@@ -24,11 +27,6 @@ jobs:
           git config user.name "GitHub Bot"
           git config user.email "gituser@example.com"
 
-      - name: NPM Token
-        uses: filipstefansson/set-npm-token-action@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-
       - name: NPM Install
         run: npm ci
 
@@ -45,8 +43,6 @@ jobs:
         run: npx nx run-many --target=typedoc
 
       - name: Publish generated content to GitHub Pages
-        uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          dir: docs
-          branch: gh-pages
-          token: ${{ secrets.ACCESS_TOKEN }}
+          folder: docs
