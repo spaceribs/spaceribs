@@ -1,0 +1,52 @@
+name: Release
+
+on:
+  - workflow_dispatch
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: main
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Setup Git
+        run: |
+          git config user.name "GitHub Bot"
+          git config user.email "gituser@example.com"
+
+      - name: NPM Token
+        uses: filipstefansson/set-npm-token-action@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+
+      - name: NPM Install
+        run: npm ci
+
+      - name: Build Main Website
+        shell: bash
+        run: npx nx run spaceribs:build:production
+
+      - name: Build Static Website
+        shell: bash
+        run: npm run scully
+
+      - name: Build Typedoc
+        shell: bash
+        run: npx nx run-many --target=typedoc
+
+      - name: Publish generated content to GitHub Pages
+        uses: tsunematsu21/actions-publish-gh-pages@v1.0.2
+        with:
+          dir: docs
+          branch: gh-pages
+          token: ${{ secrets.ACCESS_TOKEN }}
