@@ -17,6 +17,7 @@
         "inlineStyleLanguage": "scss",
         "assets": [
           "projects/spaceribs/src/favicon.ico",
+          "projects/spaceribs/src/.nojekyll",
           "projects/spaceribs/src/assets"
         ],
         "styles": ["projects/spaceribs/src/styles.scss"],

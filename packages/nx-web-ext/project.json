@@ -88,6 +88,14 @@
     },
     "betterer": {
       "executor": "@spaceribs/nx-betterer:betterer"
+    },
+    "typedoc": {
+      "executor": "@enio.ai/typedoc:typedoc",
+      "outputs": ["docs/packages/nx-web-ext"],
+      "options": {
+        "options": "typedoc.json"
+      },
+      "configurations": {}
     }
   },
   "tags": []

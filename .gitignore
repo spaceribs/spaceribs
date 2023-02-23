@@ -39,3 +39,10 @@ testem.log
 Thumbs.db
 
 .angular
+
+#Project Docs
+docs
+.scully
+scully.log
+scully/**/*.js
+scully/**/*.js.map

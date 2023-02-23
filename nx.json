@@ -1,19 +1,4 @@
 {
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e", "betterer"],
-        "accessToken": "YjQ1ODI2NTMtOGQxMC00NTFjLWEyNDEtYzc4OTA4ZTI5MjU4fHJlYWQtd3JpdGU="
-      }
-    }
-  },
-  "extends": "nx/presets/npm.json",
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "spaceribs",
-  "affected": {
-    "defaultBase": "main"
-  },
   "implicitDependencies": {
     "package.json": {
       "dependencies": "*",
@@ -21,10 +6,7 @@
       "scripts": {}
     }
   },
-  "workspaceLayout": {
-    "appsDir": "projects",
-    "libsDir": "packages"
-  },
+  "npmScope": "spaceribs",
   "targetDefaults": {
     "lint": {
       "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
@@ -39,6 +21,29 @@
         "tmp/{projectRoot}/.betterer.cache"
       ]
     }
+  },
+  "workspaceLayout": {
+    "appsDir": "projects",
+    "libsDir": "packages"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e",
+          "betterer",
+          "typedoc"
+        ],
+        "accessToken": "YjQ1ODI2NTMtOGQxMC00NTFjLWEyNDEtYzc4OTA4ZTI5MjU4fHJlYWQtd3JpdGU="
+      }
+    }
+  },
+  "affected": {
+    "defaultBase": "main"
   },
   "generators": {
     "@nrwl/angular:application": {
@@ -69,5 +74,6 @@
       }
     }
   },
-  "defaultProject": "angular-example"
+  "defaultProject": "angular-example",
+  "extends": "nx/presets/npm.json"
 }
