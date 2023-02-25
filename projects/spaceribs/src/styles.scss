@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+canvas {
+  image-rendering: pixelated;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: black;
+  color: white;
+}
