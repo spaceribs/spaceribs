@@ -1,0 +1,40 @@
+{
+  "name": "buildings",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/buildings/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/buildings",
+        "main": "packages/buildings/src/index.ts",
+        "tsConfig": "packages/buildings/tsconfig.lib.json",
+        "assets": [
+          "packages/buildings/*.md",
+          "packages/buildings/src/glb/*.glb",
+          "packages/buildings/src/gltf/*.gltf"
+        ]
+      },
+      "dependsOn": ["compile"]
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/buildings/**/*.ts"]
+      }
+    },
+    "compile": {
+      "executor": "@spaceribs/nx-threejs:build",
+      "outputs": ["{options.outFolder}"],
+      "options": {
+        "objFolder": "packages/buildings/src/obj",
+        "glbFolder": "packages/buildings/src/glb",
+        "gltfFolder": "packages/buildings/src/gltf"
+      }
+    }
+  },
+  "tags": []
+}
