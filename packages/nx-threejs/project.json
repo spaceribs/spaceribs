@@ -1,0 +1,67 @@
+{
+  "name": "nx-threejs",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/nx-threejs/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/nx-threejs",
+        "main": "packages/nx-threejs/src/index.ts",
+        "tsConfig": "packages/nx-threejs/tsconfig.lib.json",
+        "assets": [
+          "packages/nx-threejs/*.md",
+          {
+            "input": "./packages/nx-threejs/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-threejs/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./packages/nx-threejs",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./packages/nx-threejs",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/nx-threejs/**/*.ts",
+          "packages/nx-threejs/generators.json",
+          "packages/nx-threejs/executors.json",
+          "packages/nx-threejs/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/nx-threejs/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

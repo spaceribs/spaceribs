@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@spaceribs/nx-betterer": ["packages/nx-betterer/src/index.ts"],
+      "@spaceribs/nx-threejs": ["packages/nx-threejs/src/index.ts"],
       "@spaceribs/nx-web-ext": ["packages/nx-web-ext/src/index.ts"]
     }
   },
