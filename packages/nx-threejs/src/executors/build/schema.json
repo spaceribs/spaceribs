@@ -5,6 +5,19 @@
   "title": "Build executor",
   "description": "",
   "type": "object",
-  "properties": {},
-  "required": []
+  "properties": {
+    "objFolder": {
+      "type": "string",
+      "description": "A directory where all .obj files will be converted to .gltf/.glb"
+    },
+    "glbFolder": {
+      "type": "string",
+      "description": "A directory where .glb files will be outputted to."
+    },
+    "gltfFolder": {
+      "type": "string",
+      "description": "A directory where .gltf files will be outputted to."
+    }
+  },
+  "required": ["objFolder", "glbFolder", "gltfFolder"]
 }

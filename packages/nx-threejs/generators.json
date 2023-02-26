@@ -3,10 +3,10 @@
   "name": "nx-threejs",
   "version": "0.0.1",
   "generators": {
-    "nx-threejs": {
-      "factory": "./src/generators/nx-threejs/generator",
-      "schema": "./src/generators/nx-threejs/schema.json",
-      "description": "nx-threejs generator"
+    "asset-library": {
+      "factory": "./src/generators/asset-library/generator",
+      "schema": "./src/generators/asset-library/schema.json",
+      "description": "A threejs library for managing and converting assets"
     }
   }
 }

@@ -19,6 +19,7 @@
     "@scullyio/scully-plugin-playwright": "^2.1.41",
     "@swc/helpers": "~0.4.11",
     "core-js": "^3.26.1",
+    "obj2gltf": "^3.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.4.1",
