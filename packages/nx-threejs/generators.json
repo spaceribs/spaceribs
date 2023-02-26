@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "nx-threejs",
+  "version": "0.0.1",
+  "generators": {
+    "nx-threejs": {
+      "factory": "./src/generators/nx-threejs/generator",
+      "schema": "./src/generators/nx-threejs/schema.json",
+      "description": "nx-threejs generator"
+    }
+  }
+}
