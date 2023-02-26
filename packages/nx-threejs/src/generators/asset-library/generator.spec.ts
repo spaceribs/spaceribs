@@ -2,11 +2,11 @@ import { createTreeWithEmptyWorkspace } from '@nrwl/devkit/testing';
 import { Tree, readProjectConfiguration } from '@nrwl/devkit';
 
 import generator from './generator';
-import { NxThreejsGeneratorSchema } from './schema';
+import { AssetLibraryGeneratorSchema } from './schema';
 
-describe('nx-threejs generator', () => {
+describe('asset-library generator', () => {
   let appTree: Tree;
-  const options: NxThreejsGeneratorSchema = { name: 'test' };
+  const options: AssetLibraryGeneratorSchema = { name: 'test' };
 
   beforeEach(() => {
     appTree = createTreeWithEmptyWorkspace();

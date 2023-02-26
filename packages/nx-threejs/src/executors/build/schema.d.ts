@@ -1,1 +1,5 @@
-export interface BuildExecutorSchema {} // eslint-disable-line
+export interface BuildExecutorSchema {
+  objFolder: string;
+  glbFolder: string;
+  gltfFolder: string;
+}
