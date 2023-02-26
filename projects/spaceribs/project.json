@@ -6,9 +6,12 @@
   "prefix": "spaceribs",
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@angular-builders/custom-webpack:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "customWebpackConfig": {
+          "path": "projects/spaceribs/webpack.config.js"
+        },
         "outputPath": "dist/projects/spaceribs",
         "index": "projects/spaceribs/src/index.html",
         "main": "projects/spaceribs/src/main.ts",
@@ -51,7 +54,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@angular-builders/custom-webpack:dev-server",
       "configurations": {
         "production": {
           "browserTarget": "spaceribs:build:production"
