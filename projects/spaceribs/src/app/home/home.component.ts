@@ -12,6 +12,7 @@ import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
 import { RenderPixelatedPass } from 'three/examples/jsm/postprocessing/RenderPixelatedPass';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { glb } from '@spaceribs/buildings';
 
 @Component({
   selector: 'spaceribs-home',
@@ -53,10 +54,10 @@ export class HomeComponent implements AfterViewInit {
     scene.add(backLight);
 
     const camera = new THREE.OrthographicCamera(
-      800 / -300,
-      800 / 300,
-      600 / 300,
-      600 / -300,
+      800 / -200,
+      800 / 200,
+      600 / 200,
+      600 / -200,
       -2,
       1000
     );
@@ -108,7 +109,55 @@ export class HomeComponent implements AfterViewInit {
     const loader = new GLTFLoader();
 
     loader.load(
-      '/assets/gltf/1st-floor.gltf',
+      glb.ground,
+      function (gltf) {
+        gltf.scene.position.y = -1;
+        gltf.scene.rotateX(Math.PI * 0.2);
+        gltf.scene.rotateY(Math.PI * -0.2);
+        gltf.scene.receiveShadow = true;
+        gltf.scene.castShadow = true;
+        scene.add(gltf.scene);
+      },
+      undefined,
+      function (error) {
+        console.error(error);
+      }
+    );
+
+    loader.load(
+      glb.floor_one,
+      function (gltf) {
+        gltf.scene.position.y = -1;
+        gltf.scene.rotateX(Math.PI * 0.2);
+        gltf.scene.rotateY(Math.PI * -0.2);
+        gltf.scene.receiveShadow = true;
+        gltf.scene.castShadow = true;
+        scene.add(gltf.scene);
+      },
+      undefined,
+      function (error) {
+        console.error(error);
+      }
+    );
+
+    loader.load(
+      glb.floor_two,
+      function (gltf) {
+        gltf.scene.position.y = -1;
+        gltf.scene.rotateX(Math.PI * 0.2);
+        gltf.scene.rotateY(Math.PI * -0.2);
+        gltf.scene.receiveShadow = true;
+        gltf.scene.castShadow = true;
+        scene.add(gltf.scene);
+      },
+      undefined,
+      function (error) {
+        console.error(error);
+      }
+    );
+
+    loader.load(
+      glb.roof,
       function (gltf) {
         gltf.scene.position.y = -1;
         gltf.scene.rotateX(Math.PI * 0.2);
