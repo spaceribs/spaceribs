@@ -48,7 +48,7 @@
     "@commitlint/cz-commitlint": "17.3.0",
     "@enio.ai/typedoc": "^1.0.6",
     "@jscutlery/semver": "2.29.3",
-    "@nrwl/angular": "15.6.3",
+    "@nrwl/angular": "15.8.9",
     "@nrwl/cli": "15.6.3",
     "@nrwl/devkit": "15.6.3",
     "@nrwl/eslint-plugin-nx": "15.6.3",
