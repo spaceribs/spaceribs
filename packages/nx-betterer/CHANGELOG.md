@@ -2,6 +2,17 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.0](https://github.com/spaceribs/spaceribs/compare/nx-betterer-0.2.1...nx-betterer-1.0.0) (2023-05-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* Major version upgrade
+
+### Build System
+
+* upgrade from nx/angular 15 to 16 ([22188b5](https://github.com/spaceribs/spaceribs/commit/22188b5027d6e8e909020af3eaf4e9724d99d2f4))
+
 ## [0.2.1](https://github.com/spaceribs/spaceribs/compare/nx-betterer-0.2.0...nx-betterer-0.2.1) (2023-01-02)
 
 ## [0.2.0](https://github.com/spaceribs/spaceribs/compare/nx-betterer-0.1.0...nx-betterer-0.2.0) (2023-01-02)
