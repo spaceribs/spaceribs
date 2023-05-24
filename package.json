@@ -103,7 +103,7 @@
     "typedoc": "^0.23.20",
     "typedoc-plugin-rename-defaults": "^0.6.4",
     "typedoc-theme-hierarchy": "^3.0.0",
-    "typescript": "4.9.3",
+    "typescript": "4.9.5",
     "verdaccio": "5.19.0",
     "web-ext": "^6.8.0",
     "web-ext-types": "^3.2.1",
