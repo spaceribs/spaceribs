@@ -1,7 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
   "$id": "NxThreejsAssetLibrary",
-  "cli": "nx",
   "title": "Create a ThreeJS Asset Library",
   "description": "Create a ThreeJS Asset Library.",
   "type": "object",
@@ -40,7 +39,10 @@
     },
     "testEnvironment": {
       "type": "string",
-      "enum": ["jsdom", "node"],
+      "enum": [
+        "jsdom",
+        "node"
+      ],
       "description": "The test environment to use if unitTestRunner is set to jest.",
       "default": "jsdom"
     },
@@ -66,13 +68,20 @@
     },
     "config": {
       "type": "string",
-      "enum": ["workspace", "project", "npm-scripts"],
+      "enum": [
+        "workspace",
+        "project",
+        "npm-scripts"
+      ],
       "default": "project",
       "description": "Determines whether the project's executors should be configured in `workspace.json`, `project.json` or as npm scripts."
     },
     "compiler": {
       "type": "string",
-      "enum": ["tsc", "swc"],
+      "enum": [
+        "tsc",
+        "swc"
+      ],
       "default": "tsc",
       "description": "The compiler used by the build and test targets"
     },
@@ -82,5 +91,7 @@
       "default": false
     }
   },
-  "required": ["name"]
+  "required": [
+    "name"
+  ]
 }

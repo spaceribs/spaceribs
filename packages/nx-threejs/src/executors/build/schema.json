@@ -1,7 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema",
   "version": 2,
-  "cli": "nx",
   "title": "Build executor",
   "description": "",
   "type": "object",
@@ -19,5 +18,9 @@
       "description": "A directory where .gltf files will be outputted to."
     }
   },
-  "required": ["objFolder", "glbFolder", "gltfFolder"]
+  "required": [
+    "objFolder",
+    "glbFolder",
+    "gltfFolder"
+  ]
 }

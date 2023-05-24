@@ -7,7 +7,7 @@ import {
   BettererRunner,
 } from '@betterer/betterer';
 import { lastValueFrom, Observable } from 'rxjs';
-import { ExecutorContext } from '@nrwl/devkit';
+import { ExecutorContext } from '@nx/devkit';
 import * as path from 'path';
 
 export default async function runExecutor(

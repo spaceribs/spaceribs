@@ -5,11 +5,12 @@
   "sourceRoot": "projects/nx-threejs-e2e/src",
   "targets": {
     "e2e": {
-      "executor": "@nrwl/nx-plugin:e2e",
+      "executor": "@nx/jest:jest",
       "options": {
-        "target": "nx-threejs:build",
-        "jestConfig": "projects/nx-threejs-e2e/jest.config.ts"
-      }
+        "jestConfig": "projects/nx-threejs-e2e/jest.config.ts",
+        "runInBand": true
+      },
+      "dependsOn": ["nx-threejs:build"]
     }
   },
   "tags": [],

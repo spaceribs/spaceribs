@@ -1,6 +1,5 @@
 {
   "$schema": "http://json-schema.org/schema",
-  "cli": "nx",
   "$id": "Add",
   "title": "",
   "type": "object",
@@ -15,5 +14,7 @@
       "x-prompt": "What project would you like to make betterer?"
     }
   },
-  "required": ["projectName"]
+  "required": [
+    "projectName"
+  ]
 }

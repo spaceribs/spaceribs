@@ -1,4 +1,4 @@
-import { Tree } from '@nrwl/devkit';
+import { Tree } from '@nx/devkit';
 
 export const appRouterUseHash = (tree: Tree, root: string) => {
   const mainFilePath = `${root}/src/main.tsx`;

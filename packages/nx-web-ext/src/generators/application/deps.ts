@@ -2,7 +2,7 @@ import {
   addDependenciesToPackageJson,
   installPackagesTask,
   Tree,
-} from '@nrwl/devkit';
+} from '@nx/devkit';
 
 export const addWebExtDeps = async (tree: Tree) => {
   addDependenciesToPackageJson(

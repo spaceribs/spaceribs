@@ -13,8 +13,8 @@
   "peerDependencies": {
     "@betterer/betterer": "^5.4.0",
     "@betterer/typescript": "^5.4.0",
-    "@nrwl/devkit": "^15.4.2",
-    "rxjs": "^7.5.7"
+    "rxjs": "^7.5.7",
+    "@nx/devkit": "^16.2.2"
   },
   "author": "Spaceribs",
   "license": "MIT",

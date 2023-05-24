@@ -2,11 +2,11 @@ import {
   readProjectConfiguration,
   Tree,
   updateProjectConfiguration,
-} from '@nrwl/devkit';
+} from '@nx/devkit';
 import { addAction } from './add-action';
 import { appRouterUseHash } from './use-hash';
 
-import { applicationGenerator, E2eTestRunner } from '@nrwl/angular/generators';
+import { applicationGenerator, E2eTestRunner } from '@nx/angular/generators';
 import { addFiles, NormalizedSchema } from '../../generator';
 import { resolve } from 'path';
 

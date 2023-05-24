@@ -2,7 +2,7 @@ import { WebExtRunOptions, WebExtServeSchema } from './schema';
 import * as webExt from 'web-ext';
 import { resolve } from 'path';
 import { Observable, Subscription } from 'rxjs';
-import { ExecutorContext, logger, runExecutor } from '@nrwl/devkit';
+import { ExecutorContext, logger, runExecutor } from '@nx/devkit';
 
 interface BuildTargetResult {
   success: boolean;

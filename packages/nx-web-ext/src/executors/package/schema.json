@@ -2,7 +2,6 @@
   "version": 2,
   "outputCapture": "direct-nodejs",
   "$schema": "http://json-schema.org/schema",
-  "cli": "nx",
   "title": "Package executor",
   "description": "",
   "type": "object",
@@ -14,5 +13,8 @@
       "type": "string"
     }
   },
-  "required": ["sourceDir", "artifactsDir"]
+  "required": [
+    "sourceDir",
+    "artifactsDir"
+  ]
 }

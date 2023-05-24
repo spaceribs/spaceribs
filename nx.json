@@ -1,34 +1,7 @@
 {
-  "implicitDependencies": {
-    "package.json": {
-      "dependencies": "*",
-      "devDependencies": {},
-      "scripts": {}
-    }
-  },
-  "npmScope": "spaceribs",
-  "targetDefaults": {
-    "lint": {
-      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
-    },
-    "test": {
-      "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
-    },
-    "betterer": {
-      "dependsOn": ["test"],
-      "outputs": [
-        "{projectRoot}/.betterer.results",
-        "tmp/{projectRoot}/.betterer.cache"
-      ]
-    }
-  },
-  "workspaceLayout": {
-    "appsDir": "projects",
-    "libsDir": "packages"
-  },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/nx-cloud",
+      "runner": "nx-cloud",
       "options": {
         "cacheableOperations": [
           "build",
@@ -43,24 +16,43 @@
       }
     }
   },
+  "targetDefaults": {
+    "lint": {
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
+    },
+    "test": {
+      "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
+    },
+    "betterer": {
+      "dependsOn": ["test"],
+      "outputs": [
+        "{projectRoot}/.betterer.results",
+        "{workspaceRoot}/tmp/{projectRoot}/.betterer.cache"
+      ]
+    }
+  },
+  "workspaceLayout": {
+    "appsDir": "projects",
+    "libsDir": "packages"
+  },
   "affected": {
     "defaultBase": "main"
   },
   "generators": {
-    "@nrwl/angular:application": {
+    "@nx/angular:application": {
       "style": "scss",
       "linter": "eslint",
       "unitTestRunner": "jest",
       "e2eTestRunner": "none"
     },
-    "@nrwl/angular:library": {
+    "@nx/angular:library": {
       "linter": "eslint",
       "unitTestRunner": "jest"
     },
-    "@nrwl/angular:component": {
+    "@nx/angular:component": {
       "style": "scss"
     },
-    "@nrwl/react": {
+    "@nx/react": {
       "application": {
         "style": "scss",
         "linter": "eslint",
@@ -76,5 +68,6 @@
     }
   },
   "defaultProject": "angular-example",
-  "extends": "nx/presets/npm.json"
+  "extends": "nx/presets/npm.json",
+  "$schema": "./node_modules/nx/schemas/nx-schema.json"
 }

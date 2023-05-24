@@ -2,13 +2,13 @@ import {
   readProjectConfiguration,
   Tree,
   updateProjectConfiguration,
-} from '@nrwl/devkit';
+} from '@nx/devkit';
 import { addAction } from './add-action';
 import { appRouterUseHash } from './use-hash';
 
-import { applicationGenerator } from '@nrwl/react';
+import { applicationGenerator } from '@nx/react';
 import { addFiles, NormalizedSchema } from '../../generator';
-import { Linter } from '@nrwl/linter';
+import { Linter } from '@nx/linter';
 import { replaceFiles } from './replace-files';
 import { resolve } from 'path';
 

@@ -5,11 +5,12 @@
   "sourceRoot": "projects/nx-betterer-e2e/src",
   "targets": {
     "e2e": {
-      "executor": "@nrwl/nx-plugin:e2e",
+      "executor": "@nx/jest:jest",
       "options": {
-        "target": "nx-betterer:build",
-        "jestConfig": "projects/nx-betterer-e2e/jest.config.ts"
-      }
+        "jestConfig": "projects/nx-betterer-e2e/jest.config.ts",
+        "runInBand": true
+      },
+      "dependsOn": ["nx-betterer:build"]
     }
   },
   "tags": [],

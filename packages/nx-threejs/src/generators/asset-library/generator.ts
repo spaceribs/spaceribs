@@ -7,8 +7,8 @@ import {
   generateFiles,
   readProjectConfiguration,
   updateProjectConfiguration,
-} from '@nrwl/devkit';
-import { libraryGenerator } from '@nrwl/js';
+} from '@nx/devkit';
+import { libraryGenerator } from '@nx/js';
 import * as path from 'path';
 import { AssetLibraryGeneratorSchema } from './schema';
 

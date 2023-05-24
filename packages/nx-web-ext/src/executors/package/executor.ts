@@ -1,6 +1,6 @@
 import { PackageExecutorSchema, WebExtBuilderSchema } from './schema';
 import * as webExt from 'web-ext';
-import { ExecutorContext } from '@nrwl/devkit';
+import { ExecutorContext } from '@nx/devkit';
 
 export default async function runExecutor(
   options: PackageExecutorSchema,

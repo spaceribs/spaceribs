@@ -4,7 +4,7 @@ import {
   names,
   offsetFromRoot,
   Tree,
-} from '@nrwl/devkit';
+} from '@nx/devkit';
 import * as path from 'path';
 import type { NxWebExtGeneratorSchema } from './schema';
 import { angularApp } from './sub-generators/angular';

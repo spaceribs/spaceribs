@@ -5,7 +5,7 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "executor": "@nrwl/js:tsc",
+      "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/packages/nx-web-ext",
@@ -37,7 +37,7 @@
       }
     },
     "lint": {
-      "executor": "@nrwl/linter:eslint",
+      "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
@@ -49,7 +49,7 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/packages/nx-web-ext"],
       "options": {
         "jestConfig": "packages/nx-web-ext/jest.config.ts",
@@ -76,22 +76,12 @@
         "access": "public"
       }
     },
-    "dep-check": {
-      "executor": "nx-pwm:depcheck"
-    },
-    "version-check": {
-      "executor": "nx-pwm:version-check",
-      "options": {
-        "updateVersionsFiles": false,
-        "updateMigrations": true
-      }
-    },
     "betterer": {
       "executor": "@spaceribs/nx-betterer:betterer"
     },
     "typedoc": {
       "executor": "@enio.ai/typedoc:typedoc",
-      "outputs": ["docs/packages/nx-web-ext"],
+      "outputs": ["{workspaceRoot}/docs/packages/nx-web-ext"],
       "options": {
         "options": "typedoc.json"
       },
