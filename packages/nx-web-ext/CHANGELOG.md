@@ -2,6 +2,22 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.0.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-1.2.0...nx-web-ext-2.0.0) (2023-05-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* Major version upgrade
+
+### Features
+
+* **spaceribs:** add scully support ([3806b98](https://github.com/spaceribs/spaceribs/commit/3806b988ee34ba567368ce0ca1eec979ece7a358))
+
+
+### Build System
+
+* upgrade from nx/angular 15 to 16 ([22188b5](https://github.com/spaceribs/spaceribs/commit/22188b5027d6e8e909020af3eaf4e9724d99d2f4))
+
 ## [1.2.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-1.1.0...nx-web-ext-1.2.0) (2023-01-02)
 
 
