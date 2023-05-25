@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.0.1](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.0.0...nx-web-ext-2.0.1) (2023-05-25)
+
+
+### Bug Fixes
+
+* **nx-web-ext:** fix application generator for angular ([51089c2](https://github.com/spaceribs/spaceribs/commit/51089c245d8d923be064a1f1038bd1d6a4b5cf09))
+
 ## [2.0.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-1.2.0...nx-web-ext-2.0.0) (2023-05-24)
 
 
