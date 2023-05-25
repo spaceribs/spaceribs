@@ -17,8 +17,8 @@
   ],
   "peerDependencies": {
     "nx": "^16.2.2",
-    "typescript": "^4.8.2",
-    "rxjs": "^7.5.7",
+    "typescript": "~4.9.5",
+    "rxjs": "~7.8.1",
     "@nx/devkit": "^16.2.2",
     "@nx/linter": "^16.2.2"
   },
