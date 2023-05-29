@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.1.0](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.0.2...nx-betterer-1.1.0) (2023-05-29)
+
+
+### Features
+
+* **nx-betterer:** ensure tests getting worse emits an error, add update ([57bf78c](https://github.com/spaceribs/spaceribs/commit/57bf78cd18b0d7d5b4d06e798028efd743959291))
+
 ## [1.0.2](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.0.1...nx-betterer-1.0.2) (2023-05-29)
 
 ## [1.0.1](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.0.0...nx-betterer-1.0.1) (2023-05-25)
