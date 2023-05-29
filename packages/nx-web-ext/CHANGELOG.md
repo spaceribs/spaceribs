@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.1.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.0.2...nx-web-ext-2.1.0) (2023-05-29)
+
+
+### Features
+
+* **nx-betterer:** ensure tests getting worse emits an error, add update ([57bf78c](https://github.com/spaceribs/spaceribs/commit/57bf78cd18b0d7d5b4d06e798028efd743959291))
+
 ## [2.0.2](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.0.1...nx-web-ext-2.0.2) (2023-05-29)
 
 
