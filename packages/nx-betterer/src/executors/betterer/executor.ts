@@ -2,9 +2,10 @@ import { BettererExecutorSchema } from './schema';
 import {
   betterer,
   watch,
-  BettererOptionsStart,
   BettererOptionsWatch,
   BettererRunner,
+  BettererOptionsStartCI,
+  BettererOptionsStartUpdate,
 } from '@betterer/betterer';
 import { lastValueFrom, Observable } from 'rxjs';
 import { ExecutorContext } from '@nx/devkit';
@@ -20,18 +21,26 @@ export default async function runExecutor(
 
   const project = context.workspace.projects[context.projectName];
   const projectRoot = path.resolve(context.root, project.root);
+  const cachePath = path.resolve(
+    context.root,
+    'tmp',
+    project.root,
+    '.betterer.cache'
+  );
 
-  const config: BettererOptionsStart = {
-    ci: options.ci,
+  const ciConfig: BettererOptionsStartCI = {
+    ci: true,
     cwd: projectRoot,
     tsconfigPath: './tsconfig.json',
     cache: true,
-    cachePath: path.resolve(
-      context.root,
-      'tmp',
-      project.root,
-      '.betterer.cache'
-    ),
+    cachePath,
+  };
+
+  const updateConfig: BettererOptionsStartUpdate = {
+    cwd: projectRoot,
+    tsconfigPath: './tsconfig.json',
+    update: true,
+    cachePath,
   };
 
   const watchConfig: BettererOptionsWatch = {
@@ -39,17 +48,10 @@ export default async function runExecutor(
     cwd: projectRoot,
     tsconfigPath: './tsconfig.json',
     cache: true,
-    cachePath: path.resolve(
-      context.root,
-      'tmp',
-      project.root,
-      '.betterer.cache'
-    ),
+    cachePath,
   };
 
-  if (options.watch !== true) {
-    await betterer(config);
-  } else {
+  if (options.watch === true) {
     const bettererWatch = new Observable((observe) => {
       let runner: BettererRunner;
 
@@ -70,6 +72,27 @@ export default async function runExecutor(
     });
 
     await lastValueFrom(bettererWatch);
+  } else if (options.update === true) {
+    const result = await betterer(updateConfig);
+    if (
+      (result.failed && result.failed.length > 0) ||
+      (result.worse && result.worse.length > 0)
+    ) {
+      throw new Error(
+        `Betterer failed for ${result.failed.length} tests and got worse for ${result.worse.length} tests.`
+      );
+    }
+  } else {
+    const result = await betterer(ciConfig);
+    console.log(result);
+    if (
+      (result.failed && result.failed.length > 0) ||
+      (result.worse && result.worse.length > 0)
+    ) {
+      throw new Error(
+        `Betterer failed for ${result.failed.length} tests and got worse for ${result.worse.length} tests.`
+      );
+    }
   }
 
   return {

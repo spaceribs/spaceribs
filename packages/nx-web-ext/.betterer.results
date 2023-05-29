@@ -5,15 +5,15 @@
 //
 exports[`stricter compilation`] = {
   value: `{
-    "src/executors/package/executor.ts:1897279360": [
+    "src/executors/package/executor.ts:3102229393": [
       [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"]
     ],
-    "src/executors/serve/executor.ts:1354903451": [
+    "src/executors/serve/executor.ts:2054552010": [
       [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"],
       [29, 6, 7, "Variable \'project\' is used before being assigned.", "1804496816"],
       [29, 15, 6, "Variable \'target\' is used before being assigned.", "1741960948"],
       [29, 23, 13, "Variable \'configuration\' is used before being assigned.", "806380341"],
-      [36, 41, 9, "Object is possibly \'undefined\'.", "316899760"],
+      [36, 41, 9, "\'s.outfile\' is possibly \'undefined\'.", "316899760"],
       [38, 10, 9, "Variable \'runnerSub\' is used before being assigned.", "3220025905"],
       [44, 12, 9, "Type \'null\' is not assignable to type \'Subscription\'.", "3220025905"],
       [54, 10, 9, "Variable \'runnerSub\' is used before being assigned.", "3220025905"],
@@ -21,28 +21,28 @@ exports[`stricter compilation`] = {
       [77, 13, 3, "Parameter \'res\' implicitly has an \'any\' type.", "193432417"],
       [94, 14, 3, "Parameter \'err\' implicitly has an \'any\' type.", "193405824"]
     ],
-    "src/generators/application/sub-generators/angular/index.ts:2883537687": [
-      [26, 6, 14, "Object is possibly \'undefined\'.", "998857859"],
-      [27, 4, 14, "Object is possibly \'undefined\'.", "998857859"],
-      [32, 2, 14, "Object is possibly \'undefined\'.", "998857859"],
-      [34, 20, 14, "Object is possibly \'undefined\'.", "998857859"],
-      [35, 2, 14, "Object is possibly \'undefined\'.", "998857859"],
-      [39, 17, 14, "Object is possibly \'undefined\'.", "998857859"],
-      [46, 35, 11, "Argument of type \'string | undefined\' is not assignable to parameter of type \'string\'.\\n  Type \'undefined\' is not assignable to type \'string\'.", "868338854"]
+    "src/generators/application/sub-generators/angular/index.ts:3126026640": [
+      [29, 6, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
+      [30, 4, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
+      [35, 2, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
+      [37, 20, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
+      [38, 2, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
+      [42, 17, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
+      [49, 35, 11, "Argument of type \'string | undefined\' is not assignable to parameter of type \'string\'.\\n  Type \'undefined\' is not assignable to type \'string\'.", "868338854"]
     ],
-    "src/generators/application/sub-generators/angular/use-hash.ts:2557890532": [
+    "src/generators/application/sub-generators/angular/use-hash.ts:294313397": [
       [6, 20, 28, "Object is possibly \'null\'.", "2958527246"]
     ],
-    "src/generators/application/sub-generators/react/index.ts:3958230014": [
-      [32, 6, 14, "Object is possibly \'undefined\'.", "998857859"],
-      [33, 4, 14, "Object is possibly \'undefined\'.", "998857859"],
-      [38, 2, 14, "Object is possibly \'undefined\'.", "998857859"],
-      [40, 20, 14, "Object is possibly \'undefined\'.", "998857859"],
-      [41, 2, 14, "Object is possibly \'undefined\'.", "998857859"],
-      [45, 17, 14, "Object is possibly \'undefined\'.", "998857859"],
+    "src/generators/application/sub-generators/react/index.ts:3833715887": [
+      [32, 6, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
+      [33, 4, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
+      [38, 2, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
+      [40, 20, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
+      [41, 2, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
+      [45, 17, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [54, 35, 11, "Argument of type \'string | undefined\' is not assignable to parameter of type \'string\'.\\n  Type \'undefined\' is not assignable to type \'string\'.", "868338854"]
     ],
-    "src/generators/application/sub-generators/react/use-hash.ts:3752904525": [
+    "src/generators/application/sub-generators/react/use-hash.ts:2886393500": [
       [4, 15, 23, "Object is possibly \'null\'.", "3269655774"]
     ]
   }`
@@ -64,7 +64,7 @@ exports[`increase per-file test coverage`] = {
   },
   "src/executors/serve/executor.ts": {
     "lines": 38,
-    "statements": 40,
+    "statements": 41,
     "functions": 10,
     "branches": 13
   },
@@ -99,10 +99,16 @@ exports[`increase per-file test coverage`] = {
     "branches": 0
   },
   "src/generators/application/sub-generators/angular/index.ts": {
-    "lines": 19,
-    "statements": 21,
+    "lines": 21,
+    "statements": 23,
     "functions": 2,
     "branches": 1
+  },
+  "src/generators/application/sub-generators/angular/replace-files.ts": {
+    "lines": 6,
+    "statements": 7,
+    "functions": 1,
+    "branches": 0
   },
   "src/generators/application/sub-generators/angular/use-hash.ts": {
     "lines": 12,
@@ -140,7 +146,7 @@ exports[`increase per-file test coverage`] = {
 
 exports[`increase total test coverage`] = {
   value: `{
-  "total": { "lines": 121, "statements": 136, "functions": 26, "branches": 17 }
+  "total": { "lines": 129, "statements": 146, "functions": 27, "branches": 17 }
 }
 `
 };

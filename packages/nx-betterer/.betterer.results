@@ -1,0 +1,12 @@
+// BETTERER RESULTS V2.
+// 
+// If this file contains merge conflicts, use `betterer merge` to automatically resolve them:
+// https://phenomnomnominal.github.io/betterer/docs/results-file/#merge
+//
+exports[`stricter compilation`] = {
+  value: `{
+    "src/executors/betterer/executor.ts:3579634665": [
+      [21, 18, 17, "\'context.workspace\' is possibly \'undefined\'.", "4115948881"]
+    ]
+  }`
+};
