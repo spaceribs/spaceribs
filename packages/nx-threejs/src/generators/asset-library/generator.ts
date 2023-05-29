@@ -16,6 +16,12 @@ interface NormalizedSchema extends AssetLibraryGeneratorSchema {
   projectRoot: string;
 }
 
+/**
+ * Take the raw configuration and transform/decorate it for use.
+ * @param tree The file tree to modify.
+ * @param options Raw options passed from the generator.
+ * @returns Normalized options used for generating files.
+ */
 function normalizeOptions(
   tree: Tree,
   options: AssetLibraryGeneratorSchema
@@ -24,11 +30,7 @@ function normalizeOptions(
   const projectDirectory = options.directory
     ? `${names(options.directory).fileName}/${name}`
     : name;
-  // const projectName = projectDirectory.replace(new RegExp('/', 'g'), '-');
   const projectRoot = `${getWorkspaceLayout(tree).libsDir}/${projectDirectory}`;
-  // const parsedTags = options.tags
-  //   ? options.tags.split(',').map((s) => s.trim())
-  //   : [];
 
   return {
     ...options,
@@ -42,6 +44,11 @@ function normalizeOptions(
   };
 }
 
+/**
+ * Add and replace source files for asset library compilation
+ * @param tree File tree to modify
+ * @param options Options normalized by normalizeOptions()
+ */
 function addFiles(tree: Tree, options: NormalizedSchema) {
   const templateOptions = {
     ...options,
@@ -57,6 +64,11 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
   );
 }
 
+/**
+ * Replace the "build" task with one that uses @spaceribs/nx-threejs:build
+ * @param tree File tree to modify
+ * @param options Options normalized by normalizeOptions()
+ */
 function updateBuildTarget(tree: Tree, options: NormalizedSchema) {
   const projectConfig = readProjectConfiguration(tree, options.name);
 
@@ -81,6 +93,11 @@ function updateBuildTarget(tree: Tree, options: NormalizedSchema) {
   updateProjectConfiguration(tree, options.name, projectConfig);
 }
 
+/**
+ * Generator for creating a publishable three.js asset library
+ * @param tree File tree to modify
+ * @param options Options normalized by normalizeOptions()
+ */
 export default async function (
   tree: Tree,
   options: AssetLibraryGeneratorSchema

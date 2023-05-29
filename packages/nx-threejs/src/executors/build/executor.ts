@@ -4,7 +4,14 @@ import obj2gltf from 'obj2gltf';
 import * as fs from 'fs';
 import * as path from 'path';
 
-export default async function buildExecutor(options: BuildExecutorSchema) {
+/**
+ * Take all OBJ files and convert them into the gltf/glb format.
+ * @param options Options passed by the project configuration.
+ * @returns An object indicating success or failure.
+ */
+export default async function buildExecutor(
+  options: BuildExecutorSchema
+): Promise<{ success: boolean }> {
   const objFiles = fs
     .readdirSync(options.objFolder)
     .filter((fn) => fn.endsWith('.obj'));

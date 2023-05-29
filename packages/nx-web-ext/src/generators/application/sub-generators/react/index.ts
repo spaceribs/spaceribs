@@ -12,6 +12,11 @@ import { Linter } from '@nx/linter';
 import { replaceFiles } from './replace-files';
 import { resolve } from 'path';
 
+/**
+ * Generate a react application.
+ * @param tree The file tree to modify.
+ * @param options Options normalized by normalizeOptions()
+ */
 export const reactApp = async (tree: Tree, options: NormalizedSchema) => {
   await applicationGenerator(tree, {
     name: options.name,

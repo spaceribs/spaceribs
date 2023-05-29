@@ -39,10 +39,7 @@
     },
     "testEnvironment": {
       "type": "string",
-      "enum": [
-        "jsdom",
-        "node"
-      ],
+      "enum": ["jsdom", "node"],
       "description": "The test environment to use if unitTestRunner is set to jest.",
       "default": "jsdom"
     },
@@ -64,24 +61,17 @@
     "setParserOptionsProject": {
       "type": "boolean",
       "description": "Whether or not to configure the ESLint `parserOptions.project` option. We do not do this by default for lint performance reasons.",
-      "default": false
+      "default": true
     },
     "config": {
       "type": "string",
-      "enum": [
-        "workspace",
-        "project",
-        "npm-scripts"
-      ],
+      "enum": ["workspace", "project", "npm-scripts"],
       "default": "project",
       "description": "Determines whether the project's executors should be configured in `workspace.json`, `project.json` or as npm scripts."
     },
     "compiler": {
       "type": "string",
-      "enum": [
-        "tsc",
-        "swc"
-      ],
+      "enum": ["tsc", "swc"],
       "default": "tsc",
       "description": "The compiler used by the build and test targets"
     },
@@ -91,7 +81,5 @@
       "default": false
     }
   },
-  "required": [
-    "name"
-  ]
+  "required": ["name"]
 }

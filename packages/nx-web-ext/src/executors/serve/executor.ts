@@ -10,6 +10,12 @@ interface BuildTargetResult {
   outfile?: string;
 }
 
+/**
+ * Serve the web extension.
+ * @param options Raw options normalized by normalizeOptions()
+ * @param context Information about the project being served.
+ * @returns An object indicating success or failure.
+ */
 const runServe = async (
   options: WebExtServeSchema,
   context: ExecutorContext

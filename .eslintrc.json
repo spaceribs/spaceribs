@@ -1,7 +1,7 @@
 {
   "root": true,
   "ignorePatterns": ["**/*"],
-  "plugins": ["@nx"],
+  "plugins": ["@nx", "jsdoc"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
@@ -23,8 +23,65 @@
     },
     {
       "files": ["*.ts", "*.tsx"],
-      "extends": ["plugin:@nx/typescript"],
-      "rules": {}
+      "extends": [
+        "plugin:@nrwl/nx/typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:jsdoc/recommended-typescript-error"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.*?.json"
+      },
+      "rules": {
+        "jsdoc/require-jsdoc": [
+          "error",
+          {
+            "contexts": [
+              "ArrowFunctionExpression",
+              "ClassDeclaration",
+              "ClassExpression",
+              "ClassProperty",
+              "FunctionDeclaration", // function
+              "FunctionExpression",
+              "MethodDefinition",
+              "TSDeclareFunction", // function without body
+              "TSEnumDeclaration",
+              "TSMethodSignature",
+              "TSModuleDeclaration", // namespace
+              "TSPropertySignature"
+            ],
+            "publicOnly": true,
+            "checkConstructors": false,
+            "require": {
+              "ArrowFunctionExpression": true,
+              "ClassDeclaration": true,
+              "ClassExpression": true,
+              "FunctionDeclaration": true,
+              "FunctionExpression": true,
+              "MethodDefinition": false
+            }
+          }
+        ],
+        "jsdoc/require-description": [
+          "error",
+          {
+            "contexts": [
+              "ArrowFunctionExpression",
+              "ClassDeclaration",
+              "ClassExpression",
+              "ClassProperty",
+              "FunctionDeclaration", // function
+              "FunctionExpression",
+              "MethodDefinition",
+              "TSDeclareFunction", // function without body
+              "TSEnumDeclaration",
+              "TSMethodSignature",
+              "TSModuleDeclaration", // namespace
+              "TSPropertySignature"
+            ],
+            "descriptionStyle": "body"
+          }
+        ]
+      }
     },
     {
       "files": ["*.js", "*.jsx"],
@@ -36,7 +93,9 @@
       "env": {
         "jest": true
       },
-      "rules": {}
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
     },
     {
       "files": "*.json",

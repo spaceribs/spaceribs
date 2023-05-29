@@ -7,7 +7,6 @@ import {
   names,
   offsetFromRoot,
   readProjectConfiguration,
-  runExecutor,
   Tree,
   updateProjectConfiguration,
 } from '@nx/devkit';
@@ -18,7 +17,12 @@ interface NormalizedSchema extends AddGeneratorSchema {
   projectName: string;
   projectRoot: string;
 }
-
+/**
+ * Take the raw configuration and transform/decorate it for use.
+ * @param tree The file tree to modify.
+ * @param options Raw options passed from the generator.
+ * @returns Normalized options used for generating files.
+ */
 function normalizeOptions(
   tree: Tree,
   options: AddGeneratorSchema
@@ -34,6 +38,11 @@ function normalizeOptions(
   };
 }
 
+/**
+ * Add .betterer.ts configuration file to project.
+ * @param tree File tree to modify
+ * @param options Options normalized by normalizeOptions()
+ */
 function addFiles(tree: Tree, options: NormalizedSchema) {
   const templateOptions = {
     ...options,
@@ -50,6 +59,11 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
   );
 }
 
+/**
+ * Generate and configure nx-betterer for use within the specified project
+ * @param tree File tree to modify
+ * @param options Raw options passed in from the generator configuration.
+ */
 export default async function (tree: Tree, options: AddGeneratorSchema) {
   const normalizedOptions = normalizeOptions(tree, options);
 

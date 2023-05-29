@@ -11,6 +11,11 @@ import { addFiles, NormalizedSchema } from '../../generator';
 import { resolve } from 'path';
 import { replaceFiles } from './replace-files';
 
+/**
+ * Generate an angular application.
+ * @param tree The file tree to modify.
+ * @param options Options normalized by normalizeOptions()
+ */
 export const angularApp = async (tree: Tree, options: NormalizedSchema) => {
   await applicationGenerator(tree, {
     name: options.name,

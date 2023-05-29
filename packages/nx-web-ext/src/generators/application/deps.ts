@@ -4,6 +4,10 @@ import {
   Tree,
 } from '@nx/devkit';
 
+/**
+ * Add web extension dependencies to the nx workspace.
+ * @param tree The file tree to modify.
+ */
 export const addWebExtDeps = async (tree: Tree) => {
   addDependenciesToPackageJson(
     tree,

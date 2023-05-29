@@ -3,7 +3,7 @@
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {
-      "files": ["*.ts"],
+      "files": ["*.ts", ".tsx"],
       "rules": {
         "@angular-eslint/directive-selector": [
           "error",
@@ -20,7 +20,8 @@
             "prefix": "spaceribs",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "jsdoc/require-jsdoc": "off"
       },
       "extends": [
         "plugin:@nx/angular",
