@@ -2,6 +2,8 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.2](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.0.1...nx-betterer-1.0.2) (2023-05-29)
+
 ## [1.0.1](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.0.0...nx-betterer-1.0.1) (2023-05-25)
 
 ## [1.0.0](https://github.com/spaceribs/spaceribs/compare/nx-betterer-0.2.1...nx-betterer-1.0.0) (2023-05-24)
