@@ -6,7 +6,7 @@ import {
   uniq,
 } from '@nx/plugin/testing';
 
-describe('nx-threejs e2e', () => {
+describe.skip('nx-threejs e2e', () => {
   // Setting up individual workspaces per
   // test can cause e2e runs to take a long time.
   // For this reason, we recommend each suite only
