@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.0.2](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.0.1...nx-web-ext-2.0.2) (2023-05-29)
+
+
+### Bug Fixes
+
+* **nx-web-ext:** change peer dependencies required for rxjs and typescript ([d86f0c5](https://github.com/spaceribs/spaceribs/commit/d86f0c5c6cdbaa0d84c9db4cc16a74fbc1102633)), closes [#121](https://github.com/spaceribs/spaceribs/issues/121)
+
 ## [2.0.1](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.0.0...nx-web-ext-2.0.1) (2023-05-25)
 
 
