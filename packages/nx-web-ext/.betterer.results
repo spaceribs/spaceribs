@@ -5,10 +5,10 @@
 //
 exports[`stricter compilation`] = {
   value: `{
-    "src/executors/package/executor.ts:437555343": [
+    "src/executors/package/executor.ts:1466877071": [
       [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"]
     ],
-    "src/executors/serve/executor.ts:981033380": [
+    "src/executors/serve/executor.ts:1707739588": [
       [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"],
       [35, 6, 7, "Variable \'project\' is used before being assigned.", "1804496816"],
       [35, 15, 6, "Variable \'target\' is used before being assigned.", "1741960948"],
@@ -21,7 +21,7 @@ exports[`stricter compilation`] = {
       [83, 13, 3, "Parameter \'res\' implicitly has an \'any\' type.", "193432417"],
       [100, 14, 3, "Parameter \'err\' implicitly has an \'any\' type.", "193405824"]
     ],
-    "src/generators/application/sub-generators/angular/index.ts:622908284": [
+    "src/generators/application/sub-generators/angular/index.ts:2783021596": [
       [34, 6, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [35, 4, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [40, 2, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
@@ -30,10 +30,10 @@ exports[`stricter compilation`] = {
       [47, 17, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [54, 35, 11, "Argument of type \'string | undefined\' is not assignable to parameter of type \'string\'.\\n  Type \'undefined\' is not assignable to type \'string\'.", "868338854"]
     ],
-    "src/generators/application/sub-generators/angular/use-hash.ts:1999019028": [
+    "src/generators/application/sub-generators/angular/use-hash.ts:3164198356": [
       [11, 20, 28, "Object is possibly \'null\'.", "2958527246"]
     ],
-    "src/generators/application/sub-generators/react/index.ts:1606110638": [
+    "src/generators/application/sub-generators/react/index.ts:2750210830": [
       [37, 6, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [38, 4, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [43, 2, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
@@ -42,7 +42,7 @@ exports[`stricter compilation`] = {
       [50, 17, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [59, 35, 11, "Argument of type \'string | undefined\' is not assignable to parameter of type \'string\'.\\n  Type \'undefined\' is not assignable to type \'string\'.", "868338854"]
     ],
-    "src/generators/application/sub-generators/react/use-hash.ts:1659424745": [
+    "src/generators/application/sub-generators/react/use-hash.ts:245849513": [
       [9, 15, 23, "Object is possibly \'null\'.", "3269655774"]
     ]
   }`
@@ -153,20 +153,20 @@ exports[`increase total test coverage`] = {
 
 exports[`no unsafe`] = {
   value: `{
-    "src/executors/package/executor.ts:437555343": [
+    "src/executors/package/executor.ts:1466877071": [
       [23, 8, 16, "Unsafe call of an \`any\` typed value.", "121467136"]
     ],
-    "src/executors/serve/executor.ts:981033380": [
+    "src/executors/serve/executor.ts:1707739588": [
       [73, 4, 711, "Unsafe call of an \`any\` typed value.", "349462804"],
       [73, 4, 188, "Unsafe call of an \`any\` typed value.", "3416227253"],
       [73, 4, 21, "Unsafe call of an \`any\` typed value.", "546868757"],
       [95, 8, 39, "Unsafe call of an \`any\` typed value.", "2688033796"]
     ],
-    "src/generators/application/sub-generators/angular/index.ts:622908284": [
+    "src/generators/application/sub-generators/angular/index.ts:2783021596": [
       [34, 6, 44, "Unsafe call of an \`any\` typed value.", "1991309353"],
       [35, 4, 40, "Unsafe call of an \`any\` typed value.", "2889352408"]
     ],
-    "src/generators/application/sub-generators/react/index.ts:1606110638": [
+    "src/generators/application/sub-generators/react/index.ts:2750210830": [
       [37, 6, 44, "Unsafe call of an \`any\` typed value.", "1991309353"],
       [38, 4, 40, "Unsafe call of an \`any\` typed value.", "2889352408"]
     ]

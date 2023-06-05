@@ -1,0 +1,1039 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WangTileChunk constructor should initialize a 1 dimensional chunk 1`] = `
+Object {
+  "0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+}
+`;
+
+exports[`WangTileChunk constructor should initialize a 2 dimensional chunk 1`] = `
+Object {
+  "0,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "0,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "0,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+}
+`;
+
+exports[`WangTileChunk constructor should initialize a 3 dimensional chunk 1`] = `
+Object {
+  "0,0,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "0,0,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "0,0,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "0,1,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "0,1,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "0,1,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "0,2,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "0,2,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "0,2,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,0,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,0,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,0,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,1,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,1,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,1,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,2,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,2,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "1,2,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,0,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,0,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,0,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,1,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,1,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,1,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,2,0": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,2,1": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+  "2,2,2": Set {
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  },
+}
+`;
+
+exports[`WangTileChunk observe() should observe all the tiles. 2`] = `
+Array [
+  Array [
+    Array [
+      2,
+      5,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      1,
+      5,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      1,
+      4,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      2,
+      4,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      1,
+      3,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      2,
+      3,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      1,
+      2,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      2,
+      2,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      1,
+      1,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      2,
+      1,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      1,
+      6,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      2,
+      6,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      1,
+      7,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      2,
+      7,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      1,
+      8,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      2,
+      8,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      1,
+      9,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      2,
+      9,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      3,
+      9,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      3,
+      8,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      3,
+      7,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      3,
+      6,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      3,
+      5,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      3,
+      4,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      3,
+      3,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      3,
+      2,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      3,
+      1,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      4,
+      9,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      4,
+      8,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      4,
+      7,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      4,
+      6,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      4,
+      5,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      4,
+      4,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      4,
+      3,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      4,
+      2,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      4,
+      1,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      0,
+      9,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      0,
+      8,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      0,
+      7,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      0,
+      6,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      0,
+      5,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      0,
+      4,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      0,
+      3,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      0,
+      2,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      0,
+      1,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      4,
+      0,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      3,
+      0,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      2,
+      0,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      1,
+      0,
+    ],
+    WangTile {
+      "data": "-",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+  Array [
+    Array [
+      0,
+      0,
+    ],
+    WangTile {
+      "data": "|",
+      "edges": Object {},
+      "probability": 1,
+    },
+  ],
+]
+`;
