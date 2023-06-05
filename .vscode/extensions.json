@@ -6,6 +6,7 @@
     "firsttris.vscode-jest-runner",
     "vivaxy.vscode-conventional-commits",
     "github.vscode-pull-request-github",
-    "remcohaszing.schemastore"
+    "remcohaszing.schemastore",
+    "wayou.vscode-todo-highlight"
   ]
 }
