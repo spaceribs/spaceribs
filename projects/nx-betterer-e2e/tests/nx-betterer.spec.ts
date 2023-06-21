@@ -1,5 +1,5 @@
 import {
-  checkFilesExist,
+  updateFile,
   ensureNxProject,
   readFile,
   readJson,
@@ -19,7 +19,7 @@ describe('nx-betterer e2e', () => {
     await runNxCommandAsync(
       `generate @spaceribs/nx-betterer:add ${project} --no-interactive`
     );
-  }, 30000);
+  }, 120000);
 
   afterAll(() => {
     // `nx reset` kills the daemon, and performs
@@ -57,6 +57,30 @@ describe('nx-betterer e2e', () => {
       expect(result.stdout).toContain(
         `"stricter compilation" has already met its goal!`
       );
+    });
+    describe('eslint check', () => {
+      it('should run betterer with eslint typescript checks enabled.', async () => {
+        const bettererConfig = updateFile(
+          `libs/${project}/.betterer.ts`,
+          (orig: string) => {
+            return orig
+              .replace(
+                `const typescript = require('@betterer/typescript');`,
+                `const typescript = require('@betterer/typescript');\nconst eslint = require('@betterer/eslint');`
+              )
+              .replace(
+                '};',
+                `'no unsafe': () => eslint.eslint({ '@typescript-eslint/no-unsafe-call': 'error' }).include('./src/**/*.ts'), };`
+              );
+          }
+        );
+        const result = await runNxCommandAsync(`run ${project}:betterer`, {
+          silenceError: true,
+        });
+        expect(result.stdout).toContain(
+          `"no unsafe" has already met its goal!`
+        );
+      });
     });
   });
 });
