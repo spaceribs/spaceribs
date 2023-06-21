@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.1.3](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.1.2...nx-betterer-1.1.3) (2023-06-21)
+
+
+### Bug Fixes
+
+* **nx-betterer:** default to ci mode unless update option is passed to executor ([c146647](https://github.com/spaceribs/spaceribs/commit/c146647366306ad7adbcc972d8c223b114021d84))
+
 ## [1.1.2](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.1.1...nx-betterer-1.1.2) (2023-05-29)
 
 ## [1.1.1](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.1.0...nx-betterer-1.1.1) (2023-05-29)
