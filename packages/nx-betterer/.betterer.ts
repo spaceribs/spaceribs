@@ -1,8 +1,8 @@
-const typescript = require('@betterer/typescript');
+const bettererTypescript = require('@betterer/typescript');
 
 module.exports = {
   'stricter compilation': () =>
-    typescript
+    bettererTypescript
       .typescript('./tsconfig.lib.json', {
         strict: true,
       })

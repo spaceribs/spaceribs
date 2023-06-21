@@ -5,10 +5,10 @@
   "description": "",
   "type": "object",
   "properties": {
-    "ci": {
+    "watch": {
       "type": "boolean"
     },
-    "watch": {
+    "update": {
       "type": "boolean"
     }
   },
