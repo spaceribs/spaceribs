@@ -1,20 +1,26 @@
-const typescript = require('@betterer/typescript');
-const coverage = require('@betterer/coverage');
-const eslint = require('@betterer/eslint');
+const bettererTs = require('@betterer/typescript');
+const bettererCoverage = require('@betterer/coverage');
+const bettererEslint = require('@betterer/eslint');
 
 const coverageSummary =
   '../../coverage/packages/nx-web-ext/coverage-summary.json';
 
 module.exports = {
   'stricter compilation': () =>
-    typescript
+    bettererTs
       .typescript('./tsconfig.lib.json', {
         strict: true,
       })
       .include('./src/**/*.ts')
       .exclude(/\.spec\.ts/gi),
-  'increase per-file test coverage': () => coverage.coverage(coverageSummary),
-  'increase total test coverage': () => coverage.coverageTotal(coverageSummary),
+  'increase per-file test coverage': () =>
+    bettererCoverage.coverage(coverageSummary),
+  'increase total test coverage': () =>
+    bettererCoverage.coverageTotal(coverageSummary),
   'no more debuggers': () =>
-    eslint.eslint({ 'no-debugger': 'error' }).include('./src/**/*.ts'),
+    bettererEslint.eslint({ 'no-debugger': 'error' }).include('./src/**/*.ts'),
+  'no unsafe': () =>
+    bettererEslint
+      .eslint({ '@typescript-eslint/no-unsafe-call': 'error' })
+      .include('./src/**/*.ts'),
 };
