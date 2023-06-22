@@ -43,6 +43,7 @@
               "FunctionDeclaration", // function
               "FunctionExpression",
               "MethodDefinition",
+              "TSTypeAliasDeclaration",
               "TSDeclareFunction", // function without body
               "TSEnumDeclaration",
               "TSMethodSignature",
@@ -61,6 +62,7 @@
             }
           }
         ],
+        "jsdoc/require-hyphen-before-param-description": ["error", "always"],
         "jsdoc/require-description": [
           "error",
           {
@@ -72,6 +74,7 @@
               "FunctionDeclaration", // function
               "FunctionExpression",
               "MethodDefinition",
+              "TSTypeAliasDeclaration",
               "TSDeclareFunction", // function without body
               "TSEnumDeclaration",
               "TSMethodSignature",

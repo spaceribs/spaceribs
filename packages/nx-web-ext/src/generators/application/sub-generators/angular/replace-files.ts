@@ -4,9 +4,9 @@ import { NormalizedSchema } from '../../generator';
 
 /**
  * Replace certain files to support an Angular based web extension.
- * @param tree The file tree to modify.
- * @param options Options normalized by normalizeOptions()
- * @param root The root directory of the project.
+ * @param tree - The file tree to modify.
+ * @param options - Options normalized by normalizeOptions()
+ * @param root - The root directory of the project.
  */
 export const replaceFiles = (
   tree: Tree,

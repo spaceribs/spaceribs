@@ -13,8 +13,8 @@ import * as path from 'path';
 
 /**
  * Use nx-betterer to measure previously defined code standards
- * @param options Raw options passed from the executor configuration.
- * @param context Information about the project being assessed.
+ * @param options - Raw options passed from the executor configuration.
+ * @param context - Information about the project being assessed.
  * @returns An object indicating success or failure.
  */
 export default async function runExecutor(

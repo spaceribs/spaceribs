@@ -4,9 +4,9 @@ import { NormalizedSchema } from '../../generator';
 
 /**
  * Replace
- * @param tree The file tree to modify.
- * @param options Raw options passed from the generator.
- * @param root The root directory of the project.
+ * @param tree - The file tree to modify.
+ * @param options - Raw options passed from the generator.
+ * @param root - The root directory of the project.
  */
 export const replaceFiles = (
   tree: Tree,

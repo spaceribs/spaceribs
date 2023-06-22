@@ -4,8 +4,8 @@ import { ObjectLiteralExpression } from 'typescript';
 
 /**
  * Ensure the application is configured to route by hash.
- * @param tree The file tree to modify.
- * @param root The root directory of the project.
+ * @param tree - The file tree to modify.
+ * @param root - The root directory of the project.
  */
 export const appRouterUseHash = (tree: Tree, root: string) => {
   const appModuleFilePath = `${root}/src/app/app.module.ts`;

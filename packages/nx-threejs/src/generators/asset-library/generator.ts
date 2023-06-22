@@ -18,8 +18,8 @@ interface NormalizedSchema extends AssetLibraryGeneratorSchema {
 
 /**
  * Take the raw configuration and transform/decorate it for use.
- * @param tree The file tree to modify.
- * @param options Raw options passed from the generator.
+ * @param tree - The file tree to modify.
+ * @param options - Raw options passed from the generator.
  * @returns Normalized options used for generating files.
  */
 function normalizeOptions(
@@ -46,8 +46,8 @@ function normalizeOptions(
 
 /**
  * Add and replace source files for asset library compilation
- * @param tree File tree to modify
- * @param options Options normalized by normalizeOptions()
+ * @param tree - File tree to modify
+ * @param options - Options normalized by normalizeOptions()
  */
 function addFiles(tree: Tree, options: NormalizedSchema) {
   const templateOptions = {
@@ -66,8 +66,8 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
 
 /**
  * Replace the "build" task with one that uses @spaceribs/nx-threejs:build
- * @param tree File tree to modify
- * @param options Options normalized by normalizeOptions()
+ * @param tree - File tree to modify
+ * @param options - Options normalized by normalizeOptions()
  */
 function updateBuildTarget(tree: Tree, options: NormalizedSchema) {
   const projectConfig = readProjectConfiguration(tree, options.name);
@@ -95,8 +95,8 @@ function updateBuildTarget(tree: Tree, options: NormalizedSchema) {
 
 /**
  * Generator for creating a publishable three.js asset library
- * @param tree File tree to modify
- * @param options Options normalized by normalizeOptions()
+ * @param tree - File tree to modify
+ * @param options - Options normalized by normalizeOptions()
  */
 export default async function (
   tree: Tree,

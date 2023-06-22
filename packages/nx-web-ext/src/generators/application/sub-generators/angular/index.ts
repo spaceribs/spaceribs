@@ -13,8 +13,8 @@ import { replaceFiles } from './replace-files';
 
 /**
  * Generate an angular application.
- * @param tree The file tree to modify.
- * @param options Options normalized by normalizeOptions()
+ * @param tree - The file tree to modify.
+ * @param options - Options normalized by normalizeOptions()
  */
 export const angularApp = async (tree: Tree, options: NormalizedSchema) => {
   await applicationGenerator(tree, {
