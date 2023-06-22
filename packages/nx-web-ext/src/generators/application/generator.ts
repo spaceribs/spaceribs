@@ -23,7 +23,7 @@ export interface NormalizedSchema extends NxWebExtGeneratorSchema {
 
 /**
  * Take the raw configuration and transform/decorate it for use.
- * @param options Raw options passed from the generator.
+ * @param options - Raw options passed from the generator.
  * @returns Normalized options used for generating files.
  */
 function normalizeOptions(options: NxWebExtGeneratorSchema): NormalizedSchema {
@@ -38,9 +38,9 @@ function normalizeOptions(options: NxWebExtGeneratorSchema): NormalizedSchema {
 
 /**
  * Add and replace files to support a web extension project.
- * @param tree The file tree to modify.
- * @param options Options normalized by normalizeOptions()
- * @param root The root directory of the project.
+ * @param tree - The file tree to modify.
+ * @param options - Options normalized by normalizeOptions()
+ * @param root - The root directory of the project.
  */
 export const addFiles = (
   tree: Tree,
@@ -58,8 +58,8 @@ export const addFiles = (
 
 /**
  * Generator used to create a web extension.
- * @param tree The file tree the generator is modifying.
- * @param options The raw options passed by the generator.
+ * @param tree - The file tree the generator is modifying.
+ * @param options - The raw options passed by the generator.
  */
 export default async function (tree: Tree, options: NxWebExtGeneratorSchema) {
   const normalizedOptions = normalizeOptions(options);

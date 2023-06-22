@@ -1,6 +1,8 @@
+/**
+ * Valid modes for betterer to run as.
+ */
 export type BettererExecutorSchema =
   | BettererExecutorSchemaBase
-  | BettererExecutorSchemaCi
   | BettererExecutorSchemaWatch
   | BettererExecutorSchemaUpdate;
 

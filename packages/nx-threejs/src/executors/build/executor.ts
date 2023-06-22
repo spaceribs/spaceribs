@@ -6,7 +6,7 @@ import * as path from 'path';
 
 /**
  * Take all OBJ files and convert them into the gltf/glb format.
- * @param options Options passed by the project configuration.
+ * @param options - Options passed by the project configuration.
  * @returns An object indicating success or failure.
  */
 export default async function buildExecutor(
