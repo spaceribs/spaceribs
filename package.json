@@ -112,7 +112,7 @@
     "typedoc-theme-hierarchy": "^3.2.0",
     "typescript": "^5.0.4",
     "url-loader": "^4.1.1",
-    "verdaccio": "5.19.0",
+    "verdaccio": "5.25.0",
     "web-ext": "^6.8.0",
     "web-ext-types": "^3.2.1",
     "webextension-polyfill": "^0.10.0"
