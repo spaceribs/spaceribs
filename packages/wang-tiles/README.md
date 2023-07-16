@@ -1,11 +1,17 @@
 # wang-tiles
 
+<a href="https://www.npmjs.com/package/@spaceribs/nx-web-ext" rel="nofollow">
+  <img src="https://badgen.net/npm/v/@spaceribs/nx-web-ext" alt="@spaceribs/nx-web-ext NPM package">
+</a>
+
 This library was generated with [Nx](https://nx.dev).
 
-## Building
+## Quick Start
 
-Run `nx build wang-tiles` to build the library.
+1. Add `@spaceribs/nx-web-ext` to your project:
 
-## Running unit tests
-
-Run `nx test wang-tiles` to execute the unit tests via [Jest](https://jestjs.io).
+   ```bash
+   $ npm install @spaceribs/nx-web-ext --save-dev
+   # or
+   $ yarn add @spaceribs/nx-web-ext --dev
+   ```
