@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.2.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.1.2...nx-web-ext-2.2.0) (2023-07-16)
+
+
+### Features
+
+* **wang-tiles:** initialize the project ([01796ae](https://github.com/spaceribs/spaceribs/commit/01796aee652ed235ae97687056586ac51a7228ef))
+
 ## [2.1.2](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.1.1...nx-web-ext-2.1.2) (2023-06-21)
 
 ## [2.1.1](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.1.0...nx-web-ext-2.1.1) (2023-05-29)
