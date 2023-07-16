@@ -14,6 +14,13 @@
         "assets": ["packages/wang-tiles/*.md"]
       }
     },
+    "cli": {
+      "executor": "nx:run-commands",
+      "dependsOn": ["build"],
+      "options": {
+        "command": "node ./dist/packages/wang-tiles/src/cli/cli.js generate-chunk"
+      }
+    },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],

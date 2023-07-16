@@ -1,7 +1,10 @@
 {
   "name": "@spaceribs/wang-tiles",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "commonjs",
+  "bin": {
+    "wtdb": "./src/cli/cli.js"
+  },
   "description": "Generate worlds with simple sets of tiles and rules.",
   "repository": {
     "type": "git",
@@ -9,6 +12,7 @@
   },
   "keywords": [
     "world-gen",
+    "procedural",
     "wang",
     "tiles"
   ],

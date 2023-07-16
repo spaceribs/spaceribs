@@ -3,6 +3,7 @@ import { Edge } from './edge';
 import { RandomGenerator } from './prng';
 import { WangTile } from './tile';
 import { WangTileSet } from './tile-set';
+import { asciiDebug } from './util/ascii-debug';
 
 describe('WangTileChunk', () => {
   describe('constructor', () => {
@@ -59,7 +60,7 @@ describe('WangTileChunk', () => {
           },
         ]
       `);
-      expect(chunk.debug()).toMatchInlineSnapshot(`
+      expect(asciiDebug(chunk)).toMatchInlineSnapshot(`
         "
         ░░░░░
         ░░░░░
@@ -77,7 +78,7 @@ describe('WangTileChunk', () => {
 
     it('should observe all the tiles.', () => {
       const results = [...chunk.observe()];
-      expect(chunk.debug()).toMatchInlineSnapshot(`
+      expect(asciiDebug(chunk)).toMatchInlineSnapshot(`
         "
         ---|-
         ||-||
@@ -143,7 +144,7 @@ describe('WangTileChunk', () => {
 
       const results = [...chunk.observe()];
 
-      expect(chunk.debug()).toMatchInlineSnapshot(`
+      expect(asciiDebug(chunk)).toMatchInlineSnapshot(`
         "
         -= -= -= -
         -= -= -= -
@@ -224,7 +225,7 @@ describe('WangTileChunk', () => {
 
       const results = [...chunk.observe()];
 
-      expect(chunk.debug()).toMatchInlineSnapshot(`
+      expect(asciiDebug(chunk)).toMatchInlineSnapshot(`
         "
            ║ ║     ╚══╗║  ╚╝    
            ║╔╝        ║║     ╔══

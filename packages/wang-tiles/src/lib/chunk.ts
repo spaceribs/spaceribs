@@ -13,10 +13,10 @@ export class WangTileChunk<
   V extends WangTileSet<D> | WangTile<D> = WangTileSet<D> | WangTile<D>
 > {
   public observed = false;
-  private readonly coordMap: CoordMap<D, V>;
+  public active: D | null = null;
+  public readonly coordMap: CoordMap<D, V>;
+
   private readonly center: D;
-  private readonly iter: number;
-  private active: D | null = null;
 
   constructor(
     private readonly tileset: Set<WangTile<D>>,
@@ -34,7 +34,6 @@ export class WangTileChunk<
       const diff = end - start;
       return start + Math.floor(diff / 2);
     }) as D;
-    this.iter = this.center.reduce((memo, vec) => (memo *= vec), 1);
   }
 
   /**
@@ -47,7 +46,6 @@ export class WangTileChunk<
     // observe the center if still a set
     if (centerTile instanceof Set) {
       yield this.select(this.center);
-      // this.reduceAll();
     }
 
     // sort by size and observe the next smallest set.
@@ -56,13 +54,12 @@ export class WangTileChunk<
       nextSet = this.findSmallestSet();
       if (nextSet != null) {
         this.active = nextSet[0];
-        console.log(this.debug());
+        this.reduceAll();
         yield this.select(nextSet[0]);
       }
     } while (nextSet != null);
 
     this.active = null;
-    console.log(this.debug());
 
     // mark the chuck as observed and end iteration.
     this.observed = true;
@@ -152,11 +149,9 @@ export class WangTileChunk<
    * Reduce the possibilities of the entire chunk
    */
   private reduceAll(): void {
-    for (let index = 0; index < this.iter; index++) {
-      for (const [coord] of this.coordMap) {
-        this.reduce(coord);
-      }
-    }
+    // for (const [coord] of this.coordMap) {
+    //   this.reduce(coord);
+    // }
   }
 
   /**
@@ -326,42 +321,5 @@ export class WangTileChunk<
    */
   toJSON(): Record<string, V> {
     return this.coordMap.toJSON();
-  }
-
-  /**
-   * Convert coordinate map to an ascii representation.
-   * Only works for 2D chunks at the moment.
-   * @returns An ascii based representation of the map.
-   */
-  debug(): string {
-    const asciiCoords = Array.from(this.coordMap)
-      .reduce((memo, [coord, val]) => {
-        if (memo[coord[1]] == null) {
-          memo[coord[1]] = [];
-        }
-        if (
-          this.active != null &&
-          coord[0] === this.active[0] &&
-          coord[1] === this.active[1]
-        ) {
-          memo[coord[1]][coord[0]] = '█';
-        } else if (val instanceof Set) {
-          memo[coord[1]][coord[0]] = '░';
-        } else {
-          memo[coord[1]][coord[0]] = val.toString();
-        }
-        return memo;
-      }, [] as string[][])
-      .map((strings) => strings.join(''));
-
-    let blockDrawing = asciiCoords
-      .reverse()
-      .reduce((memo, string) => `${memo}\n${string}`, '');
-
-    if (this.active != null) {
-      blockDrawing += `\nActive: {${this.active[0]}, ${this.active[1]}}`;
-    }
-
-    return blockDrawing + '\n';
   }
 }
