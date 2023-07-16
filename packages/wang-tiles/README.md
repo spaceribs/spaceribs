@@ -1,7 +1,7 @@
 # wang-tiles
 
-<a href="https://www.npmjs.com/package/@spaceribs/nx-web-ext" rel="nofollow">
-  <img src="https://badgen.net/npm/v/@spaceribs/nx-web-ext" alt="@spaceribs/nx-web-ext NPM package">
+<a href="https://www.npmjs.com/package/@spaceribs/wang-tiles" rel="nofollow">
+  <img src="https://badgen.net/npm/v/@spaceribs/wang-tiles" alt="@spaceribs/nx-web-ext NPM package">
 </a>
 
 This library was generated with [Nx](https://nx.dev).

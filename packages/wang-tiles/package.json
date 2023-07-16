@@ -1,5 +1,21 @@
 {
   "name": "@spaceribs/wang-tiles",
   "version": "0.1.0",
-  "type": "commonjs"
+  "type": "commonjs",
+  "description": "Generate worlds with simple sets of tiles and rules.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaceribs/spaceribs.git"
+  },
+  "keywords": [
+    "world-gen",
+    "wang",
+    "tiles"
+  ],
+  "author": "Spaceribs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spaceribs/spaceribs/issues"
+  },
+  "homepage": "https://spaceribs.tech/packages/wang-tiles/"
 }
