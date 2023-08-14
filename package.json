@@ -40,7 +40,7 @@
     "@angular-eslint/template-parser": "16.0.3",
     "@angular/cli": "16.1.0",
     "@angular/compiler-cli": "16.1.0",
-    "@angular/language-service": "16.1.0",
+    "@angular/language-service": "16.2.0",
     "@babel/preset-react": "^7.22.3",
     "@betterer/cli": "^5.4.0",
     "@betterer/coverage": "^5.4.0",
