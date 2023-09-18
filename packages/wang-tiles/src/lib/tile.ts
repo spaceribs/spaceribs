@@ -10,7 +10,7 @@ export class WangTile<D extends number[], DataType = unknown> {
 
   constructor(
     private readonly data: DataType,
-    public readonly probability: number = 1
+    public readonly probability: number = 1,
   ) {}
 
   /**

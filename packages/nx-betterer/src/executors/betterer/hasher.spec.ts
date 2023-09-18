@@ -31,7 +31,7 @@ describe('bettererHasher', () => {
             },
           },
         },
-      } as unknown as HasherContext
+      } as unknown as HasherContext,
     );
     expect(hash).toMatchSnapshot();
   });

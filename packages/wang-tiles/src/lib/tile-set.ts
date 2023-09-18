@@ -7,7 +7,7 @@ import { WangTile } from './tile';
  */
 export class WangTileSet<
   D extends number[] = number[],
-  DataType = unknown
+  DataType = unknown,
 > extends Set<WangTile<D, DataType>> {
   /**
    * Reduce the tiles by the constraint and return a new set.
@@ -31,7 +31,7 @@ export class WangTileSet<
    */
   public reduceByConstraints(
     edges: Edge[],
-    coords: D
+    coords: D,
   ): WangTileSet<D, DataType> {
     const tiles: WangTile<D, DataType>[] = [];
 
@@ -56,7 +56,7 @@ export class WangTileSet<
     edgeOrEdges: Edge | Edge[],
     dimensions: number,
     dimension: number,
-    offset: -1 | 1
+    offset: -1 | 1,
   ): WangTileSet<D, DataType> {
     const coords = new Array(dimensions).fill(0) as D;
     coords[dimension] = offset;

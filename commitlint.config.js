@@ -14,7 +14,7 @@ module.exports = {
         'deps-dev',
         ...(await getProjects(
           ctx,
-          ({ name, projectType }) => !name.includes('e2e')
+          ({ name, projectType }) => !name.includes('e2e'),
         )),
       ],
     ],

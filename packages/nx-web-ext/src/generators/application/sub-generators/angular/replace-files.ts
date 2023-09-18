@@ -11,7 +11,7 @@ import { NormalizedSchema } from '../../generator';
 export const replaceFiles = (
   tree: Tree,
   options: NormalizedSchema,
-  root: string
+  root: string,
 ) => {
   const templateOptions = {
     ...options,

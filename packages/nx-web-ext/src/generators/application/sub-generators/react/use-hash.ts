@@ -10,7 +10,7 @@ export const appRouterUseHash = (tree: Tree, root: string) => {
   const main = tree.read(mainFilePath).toString();
   const newContents = main.replace(
     new RegExp('BrowserRouter', 'g'),
-    'HashRouter'
+    'HashRouter',
   );
   tree.write(mainFilePath, newContents);
 };

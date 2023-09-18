@@ -9,7 +9,7 @@ import { RandomGenerator } from './prng';
 export class WangTileWorld<
   WorldDimensions extends number[],
   ChunkDimensions extends number[],
-  DataType = unknown
+  DataType = unknown,
 > {
   private readonly chunkMap: CoordMap<
     WorldDimensions,
@@ -23,7 +23,7 @@ export class WangTileWorld<
     private readonly worldEnd: WorldDimensions,
     private readonly chunkStart: ChunkDimensions,
     private readonly chunkEnd: ChunkDimensions,
-    seed = 'default seed'
+    seed = 'default seed',
   ) {
     this.random = new RandomGenerator(seed);
     this.chunkMap = new CoordMap<
@@ -32,7 +32,7 @@ export class WangTileWorld<
     >().fill(
       () => new WangTileChunk(tileset, this.random, chunkStart, chunkEnd),
       worldStart,
-      worldEnd
+      worldEnd,
     );
   }
 

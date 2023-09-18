@@ -37,7 +37,7 @@ export const reactApp = async (tree: Tree, options: NormalizedSchema) => {
   const manifestPath = `${config.root}/src/manifest.json`;
   if (config.targets.build.options.assets.includes(manifestPath) != true) {
     config.targets.build.options.assets.push(
-      `${config.root}/src/manifest.json`
+      `${config.root}/src/manifest.json`,
     );
   }
 

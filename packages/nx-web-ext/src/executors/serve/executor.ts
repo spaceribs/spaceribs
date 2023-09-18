@@ -18,7 +18,7 @@ interface BuildTargetResult {
  */
 const runServe = async (
   options: WebExtServeSchema,
-  context: ExecutorContext
+  context: ExecutorContext,
 ) => {
   let project: string;
   let target: string;
@@ -35,7 +35,7 @@ const runServe = async (
   for await (const s of await runExecutor<BuildTargetResult>(
     { project, target, configuration },
     { watch: true },
-    context
+    context,
   )) {
     if (s.success === true) {
       logger.info('Application built successfully.');
@@ -53,7 +53,7 @@ const runServe = async (
           },
           () => {
             throw new Error('WebExt closed.');
-          }
+          },
         );
       }
     } else {
@@ -79,7 +79,7 @@ const startWebExt = (webExtOptions: WebExtRunOptions, sourceDir: string) => {
         },
         {
           shouldExitProgram: false,
-        }
+        },
       )
       .then((res) => {
         if (res.extensionRunners && res.extensionRunners.length <= 0) {
@@ -89,7 +89,7 @@ const startWebExt = (webExtOptions: WebExtRunOptions, sourceDir: string) => {
         if (res.extensionRunners[0].runningInfo != null) {
           console.log(
             'Debugger Port: ',
-            res.extensionRunners[0].runningInfo.debuggerPort
+            res.extensionRunners[0].runningInfo.debuggerPort,
           );
         }
 

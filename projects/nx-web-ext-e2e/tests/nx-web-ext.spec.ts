@@ -24,7 +24,7 @@ describe('nx-web-ext e2e', () => {
       beforeEach(async () => {
         project = uniq('nx-web-ext-angular');
         await runNxCommandAsync(
-          `generate @spaceribs/nx-web-ext:application ${project} --framework="angular" --no-interactive`
+          `generate @spaceribs/nx-web-ext:application ${project} --framework="angular" --no-interactive`,
         );
       });
 
@@ -45,7 +45,7 @@ describe('nx-web-ext e2e', () => {
       beforeEach(async () => {
         project = uniq('nx-web-ext-react');
         await runNxCommandAsync(
-          `generate @spaceribs/nx-web-ext:application ${project} --framework="react" --no-interactive`
+          `generate @spaceribs/nx-web-ext:application ${project} --framework="react" --no-interactive`,
         );
       });
 

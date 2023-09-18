@@ -14,10 +14,10 @@ describe('nx-betterer e2e', () => {
     project = uniq('nx-betterer');
     ensureNxProject('@spaceribs/nx-betterer', 'dist/packages/nx-betterer');
     await runNxCommandAsync(
-      `generate @nx/js:library ${project} --no-interactive`
+      `generate @nx/js:library ${project} --no-interactive`,
     );
     await runNxCommandAsync(
-      `generate @spaceribs/nx-betterer:add ${project} --no-interactive`
+      `generate @spaceribs/nx-betterer:add ${project} --no-interactive`,
     );
   }, 120000);
 
@@ -55,7 +55,7 @@ describe('nx-betterer e2e', () => {
     it('should run betterer.', async () => {
       const result = await runNxCommandAsync(`run ${project}:betterer`);
       expect(result.stdout).toContain(
-        `"stricter compilation" has already met its goal!`
+        `"stricter compilation" has already met its goal!`,
       );
     });
     describe('eslint check', () => {
@@ -66,19 +66,19 @@ describe('nx-betterer e2e', () => {
             return orig
               .replace(
                 `const typescript = require('@betterer/typescript');`,
-                `const typescript = require('@betterer/typescript');\nconst eslint = require('@betterer/eslint');`
+                `const typescript = require('@betterer/typescript');\nconst eslint = require('@betterer/eslint');`,
               )
               .replace(
                 '};',
-                `'no unsafe': () => eslint.eslint({ '@typescript-eslint/no-unsafe-call': 'error' }).include('./src/**/*.ts'), };`
+                `'no unsafe': () => eslint.eslint({ '@typescript-eslint/no-unsafe-call': 'error' }).include('./src/**/*.ts'), };`,
               );
-          }
+          },
         );
         const result = await runNxCommandAsync(`run ${project}:betterer`, {
           silenceError: true,
         });
         expect(result.stdout).toContain(
-          `"no unsafe" has already met its goal!`
+          `"no unsafe" has already met its goal!`,
         );
       });
     });

@@ -9,7 +9,7 @@ import { wrapAngularDevkitSchematic } from 'nx/src/adapter/ngcli-adapter';
 export const addAction = async (tree: Tree, project: string) => {
   const moduleGenerator = wrapAngularDevkitSchematic(
     '@schematics/angular',
-    'module'
+    'module',
   );
 
   await moduleGenerator(tree, {

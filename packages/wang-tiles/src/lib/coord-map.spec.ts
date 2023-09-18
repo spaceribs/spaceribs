@@ -70,13 +70,13 @@ describe('CoordMap', () => {
         1,
         'Origin',
         [1, 2, 3, 4],
-        coordMap4D
+        coordMap4D,
       );
       expect(callback).toHaveBeenNthCalledWith(
         2,
         'Test',
         [2, 2, 3, 4],
-        coordMap4D
+        coordMap4D,
       );
     });
   });
@@ -148,7 +148,7 @@ describe('CoordMap', () => {
       coordMap3D.fill(
         (coord) => `${coord[0]} ${coord[1]} ${coord[2]}`,
         [0, 0, 0],
-        [2, 2, 2]
+        [2, 2, 2],
       );
       expect(coordMap3D).toMatchInlineSnapshot(`
         Object {
@@ -181,7 +181,7 @@ describe('CoordMap', () => {
       coordMap2D.set([2, 2], 'Test');
       const result = JSON.stringify(coordMap2D);
       expect(result).toMatchInlineSnapshot(
-        `"{\\"1,2\\":\\"Origin\\",\\"2,2\\":\\"Test\\"}"`
+        `"{\\"1,2\\":\\"Origin\\",\\"2,2\\":\\"Test\\"}"`,
       );
     });
   });

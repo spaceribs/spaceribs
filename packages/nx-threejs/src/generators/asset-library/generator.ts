@@ -24,7 +24,7 @@ interface NormalizedSchema extends AssetLibraryGeneratorSchema {
  */
 function normalizeOptions(
   tree: Tree,
-  options: AssetLibraryGeneratorSchema
+  options: AssetLibraryGeneratorSchema,
 ): NormalizedSchema {
   const name = names(options.name).fileName;
   const projectDirectory = options.directory
@@ -60,7 +60,7 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
     tree,
     path.join(__dirname, 'files'),
     options.projectRoot,
-    templateOptions
+    templateOptions,
   );
 }
 
@@ -100,7 +100,7 @@ function updateBuildTarget(tree: Tree, options: NormalizedSchema) {
  */
 export default async function (
   tree: Tree,
-  options: AssetLibraryGeneratorSchema
+  options: AssetLibraryGeneratorSchema,
 ) {
   const normalizedOptions = normalizeOptions(tree, options);
   await libraryGenerator(tree, normalizedOptions);
