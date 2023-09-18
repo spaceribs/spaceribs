@@ -45,7 +45,7 @@ function normalizeOptions(options: NxWebExtGeneratorSchema): NormalizedSchema {
 export const addFiles = (
   tree: Tree,
   options: NormalizedSchema,
-  root: string
+  root: string,
 ) => {
   const templateOptions = {
     ...options,

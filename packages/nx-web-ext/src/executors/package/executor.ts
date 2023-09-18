@@ -10,7 +10,7 @@ import { ExecutorContext } from '@nx/devkit';
  */
 export default async function runExecutor(
   options: PackageExecutorSchema,
-  context: ExecutorContext
+  context: ExecutorContext,
 ) {
   if (context.projectName == null) {
     throw new Error('no project name set.');

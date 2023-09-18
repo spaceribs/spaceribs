@@ -75,7 +75,7 @@ export class CoordMap<D extends number[], V = unknown> implements Map<D, V> {
    */
   forEach(
     callbackfn: (value: V, key: D, map: Map<D, V>) => void,
-    thisArg?: unknown
+    thisArg?: unknown,
   ): void {
     this.coords.forEach((v: V, k: string) => {
       callbackfn(v, this.decodeCoordinate(k), this);
@@ -142,7 +142,7 @@ export class CoordMap<D extends number[], V = unknown> implements Map<D, V> {
   getByOffset(
     dimensions: number,
     dimension: number,
-    offset: -1 | 1
+    offset: -1 | 1,
   ): V | undefined {
     const coords: D = new Array(dimensions).fill(0) as D;
     coords[dimension] = offset;
@@ -206,7 +206,7 @@ export class CoordMap<D extends number[], V = unknown> implements Map<D, V> {
     generator: (coord: D) => V,
     start: D,
     end: D,
-    state: number[] = []
+    state: number[] = [],
   ) {
     if (start.length === 0) {
       const val = generator(state as D);

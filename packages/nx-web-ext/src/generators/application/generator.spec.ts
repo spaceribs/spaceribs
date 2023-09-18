@@ -39,7 +39,7 @@ describe('nx-web-ext generator', () => {
   it('should error if no framework matches.', async () => {
     options.framework = 'boop' as any;
     await expect(generator(appTree, options)).rejects.toMatchInlineSnapshot(
-      `[Error: This application target is not supported.]`
+      `[Error: This application target is not supported.]`,
     );
   });
 });

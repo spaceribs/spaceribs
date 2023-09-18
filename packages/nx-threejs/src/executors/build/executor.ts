@@ -10,7 +10,7 @@ import * as path from 'path';
  * @returns An object indicating success or failure.
  */
 export default async function buildExecutor(
-  options: BuildExecutorSchema
+  options: BuildExecutorSchema,
 ): Promise<{ success: boolean }> {
   const objFiles = fs
     .readdirSync(options.objFolder)

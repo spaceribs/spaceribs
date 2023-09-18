@@ -73,7 +73,5 @@
       }
     }
   },
-  "requiredProperties": [
-    "browserTarget"
-  ]
+  "requiredProperties": ["browserTarget"]
 }

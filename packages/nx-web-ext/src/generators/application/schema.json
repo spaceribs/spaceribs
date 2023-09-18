@@ -15,10 +15,7 @@
     "framework": {
       "type": "string",
       "default": "angular",
-      "enum": [
-        "angular",
-        "react"
-      ],
+      "enum": ["angular", "react"],
       "description": "The framework to use to generate the project.",
       "x-prompt": "What framework would you like to use?"
     },
@@ -27,8 +24,5 @@
       "description": "A description of the extension."
     }
   },
-  "required": [
-    "name",
-    "framework"
-  ]
+  "required": ["name", "framework"]
 }

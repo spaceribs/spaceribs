@@ -25,7 +25,7 @@ interface NormalizedSchema extends AddGeneratorSchema {
  */
 function normalizeOptions(
   tree: Tree,
-  options: AddGeneratorSchema
+  options: AddGeneratorSchema,
 ): NormalizedSchema {
   const name = names(options.projectName).fileName;
   const projectName = name.replace(new RegExp('/', 'g'), '-');
@@ -55,7 +55,7 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
     tree,
     path.join(__dirname, 'files'),
     options.projectRoot,
-    templateOptions
+    templateOptions,
   );
 }
 
@@ -69,7 +69,7 @@ export default async function (tree: Tree, options: AddGeneratorSchema) {
 
   const projectConfig = readProjectConfiguration(
     tree,
-    normalizedOptions.projectName
+    normalizedOptions.projectName,
   );
 
   if (projectConfig.targets) {
@@ -81,13 +81,13 @@ export default async function (tree: Tree, options: AddGeneratorSchema) {
   updateProjectConfiguration(
     tree,
     normalizedOptions.projectName,
-    projectConfig
+    projectConfig,
   );
 
   addDependenciesToPackageJson(
     tree,
     {},
-    { '@betterer/betterer': '^5.4.0', '@betterer/typescript': '^5.4.0' }
+    { '@betterer/betterer': '^5.4.0', '@betterer/typescript': '^5.4.0' },
   );
 
   installPackagesTask(tree);

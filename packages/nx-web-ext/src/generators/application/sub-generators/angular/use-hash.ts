@@ -21,7 +21,7 @@ export const appRouterUseHash = (tree: Tree, root: string) => {
         return routerConfig.getText().replace('{', '{ useHash: true,');
       }
       return undefined;
-    }
+    },
   );
   tree.write(appModuleFilePath, newContents);
 };

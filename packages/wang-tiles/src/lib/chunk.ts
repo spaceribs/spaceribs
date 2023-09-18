@@ -10,7 +10,7 @@ import { Edge } from './edge';
  */
 export class WangTileChunk<
   D extends number[],
-  V extends WangTileSet<D> | WangTile<D> = WangTileSet<D> | WangTile<D>
+  V extends WangTileSet<D> | WangTile<D> = WangTileSet<D> | WangTile<D>,
 > {
   public observed = false;
   private readonly coordMap: CoordMap<D, V>;
@@ -22,12 +22,12 @@ export class WangTileChunk<
     private readonly tileset: Set<WangTile<D>>,
     private readonly random: RandomGenerator,
     chunkStart: D,
-    chunkEnd: D
+    chunkEnd: D,
   ) {
     this.coordMap = new CoordMap<D, V>().fill(
       () => new Set(tileset) as V,
       chunkStart,
-      chunkEnd
+      chunkEnd,
     );
     this.center = chunkStart.map((start, index) => {
       const end = chunkEnd[index];
@@ -83,7 +83,7 @@ export class WangTileChunk<
     }
 
     const possibleElements: WeightedArray<WangTile<D>> = Array.from(elem).map(
-      (tile) => [tile.probability, tile]
+      (tile) => [tile.probability, tile],
     );
 
     const tile = this.random.weightedRandom(possibleElements);
@@ -97,7 +97,7 @@ export class WangTileChunk<
    */
   private findSmallestSet(): [D, WangTileSet<D>] | null {
     const sets: [D, WangTileSet<D>][] = Array.from(this.coordMap).filter(
-      (coord) => coord[1] instanceof Set
+      (coord) => coord[1] instanceof Set,
     ) as [D, WangTileSet<D>][];
 
     if (sets.length < 1) {
@@ -201,7 +201,7 @@ export class WangTileChunk<
           availableTiles,
           coord.length,
           dimension,
-          1
+          1,
         );
       } else if (beforeVal instanceof Set) {
         availableTiles = this.reduceByNeighborEdges(
@@ -209,7 +209,7 @@ export class WangTileChunk<
           availableTiles,
           coord.length,
           dimension,
-          1
+          1,
         );
       }
 
@@ -219,7 +219,7 @@ export class WangTileChunk<
           availableTiles,
           coord.length,
           dimension,
-          -1
+          -1,
         );
       } else if (afterVal instanceof Set) {
         availableTiles = this.reduceByNeighborEdges(
@@ -227,13 +227,13 @@ export class WangTileChunk<
           availableTiles,
           coord.length,
           dimension,
-          -1
+          -1,
         );
       }
 
       if (availableTiles.size < 1) {
         throw new Error(
-          `The coordinate {${coord.join()}} could not be resolved due to it's neighbors constraints at {${beforeCoord.join()}}:${beforeVal} and {${afterCoord.join()}}:${afterVal}`
+          `The coordinate {${coord.join()}} could not be resolved due to it's neighbors constraints at {${beforeCoord.join()}}:${beforeVal} and {${afterCoord.join()}}:${afterVal}`,
         );
       }
     }
@@ -263,7 +263,7 @@ export class WangTileChunk<
     availableTiles: WangTileSet<D, unknown>,
     dimensions: number,
     dimension: number,
-    offset: -1 | 1
+    offset: -1 | 1,
   ): WangTileSet<D, unknown> {
     const oppositeOffset = (offset * -1) as 1 | -1;
     const edge = tile.edges.getByOffset(dimensions, dimension, offset);
@@ -273,7 +273,7 @@ export class WangTileChunk<
         edge,
         dimensions,
         dimension,
-        oppositeOffset
+        oppositeOffset,
       );
     }
     return availableTiles;
@@ -293,7 +293,7 @@ export class WangTileChunk<
     availableTiles: WangTileSet<D, unknown>,
     dimensions: number,
     dimension: number,
-    offset: -1 | 1
+    offset: -1 | 1,
   ): WangTileSet<D, unknown> {
     let beforeEdges: Edge[] | null = null;
 
@@ -313,7 +313,7 @@ export class WangTileChunk<
         beforeEdges,
         dimensions,
         dimension,
-        -1
+        -1,
       );
     }
 

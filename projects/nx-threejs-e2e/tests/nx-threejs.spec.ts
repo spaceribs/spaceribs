@@ -26,7 +26,7 @@ describe.skip('nx-threejs e2e', () => {
   it('should create nx-threejs', async () => {
     const project = uniq('nx-threejs');
     await runNxCommandAsync(
-      `generate @spaceribs/nx-threejs:nx-threejs ${project}`
+      `generate @spaceribs/nx-threejs:nx-threejs ${project}`,
     );
     const result = await runNxCommandAsync(`build ${project}`);
     expect(result.stdout).toContain('Executor ran');
@@ -36,10 +36,10 @@ describe.skip('nx-threejs e2e', () => {
     it('should create src in the specified directory', async () => {
       const project = uniq('nx-threejs');
       await runNxCommandAsync(
-        `generate @spaceribs/nx-threejs:nx-threejs ${project} --directory subdir`
+        `generate @spaceribs/nx-threejs:nx-threejs ${project} --directory subdir`,
       );
       expect(() =>
-        checkFilesExist(`libs/subdir/${project}/src/index.ts`)
+        checkFilesExist(`libs/subdir/${project}/src/index.ts`),
       ).not.toThrow();
     }, 120000);
   });
@@ -49,7 +49,7 @@ describe.skip('nx-threejs e2e', () => {
       const projectName = uniq('nx-threejs');
       ensureNxProject('@spaceribs/nx-threejs', 'dist/packages/nx-threejs');
       await runNxCommandAsync(
-        `generate @spaceribs/nx-threejs:nx-threejs ${projectName} --tags e2etag,e2ePackage`
+        `generate @spaceribs/nx-threejs:nx-threejs ${projectName} --tags e2etag,e2ePackage`,
       );
       const project = readJson(`libs/${projectName}/project.json`);
       expect(project.tags).toEqual(['e2etag', 'e2ePackage']);

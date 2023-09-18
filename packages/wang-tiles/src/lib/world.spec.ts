@@ -8,7 +8,7 @@ describe('WangTileWorld', () => {
       [-1, -1],
       [2, 2],
       [0, 0],
-      [16, 16]
+      [16, 16],
     );
     expect(world).toBeDefined();
   });

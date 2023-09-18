@@ -34,7 +34,7 @@ export class HomeComponent implements AfterViewInit {
 
     const keyLight = new THREE.DirectionalLight(
       new THREE.Color('hsl(30, 100%, 75%)'),
-      1.0
+      1.0,
     );
     keyLight.position.set(0, 10, -10).normalize();
     keyLight.castShadow = true;
@@ -42,7 +42,7 @@ export class HomeComponent implements AfterViewInit {
 
     const fillLight = new THREE.DirectionalLight(
       new THREE.Color('hsl(240, 100%, 75%)'),
-      0.75
+      0.75,
     );
     fillLight.position.set(100, 0, 100).normalize();
     fillLight.castShadow = true;
@@ -59,7 +59,7 @@ export class HomeComponent implements AfterViewInit {
       600 / 200,
       600 / -200,
       -2,
-      1000
+      1000,
     );
 
     // const camera = new THREE.PerspectiveCamera(2, 800 / 600, 0.01, 50);
@@ -121,7 +121,7 @@ export class HomeComponent implements AfterViewInit {
       undefined,
       function (error) {
         console.error(error);
-      }
+      },
     );
 
     loader.load(
@@ -137,7 +137,7 @@ export class HomeComponent implements AfterViewInit {
       undefined,
       function (error) {
         console.error(error);
-      }
+      },
     );
 
     loader.load(
@@ -153,7 +153,7 @@ export class HomeComponent implements AfterViewInit {
       undefined,
       function (error) {
         console.error(error);
-      }
+      },
     );
 
     loader.load(
@@ -169,7 +169,7 @@ export class HomeComponent implements AfterViewInit {
       undefined,
       function (error) {
         console.error(error);
-      }
+      },
     );
 
     this.zone.runOutsideAngular(() => {

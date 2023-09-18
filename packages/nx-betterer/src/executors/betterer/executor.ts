@@ -19,7 +19,7 @@ import * as path from 'path';
  */
 export default async function runExecutor(
   options: BettererExecutorSchema,
-  context: ExecutorContext
+  context: ExecutorContext,
 ) {
   if (context.projectName == null) {
     throw new Error('No project name specified.');
@@ -31,7 +31,7 @@ export default async function runExecutor(
     context.root,
     'tmp',
     project.root,
-    '.betterer.cache'
+    '.betterer.cache',
   );
 
   const ciConfig: BettererOptionsStartCI = {
@@ -85,7 +85,7 @@ export default async function runExecutor(
       (result.worse && result.worse.length > 0)
     ) {
       throw new Error(
-        `Betterer failed for ${result.failed.length} tests and got worse for ${result.worse.length} tests.`
+        `Betterer failed for ${result.failed.length} tests and got worse for ${result.worse.length} tests.`,
       );
     }
   } else {
@@ -96,7 +96,7 @@ export default async function runExecutor(
       (result.worse && result.worse.length > 0)
     ) {
       throw new Error(
-        `Betterer failed for ${result.failed.length} tests and got worse for ${result.worse.length} tests.`
+        `Betterer failed for ${result.failed.length} tests and got worse for ${result.worse.length} tests.`,
       );
     }
   }
