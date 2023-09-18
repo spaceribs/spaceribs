@@ -40,14 +40,14 @@
               "ClassDeclaration",
               "ClassExpression",
               "ClassProperty",
-              "FunctionDeclaration", // function
+              "FunctionDeclaration",
               "FunctionExpression",
               "MethodDefinition",
               "TSTypeAliasDeclaration",
-              "TSDeclareFunction", // function without body
+              "TSDeclareFunction",
               "TSEnumDeclaration",
               "TSMethodSignature",
-              "TSModuleDeclaration", // namespace
+              "TSModuleDeclaration",
               "TSPropertySignature"
             ],
             "publicOnly": true,
@@ -71,14 +71,14 @@
               "ClassDeclaration",
               "ClassExpression",
               "ClassProperty",
-              "FunctionDeclaration", // function
+              "FunctionDeclaration",
               "FunctionExpression",
               "MethodDefinition",
               "TSTypeAliasDeclaration",
-              "TSDeclareFunction", // function without body
+              "TSDeclareFunction",
               "TSEnumDeclaration",
               "TSMethodSignature",
-              "TSModuleDeclaration", // namespace
+              "TSModuleDeclaration",
               "TSPropertySignature"
             ],
             "descriptionStyle": "body"
