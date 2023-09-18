@@ -2,6 +2,8 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.2.1](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.2.0...nx-web-ext-2.2.1) (2023-09-18)
+
 ## [2.2.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.1.2...nx-web-ext-2.2.0) (2023-07-16)
 
 
