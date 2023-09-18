@@ -29,11 +29,11 @@ describe('nx-betterer e2e', () => {
 
   describe('add generator', () => {
     it('should add a betterer configuration.', async () => {
-      const projectJson = readJson(`libs/${project}/project.json`);
+      const projectJson = readJson(`${project}/project.json`);
       expect(projectJson.targets.betterer).toEqual({
         executor: '@spaceribs/nx-betterer:betterer',
       });
-      const bettererConfig = readFile(`libs/${project}/.betterer.ts`);
+      const bettererConfig = readFile(`${project}/.betterer.ts`);
       expect(bettererConfig).toMatchInlineSnapshot(`
         "const typescript = require('@betterer/typescript');
 
@@ -61,7 +61,7 @@ describe('nx-betterer e2e', () => {
     describe('eslint check', () => {
       it('should run betterer with eslint typescript checks enabled.', async () => {
         const bettererConfig = updateFile(
-          `libs/${project}/.betterer.ts`,
+          `${project}/.betterer.ts`,
           (orig: string) => {
             return orig
               .replace(
