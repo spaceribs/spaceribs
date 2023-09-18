@@ -15,7 +15,8 @@
           "packages/buildings/*.md",
           "packages/buildings/src/glb/*.glb",
           "packages/buildings/src/gltf/*.gltf"
-        ]
+        ],
+        "updateBuildableProjectDepsInPackageJson": true
       },
       "dependsOn": ["compile"]
     },
