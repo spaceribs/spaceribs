@@ -63,12 +63,16 @@ export default async function (tree: Tree, options: NxWebExtGeneratorSchema) {
   const normalizedOptions = normalizeOptions(options);
 
   switch (normalizedOptions.framework) {
-    case 'angular':
-      await import('./sub-generators/angular').then(({ angularApp }) => angularApp(tree, normalizedOptions));
+    case 'angular': {
+      const { angularApp } = await import('./sub-generators/angular');
+      await angularApp(tree, normalizedOptions);
       break;
-    case 'react':
-      await import('./sub-generators/react').then(({ reactApp }) => reactApp(tree, normalizedOptions));
+    }
+    case 'react': {
+      const { reactApp } = await import('./sub-generators/react');
+      await reactApp(tree, normalizedOptions);
       break;
+    }
     default:
       throw new Error('This application target is not supported.');
   }
