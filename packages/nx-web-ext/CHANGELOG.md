@@ -2,6 +2,14 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.2.2](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.2.1...nx-web-ext-2.2.2) (2023-10-03)
+
+
+### Bug Fixes
+
+* **nx-web-ext:** use react or angular import when needed ([8328836](https://github.com/spaceribs/spaceribs/commit/8328836d938da7c1227299075c454422dde3a9fc))
+* use react or angular import when needed ([6d8957b](https://github.com/spaceribs/spaceribs/commit/6d8957b22aa1ea2f72c676c150b9607dbcf0ab8e))
+
 ## [2.2.1](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.2.0...nx-web-ext-2.2.1) (2023-09-18)
 
 ## [2.2.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-2.1.2...nx-web-ext-2.2.0) (2023-07-16)
