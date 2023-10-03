@@ -2,6 +2,8 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.3](https://github.com/spaceribs/spaceribs/compare/wang-tiles-0.1.2...wang-tiles-0.1.3) (2023-10-03)
+
 ## [0.1.2](https://github.com/spaceribs/spaceribs/compare/wang-tiles-0.1.1...wang-tiles-0.1.2) (2023-09-18)
 
 ## [0.1.1](https://github.com/spaceribs/spaceribs/compare/wang-tiles-0.1.0...wang-tiles-0.1.1) (2023-07-16)
