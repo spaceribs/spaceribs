@@ -101,9 +101,14 @@
       }
     },
     {
-      "files": "*.json",
+      "files": ["package.json"],
       "parser": "jsonc-eslint-parser",
-      "rules": {}
+      "rules": {
+        "@nx/dependency-checks": [
+          "error",
+          { "checkObsoleteDependencies": false }
+        ]
+      }
     },
     {
       "files": [".betterer.ts"],

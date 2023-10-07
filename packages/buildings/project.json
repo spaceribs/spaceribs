@@ -24,7 +24,10 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/buildings/**/*.ts"]
+        "lintFilePatterns": [
+          "packages/buildings/**/*.ts",
+          "packages/buildings/package.json"
+        ]
       }
     },
     "compile": {
