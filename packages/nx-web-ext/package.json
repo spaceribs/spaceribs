@@ -20,7 +20,8 @@
     "typescript": ">= 4.8.2 < 6",
     "rxjs": ">= 6.6.3 < 8",
     "@nx/devkit": "^16.2.2",
-    "@nx/linter": "^16.2.2"
+    "@nx/linter": "^16.2.2",
+    "tslib": "~2.5.0"
   },
   "dependencies": {
     "@phenomnomnominal/tsquery": "^5.0.0",

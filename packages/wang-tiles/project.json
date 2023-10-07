@@ -19,7 +19,10 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/wang-tiles/**/*.ts"]
+        "lintFilePatterns": [
+          "packages/wang-tiles/**/*.ts",
+          "packages/wang-tiles/package.json"
+        ]
       }
     },
     "test": {

@@ -1,5 +1,8 @@
 {
   "name": "@spaceribs/buildings",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "tslib": "~2.5.0"
+  }
 }
