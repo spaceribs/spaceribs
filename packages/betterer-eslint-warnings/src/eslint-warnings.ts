@@ -2,9 +2,18 @@ import { BettererFileTest } from '@betterer/betterer';
 import { ESLint } from 'eslint';
 
 /**
- * Use this test to incrementally introduce reduce {@link https://eslint.org/ | **ESLint**} warnings of
+ * Use this test to incrementally reduce {@link https://eslint.org/ | **ESLint**} warnings in
  * your codebase.
- * @throws {BettererError} Will throw if the user doesn't pass `rules`.
+ * @example
+ * ```typescript
+ * import { eslint } from '@betterer/eslint';
+ *
+ * export default {
+ *   'new eslint warnings': () =>
+ *     eslintWarnings()
+ *     .include('./src/*.ts')
+ * };
+ * ```
  * @returns a BettererFileTest which tracks the number of warnings on a project.
  */
 export function eslintWarnings(): BettererFileTest {
