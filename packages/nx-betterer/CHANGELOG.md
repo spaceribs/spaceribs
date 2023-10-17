@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.1.9](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.1.8...nx-betterer-1.1.9) (2023-10-17)
+
+
+### Bug Fixes
+
+* **nx-betterer:** add missing peer deps ([edeb40d](https://github.com/spaceribs/spaceribs/commit/edeb40d86e1e6af596984017a719be0b9172bc71))
+
 ## [1.1.8](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.1.7...nx-betterer-1.1.8) (2023-10-07)
 
 ## [1.1.7](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.1.6...nx-betterer-1.1.7) (2023-10-03)
