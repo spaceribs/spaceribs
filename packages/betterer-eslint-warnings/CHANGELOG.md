@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.1](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-0.1.0...betterer-eslint-warnings-0.1.1) (2023-10-17)
+
+
+### Bug Fixes
+
+* **betterer-eslint-warnings:** remove files param from packages.json ([69fa733](https://github.com/spaceribs/spaceribs/commit/69fa73319f95eb492e0f6a92b279713cd8f54022))
+
 ## 0.1.0 (2023-10-17)
 
 
