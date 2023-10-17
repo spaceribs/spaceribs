@@ -10,6 +10,9 @@
     },
     "update": {
       "type": "boolean"
+    },
+    "precommit": {
+      "type": "boolean"
     }
   },
   "required": []
