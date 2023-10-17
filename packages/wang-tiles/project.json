@@ -61,7 +61,7 @@
     },
     "typedoc": {
       "executor": "@enio.ai/typedoc:typedoc",
-      "outputs": ["{workspaceRoot}/docs/packages/nx-betterer"],
+      "outputs": ["{workspaceRoot}/docs/packages/wang-tiles"],
       "options": {
         "options": "typedoc.json"
       },
