@@ -4,7 +4,12 @@
   "main": "src/index.js",
   "generators": "./generators.json",
   "executors": "./executors.json",
+  "peerDependencies": {
+    "@nx/devkit": "^16.8.1",
+    "@nx/js": "^16.8.1"
+  },
   "dependencies": {
-    "tslib": "~2.5.0"
+    "tslib": "~2.5.0",
+    "obj2gltf": "^3.1.6"
   }
 }
