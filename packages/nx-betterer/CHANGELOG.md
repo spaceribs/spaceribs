@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.2.0](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.1.9...nx-betterer-1.2.0) (2023-10-17)
+
+
+### Features
+
+* **nx-betterer:** add precommit task ([cafd209](https://github.com/spaceribs/spaceribs/commit/cafd209c1435aefe30bbfdd1f87e2eca2dafe1fa))
+
 ## [1.1.9](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.1.8...nx-betterer-1.1.9) (2023-10-17)
 
 
