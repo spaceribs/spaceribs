@@ -1,6 +1,6 @@
 {
   "name": "@spaceribs/betterer-eslint-warnings",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ESLint warnings test for @betterer/betterer",
   "license": "MIT",
   "publishConfig": {
