@@ -6,9 +6,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "dist"
-  ],
   "contributors": [
     "Craig Spence <craigspence0@gmail.com>",
     "Spaceribs"
