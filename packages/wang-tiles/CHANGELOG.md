@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [0.1.5](https://github.com/spaceribs/spaceribs/compare/wang-tiles-0.1.4...wang-tiles-0.1.5) (2023-10-17)
+
+
+### Bug Fixes
+
+* **wang-tiles:** fix output folder of wang tiles docs ([7964ca1](https://github.com/spaceribs/spaceribs/commit/7964ca14f3eb33d3f77e37326568e9629ad66ae6))
+
 ## [0.1.4](https://github.com/spaceribs/spaceribs/compare/wang-tiles-0.1.3...wang-tiles-0.1.4) (2023-10-07)
 
 ## [0.1.3](https://github.com/spaceribs/spaceribs/compare/wang-tiles-0.1.2...wang-tiles-0.1.3) (2023-10-03)
