@@ -5,8 +5,8 @@
 //
 exports[`stricter compilation`] = {
   value: `{
-    "src/executors/betterer/executor.ts:1201876524": [
-      [27, 18, 17, "\'context.workspace\' is possibly \'undefined\'.", "4115948881"]
+    "src/executors/betterer/executor.ts:878501392": [
+      [28, 18, 17, "\'context.workspace\' is possibly \'undefined\'.", "4115948881"]
     ]
   }`
 };
