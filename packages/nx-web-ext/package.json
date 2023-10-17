@@ -23,6 +23,11 @@
     "@nx/linter": "^16.2.2",
     "tslib": "~2.5.0"
   },
+  "devDependencies": {
+    "@betterer/typescript": "^5.4.0",
+    "@betterer/coverage": "^5.4.0",
+    "@betterer/eslint": "^5.4.0"
+  },
   "dependencies": {
     "@phenomnomnominal/tsquery": "^5.0.0",
     "web-ext": "^6.8.0"

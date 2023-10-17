@@ -106,7 +106,10 @@
       "rules": {
         "@nx/dependency-checks": [
           "error",
-          { "checkObsoleteDependencies": false }
+          {
+            "checkObsoleteDependencies": false,
+            "ignoredFiles": ["**/.betterer.ts"]
+          }
         ]
       }
     },
