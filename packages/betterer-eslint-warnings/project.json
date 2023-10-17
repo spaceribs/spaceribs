@@ -1,0 +1,75 @@
+{
+  "name": "betterer-eslint-warnings",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/betterer-eslint-warnings/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/betterer-eslint-warnings",
+        "main": "packages/betterer-eslint-warnings/src/index.ts",
+        "tsConfig": "packages/betterer-eslint-warnings/tsconfig.lib.json",
+        "assets": ["packages/betterer-eslint-warnings/*.md"],
+        "updateBuildableProjectDepsInPackageJson": true
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "packages/betterer-eslint-warnings/**/*.ts",
+          "packages/betterer-eslint-warnings/package.json"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "packages/betterer-eslint-warnings/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "version": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional",
+        "postTargets": [
+          "betterer-eslint-warnings:github",
+          "betterer-eslint-warnings:npm"
+        ]
+      }
+    },
+    "github": {
+      "executor": "@jscutlery/semver:github",
+      "options": {
+        "tag": "${tag}",
+        "notes": "${notes}"
+      }
+    },
+    "npm": {
+      "executor": "ngx-deploy-npm:deploy",
+      "options": {
+        "access": "public"
+      }
+    },
+    "typedoc": {
+      "executor": "@enio.ai/typedoc:typedoc",
+      "outputs": ["{workspaceRoot}/docs/packages/betterer-eslint-warnings"],
+      "options": {
+        "options": "typedoc.json"
+      },
+      "configurations": {}
+    }
+  },
+  "tags": []
+}
