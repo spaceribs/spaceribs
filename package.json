@@ -136,5 +136,8 @@
       "typedoc-theme-hierarchy": "^4.0.0",
       "typedoc": "^0.25.1"
     }
+  },
+  "nx": {
+    "includedScripts": []
   }
 }

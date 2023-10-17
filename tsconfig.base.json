@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@spaceribs/betterer-eslint-warnings": [
+        "packages/betterer-eslint-warnings/src/index.ts"
+      ],
       "@spaceribs/buildings": ["packages/buildings/src/index.ts"],
       "@spaceribs/nx-betterer": ["packages/nx-betterer/src/index.ts"],
       "@spaceribs/nx-threejs": ["packages/nx-threejs/src/index.ts"],
