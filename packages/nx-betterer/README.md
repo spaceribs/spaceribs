@@ -55,3 +55,36 @@ This library was generated with [Nx](https://nx.dev).
 
 NOTE: Keep in mind that due to a lack of ESModule support in NxNrwl, you'll
 need to use CommonJS syntax.
+
+## Setup Precommits
+
+If you have husky installed and want to make sure your betterer results are kept up
+to date, you can run the following to make sure the file hashes are updated
+when you commit:
+
+```bash
+npx husky add ./.husky/betterer "npx nx affected --target betterer --precommit"
+```
+
+Unless these hashes are kept up to date, CI mode (the default mode) will fail loudly.
+You can also run this command manually with:
+
+```bash
+nx run my-project:betterer --precommit
+```
+
+## Update Results
+
+If you wish to update all of your results, overriding failures, you can run the following:
+
+```bash
+nx run my-project:betterer --update
+```
+
+## Watch Mode
+
+If you wish to keep betterer open as you fix issues, you can run the following:
+
+```bash
+nx run my-project:betterer --watch
+```
