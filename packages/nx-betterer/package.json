@@ -15,6 +15,7 @@
     "@betterer/typescript": "^5.4.0",
     "rxjs": "^7.5.7",
     "@nx/devkit": "^16.2.2",
+    "@nx/web": "^16.2.2",
     "tslib": "~2.5.0"
   },
   "author": "Spaceribs",
