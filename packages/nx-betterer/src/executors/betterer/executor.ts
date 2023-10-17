@@ -6,6 +6,7 @@ import {
   BettererRunner,
   BettererOptionsStartCI,
   BettererOptionsStartUpdate,
+  BettererOptionsStartPrecommit,
 } from '@betterer/betterer';
 import { lastValueFrom, Observable } from 'rxjs';
 import { ExecutorContext } from '@nx/devkit';
@@ -57,6 +58,13 @@ export default async function runExecutor(
     cachePath,
   };
 
+  const precommitConfig: BettererOptionsStartPrecommit = {
+    cwd: projectRoot,
+    tsconfigPath: './tsconfig.json',
+    precommit: true,
+    cachePath,
+  };
+
   if (options.watch === true) {
     const bettererWatch = new Observable((observe) => {
       let runner: BettererRunner;
@@ -78,19 +86,25 @@ export default async function runExecutor(
     });
 
     await lastValueFrom(bettererWatch);
+  } else if (options.precommit === true) {
+    await betterer(precommitConfig);
   } else if (options.update === true) {
-    const result = await betterer(updateConfig);
-    if (
-      (result.failed && result.failed.length > 0) ||
-      (result.worse && result.worse.length > 0)
-    ) {
-      throw new Error(
-        `Betterer failed for ${result.failed.length} tests and got worse for ${result.worse.length} tests.`,
-      );
-    }
+    await betterer(updateConfig);
   } else {
     const result = await betterer(ciConfig);
-    console.log(result);
+    if (result.changed.length) {
+      throw new Error(
+        `Betterer failed due to ${result.changed.join(
+          ', ',
+        )} not being up to date, please run precommit`,
+      );
+    }
+    const anyNew = result.runSummaries.find((summary) => summary.isComplete);
+    if (anyNew != null && anyNew.isComplete !== true) {
+      throw new Error(
+        `Betterer failed due to ${anyNew.name} not being complete, please run update.`,
+      );
+    }
     if (
       (result.failed && result.failed.length > 0) ||
       (result.worse && result.worse.length > 0)
