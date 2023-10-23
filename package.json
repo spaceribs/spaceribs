@@ -80,7 +80,7 @@
     "@types/react-router-dom": "5.3.3",
     "@types/three": "^0.149.0",
     "@types/webextension-polyfill": "^0.10.1",
-    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/eslint-plugin": "6.8.0",
     "@typescript-eslint/parser": "5.62.0",
     "babel-jest": "29.5.0",
     "commitizen": "^4.2.5",
