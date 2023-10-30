@@ -47,3 +47,4 @@ docs
 scully.log
 scully/**/*.js
 scully/**/*.js.map
+.nx/cache

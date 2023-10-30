@@ -8,7 +8,7 @@ import { appRouterUseHash } from './use-hash';
 
 import { applicationGenerator } from '@nx/react';
 import { addFiles, NormalizedSchema } from '../../generator';
-import { Linter } from '@nx/linter';
+import { Linter } from '@nx/eslint';
 import { replaceFiles } from './replace-files';
 import { resolve } from 'path';
 

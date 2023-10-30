@@ -1,6 +1,6 @@
 import { BuildExecutorSchema } from './schema';
 import { logger } from '@nx/devkit';
-import obj2gltf from 'obj2gltf';
+import * as obj2gltf from 'obj2gltf';
 import * as fs from 'fs';
 import * as path from 'path';
 

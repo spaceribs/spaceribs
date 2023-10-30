@@ -1,6 +1,5 @@
-import { eslintWarnings } from '../betterer-eslint-warnings/src';
-
 const bettererTypescript = require('@betterer/typescript');
+const { eslintWarnings } = require('../betterer-eslint-warnings/src');
 
 module.exports = {
   'stricter compilation': () =>

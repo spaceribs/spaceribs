@@ -33,7 +33,7 @@ exports[`stricter compilation`] = {
     "src/generators/application/sub-generators/angular/use-hash.ts:417407512": [
       [11, 20, 28, "Object is possibly \'null\'.", "2958527246"]
     ],
-    "src/generators/application/sub-generators/react/index.ts:3897352898": [
+    "src/generators/application/sub-generators/react/index.ts:2953020483": [
       [37, 6, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [38, 4, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [43, 2, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
@@ -166,7 +166,7 @@ exports[`no unsafe`] = {
       [34, 6, 44, "Unsafe call of an \`any\` typed value.", "1991309353"],
       [35, 4, 40, "Unsafe call of an \`any\` typed value.", "2889352408"]
     ],
-    "src/generators/application/sub-generators/react/index.ts:3897352898": [
+    "src/generators/application/sub-generators/react/index.ts:2953020483": [
       [37, 6, 44, "Unsafe call of an \`any\` typed value.", "1991309353"],
       [38, 4, 40, "Unsafe call of an \`any\` typed value.", "2889352408"]
     ]

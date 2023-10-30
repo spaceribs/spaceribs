@@ -20,6 +20,7 @@ describe('bettererHasher', () => {
           target: 'target',
         },
         overrides: {},
+        outputs: [],
       },
       {
         hasher: mockHasher,
