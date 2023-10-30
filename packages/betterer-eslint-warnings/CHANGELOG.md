@@ -2,6 +2,17 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.0](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-0.1.1...betterer-eslint-warnings-1.0.0) (2023-10-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* major upgrade (nx@17)
+
+### Build System
+
+* upgrade nx from 16 to 17 ([2131c65](https://github.com/spaceribs/spaceribs/commit/2131c6513226dfde256cf2eea6dac30f04ff551e))
+
 ## [0.1.1](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-0.1.0...betterer-eslint-warnings-0.1.1) (2023-10-17)
 
 
