@@ -2,6 +2,17 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.0.0](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.2.1...nx-betterer-2.0.0) (2023-10-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* major upgrade (nx@17)
+
+### Build System
+
+* upgrade nx from 16 to 17 ([2131c65](https://github.com/spaceribs/spaceribs/commit/2131c6513226dfde256cf2eea6dac30f04ff551e))
+
 ## [1.2.1](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.2.0...nx-betterer-1.2.1) (2023-10-17)
 
 ## [1.2.0](https://github.com/spaceribs/spaceribs/compare/nx-betterer-1.1.9...nx-betterer-1.2.0) (2023-10-17)
