@@ -1,6 +1,6 @@
 {
   "name": "@spaceribs/wang-tiles",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "type": "commonjs",
   "description": "Generate worlds with simple sets of tiles and rules.",
   "repository": {
