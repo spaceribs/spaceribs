@@ -1,34 +1,37 @@
 {
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e",
-          "betterer",
-          "typedoc",
-          "compile"
-        ],
-        "accessToken": "MGIzZTU2OGYtMGQyYS00NzMyLWE5NTgtOTAyNTYwYWNkODhifHJlYWQ="
-      }
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": true
     }
   },
   "targetDefaults": {
     "lint": {
-      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"]
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
+      "cache": true
     },
     "test": {
-      "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"]
+      "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"],
+      "cache": true
     },
     "betterer": {
       "dependsOn": ["test"],
       "outputs": [
         "{projectRoot}/.betterer.results",
         "{workspaceRoot}/tmp/{projectRoot}/.betterer.cache"
-      ]
+      ],
+      "cache": true
+    },
+    "build": {
+      "cache": true
+    },
+    "e2e": {
+      "cache": true
+    },
+    "typedoc": {
+      "cache": true
+    },
+    "compile": {
+      "cache": true
     }
   },
   "workspaceLayout": {
@@ -71,9 +74,5 @@
   "defaultProject": "angular-example",
   "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "pluginsConfig": {
-    "@nx/js": {
-      "analyzeSourceFiles": true
-    }
-  }
+  "nxCloudAccessToken": "MGIzZTU2OGYtMGQyYS00NzMyLWE5NTgtOTAyNTYwYWNkODhifHJlYWQ="
 }
