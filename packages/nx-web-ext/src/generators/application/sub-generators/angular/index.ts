@@ -4,7 +4,6 @@ import {
   updateProjectConfiguration,
 } from '@nx/devkit';
 import { addAction } from './add-action';
-import { appRouterUseHash } from './use-hash';
 
 import { applicationGenerator, E2eTestRunner } from '@nx/angular/generators';
 import { addFiles, NormalizedSchema } from '../../generator';
@@ -19,13 +18,14 @@ import { replaceFiles } from './replace-files';
 export const angularApp = async (tree: Tree, options: NormalizedSchema) => {
   await applicationGenerator(tree, {
     name: options.name,
-    routing: true,
+    routing: false,
+    standalone: false,
     e2eTestRunner: E2eTestRunner.None,
   });
 
   const config = readProjectConfiguration(tree, options.name);
 
-  appRouterUseHash(tree, config.root);
+  // appRouterUseHash(tree, config.root);
 
   replaceFiles(tree, options, config.root);
 

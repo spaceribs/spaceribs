@@ -53,8 +53,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/packages/nx-web-ext"],
       "options": {
-        "jestConfig": "packages/nx-web-ext/jest.config.ts",
-        "passWithNoTests": true
+        "jestConfig": "packages/nx-web-ext/jest.config.ts"
       }
     },
     "version": {

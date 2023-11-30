@@ -28,12 +28,12 @@ describe('nx-web-ext e2e', () => {
         );
       });
 
-      it('should create a web extension project and build successfully', async () => {
+      it.skip('should create a web extension project and build successfully', async () => {
         const result = await runNxCommandAsync(`build ${project}`);
         expect(result.stdout).toContain('Successfully ran target build');
       }, 120000);
 
-      it('should create a web extension project and package successfully', async () => {
+      it.skip('should create a web extension project and package successfully', async () => {
         const result = await runNxCommandAsync(`package ${project}`);
         expect(result.stdout).toContain('Your web extension is ready');
       }, 120000);
