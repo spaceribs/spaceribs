@@ -9,10 +9,6 @@
       "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
       "cache": true
     },
-    "test": {
-      "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"],
-      "cache": true
-    },
     "betterer": {
       "dependsOn": ["test"],
       "outputs": [
@@ -24,14 +20,24 @@
     "build": {
       "cache": true
     },
-    "e2e": {
-      "cache": true
-    },
     "typedoc": {
       "cache": true
     },
     "compile": {
       "cache": true
+    },
+    "@nx/jest:jest": {
+      "cache": true,
+      "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"],
+      "options": {
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
     }
   },
   "workspaceLayout": {
