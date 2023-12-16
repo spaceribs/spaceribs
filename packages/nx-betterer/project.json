@@ -39,15 +39,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "packages/nx-betterer/**/*.ts",
-          "packages/nx-betterer/generators.json",
-          "packages/nx-betterer/executors.json",
-          "packages/nx-betterer/package.json"
-        ]
-      }
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
       "executor": "@nx/jest:jest",

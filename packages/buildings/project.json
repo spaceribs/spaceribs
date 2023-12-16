@@ -21,13 +21,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "packages/buildings/**/*.ts",
-          "packages/buildings/package.json"
-        ]
-      }
+      "outputs": ["{options.outputFile}"]
     },
     "compile": {
       "executor": "@spaceribs/nx-threejs:build",

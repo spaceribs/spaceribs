@@ -39,15 +39,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "packages/nx-threejs/**/*.ts",
-          "packages/nx-threejs/generators.json",
-          "packages/nx-threejs/executors.json",
-          "packages/nx-threejs/package.json"
-        ]
-      }
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
       "executor": "@nx/jest:jest",
