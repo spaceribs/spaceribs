@@ -2,6 +2,8 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.2](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-1.0.1...betterer-eslint-warnings-1.0.2) (2023-12-16)
+
 ## [1.0.1](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-1.0.0...betterer-eslint-warnings-1.0.1) (2023-12-03)
 
 ## [1.0.0](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-0.1.1...betterer-eslint-warnings-1.0.0) (2023-10-30)
