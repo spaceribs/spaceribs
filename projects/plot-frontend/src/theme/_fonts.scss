@@ -1,0 +1,38 @@
+@use '@fontsource-variable/ibarra-real-nova/scss/mixins.scss' as IbarraRealNova;
+@use '@fontsource-variable/material-symbols-sharp/scss/mixins.scss' as
+  MaterialSymbolsSharp;
+@use '@fontsource-variable/caveat/scss/mixins.scss' as Caveat;
+
+@include IbarraRealNova.faces(
+  // $display: 'swap',
+  $directory: '/assets/fonts/ibarra-real-nova'
+);
+@include MaterialSymbolsSharp.faces(
+  $display: 'block',
+  $directory: '/assets/fonts/material-symbols-sharp'
+);
+@include Caveat.faces(
+  // $display: 'swap',
+  $directory: '/assets/fonts/caveat'
+);
+
+.material-symbols-sharp {
+  font-family: 'Material Symbols Sharp Variable';
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 40;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}

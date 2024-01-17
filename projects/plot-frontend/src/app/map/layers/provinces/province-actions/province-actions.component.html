@@ -1,0 +1,29 @@
+<mat-action-list>
+  <h3 matSubheader>Territory Actions</h3>
+
+  <button mat-list-item (click)="action.emit(actions.Message)">
+    <mat-icon matListItemIcon>message</mat-icon>
+    <span matListItemTitle>Messenge (1)</span>
+    <span matLine>Compose and send a message to a neighboring territory</span>
+  </button>
+
+  <button mat-list-item (click)="action.emit(actions.Spy)">
+    <mat-icon matListItemIcon>domino_mask</mat-icon>
+    <span matListItemTitle>Spy (1)</span>
+    <span matLine
+      >Determine the amount of troops at a neighboring territory</span
+    >
+  </button>
+
+  <button mat-list-item (click)="action.emit(actions.Redeploy)">
+    <mat-icon matListItemIcon>shield</mat-icon>
+    <span matListItemTitle>Redeploy (1+)</span>
+    <span matLine>Move units from this territory to another</span>
+  </button>
+
+  <button mat-list-item (click)="action.emit(actions.Attack)">
+    <mat-icon matListItemIcon>destruction</mat-icon>
+    <span matListItemTitle>Attack (1+)</span>
+    <span matLine>Attempt to capture a neighboring territory</span>
+  </button>
+</mat-action-list>

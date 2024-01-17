@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameState Selectors GameState Selectors getAllGameState() should return the gamestate. 1`] = `
+Object {
+  "round": Object {
+    "end_time": "2024-01-13T23:30:50.167Z",
+  },
+  "system": Object {
+    "time": "2024-01-13T20:30:50.167Z",
+  },
+  "user": null,
+}
+`;

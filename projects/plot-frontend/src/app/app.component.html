@@ -1,0 +1,74 @@
+<mat-sidenav-container autosize fxFill>
+  <mat-sidenav #snav>
+    <mat-toolbar>
+      <span>Main Menu</span>
+      <span fxFlex></span>
+      <button mat-icon-button aria-label="Main menu" (click)="snav.close()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-toolbar>
+    <spaceribs-main-menu></spaceribs-main-menu>
+  </mat-sidenav>
+  <mat-sidenav #mnav position="end">
+    <mat-toolbar>
+      <span>Notifications</span>
+      <span fxFlex></span>
+      <button mat-icon-button aria-label="Notifications" (click)="mnav.close()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-toolbar>
+    <div
+      fxLayoutGap="20"
+      fxLayout="column"
+      fxLayoutAlign="start stretch"
+      style="padding: 20px"
+    >
+      <spaceribs-notifications></spaceribs-notifications>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content fxLayout="column" fxLayoutAlign="start stretch" fxFill>
+    <mat-toolbar
+      class="mat-elevation-z3"
+      style="z-index: 1"
+      color="primary"
+      fxLayoutGap="10"
+      fxLayoutAlign="space-between center"
+    >
+      <div fxLayoutGap="10" fxLayoutAlign="space-between center">
+        <button mat-icon-button aria-label="Main menu" (click)="snav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <button mat-stroked-button>
+          <mat-icon>update</mat-icon>
+          02:24:12
+        </button>
+      </div>
+      <h1
+        routerLink=""
+        routerLinkActive="hide"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="app-name"
+      >
+        <strong class="handwriting">Plot</strong>
+      </h1>
+      <div fxLayoutGap="10" fxLayoutAlign="space-between center">
+        <button mat-stroked-button>
+          <mat-icon>payments</mat-icon>
+          3
+        </button>
+        <button
+          mat-icon-button
+          aria-label="Notifications"
+          (click)="mnav.toggle()"
+        >
+          <mat-icon matBadge="8" matBadgePosition="after" matBadgeColor="warn"
+            >notifications</mat-icon
+          >
+        </button>
+      </div>
+    </mat-toolbar>
+    <div fxFlex>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

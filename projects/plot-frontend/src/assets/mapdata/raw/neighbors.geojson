@@ -1,0 +1,3018 @@
+{
+  "type": "FeatureCollection",
+  "name": "neighbors",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 19,
+        "height": 13,
+        "biome": 9,
+        "type": "island",
+        "population": 2516,
+        "state": 1,
+        "province": 38,
+        "culture": 2,
+        "religion": 2,
+        "neighbors": [77],
+        "province_name": "Burmouth",
+        "province_full_name": "Burmouth Land",
+        "province_form": "Land",
+        "province_state": "Southesia",
+        "province_color": "#82baba",
+        "province_capital": "Burmouth",
+        "province_area": "19975",
+        "province_population": "33544",
+        "province_rural": "31522",
+        "province_urban": "2022"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [30.564375, 46.669375],
+            [37.851367187499996, 30.1608203125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 35,
+        "height": 13,
+        "biome": 9,
+        "type": "island",
+        "population": 2387,
+        "state": 12,
+        "province": 76,
+        "culture": 2,
+        "religion": 2,
+        "neighbors": [156, 222, 279, 359, 543, 616, 774, 1059, 1349],
+        "province_name": "Warporland",
+        "province_full_name": "Warporland Territory",
+        "province_form": "Territory",
+        "province_state": "Chisland",
+        "province_color": "#ffee53",
+        "province_capital": "Mitford",
+        "province_area": "400000",
+        "province_population": "1115967",
+        "province_rural": "1038752",
+        "province_urban": "77215"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [11.555019531250002, 38.046230468750004],
+            [21.6021875, 39.7959375]
+          ],
+          [
+            [11.555019531250002, 38.046230468750004],
+            [17.918515625, 29.520703125]
+          ],
+          [
+            [11.555019531250002, 38.046230468750004],
+            [-10.52625, 31.24875]
+          ],
+          [
+            [11.555019531250002, 38.046230468750004],
+            [-20.456171875, 28.038359375]
+          ],
+          [
+            [11.555019531250002, 38.046230468750004],
+            [10.77984375, 29.68765625]
+          ],
+          [
+            [11.555019531250002, 38.046230468750004],
+            [5.14234375, 25.14609375]
+          ],
+          [
+            [11.555019531250002, 38.046230468750004],
+            [-25.405234375, 16.460703125]
+          ],
+          [
+            [11.555019531250002, 38.046230468750004],
+            [1.58609375, 16.88453125]
+          ],
+          [
+            [11.555019531250002, 38.046230468750004],
+            [6.428203125, -4.771640625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 77,
+        "height": 13,
+        "biome": 9,
+        "type": "island",
+        "population": 1600,
+        "state": 9,
+        "province": 65,
+        "culture": 2,
+        "religion": 2,
+        "neighbors": [
+          222, 475, 543, 728, 892, 900, 992, 1066, 1161, 1561, 1564
+        ],
+        "province_name": "Wiveton",
+        "province_full_name": "Wiveton Region",
+        "province_form": "Region",
+        "province_state": "Folivia",
+        "province_color": "#a4da96",
+        "province_capital": "Wiveton",
+        "province_area": "224650",
+        "province_population": "1172451",
+        "province_rural": "1058287",
+        "province_urban": "114164"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [37.851367187499996, 30.1608203125],
+            [17.918515625, 29.520703125]
+          ],
+          [
+            [37.851367187499996, 30.1608203125],
+            [23.20203125, 30.28484375]
+          ],
+          [
+            [37.851367187499996, 30.1608203125],
+            [10.77984375, 29.68765625]
+          ],
+          [
+            [37.851367187499996, 30.1608203125],
+            [50.975078125, 24.998984375]
+          ],
+          [
+            [37.851367187499996, 30.1608203125],
+            [32.358125, 18.553125]
+          ],
+          [
+            [37.851367187499996, 30.1608203125],
+            [42.625390624999987, 13.726484375]
+          ],
+          [
+            [37.851367187499996, 30.1608203125],
+            [49.881054687499997, 17.799414062499999]
+          ],
+          [
+            [37.851367187499996, 30.1608203125],
+            [15.4465625, 19.4515625]
+          ],
+          [
+            [37.851367187499996, 30.1608203125],
+            [12.96953125, 8.04140625]
+          ],
+          [
+            [37.851367187499996, 30.1608203125],
+            [21.43578125, 11.15203125]
+          ],
+          [
+            [37.851367187499996, 30.1608203125],
+            [28.053515625, 8.767421875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 156,
+        "height": 13,
+        "biome": 9,
+        "type": "island",
+        "population": 3561,
+        "state": 1,
+        "province": 39,
+        "culture": 2,
+        "religion": 2,
+        "neighbors": [222],
+        "province_name": "Craftho",
+        "province_full_name": "Craftho Land",
+        "province_form": "Land",
+        "province_state": "Southesia",
+        "province_color": "#92bdb2",
+        "province_capital": "",
+        "province_area": "12300",
+        "province_population": "15567",
+        "province_rural": "15567",
+        "province_urban": "0"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [21.6021875, 39.7959375],
+            [17.918515625, 29.520703125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 182,
+        "height": 13,
+        "biome": 12,
+        "type": "island",
+        "population": 2000,
+        "state": 11,
+        "province": 70,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [338, 348, 595],
+        "province_name": "Reaford",
+        "province_full_name": "Reaford Territory",
+        "province_form": "Territory",
+        "province_state": "Lympster",
+        "province_color": "#beea7d",
+        "province_capital": "Reaford",
+        "province_area": "34625",
+        "province_population": "161083",
+        "province_rural": "158087",
+        "province_urban": "2996"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-39.76921875, 36.829531249999988],
+            [-43.083515625, 30.645546875]
+          ],
+          [
+            [-39.76921875, 36.829531249999988],
+            [-29.615546875, 30.677109375]
+          ],
+          [
+            [-39.76921875, 36.829531249999988],
+            [-35.3053125, 29.3846875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 222,
+        "height": 52,
+        "biome": 9,
+        "type": "island",
+        "population": 1452,
+        "state": 1,
+        "province": 2,
+        "culture": 2,
+        "religion": 2,
+        "neighbors": [475, 543],
+        "province_name": "Cochamland",
+        "province_full_name": "Cochamland County",
+        "province_form": "County",
+        "province_state": "Southesia",
+        "province_color": "#94cc9f",
+        "province_capital": "Causlewich",
+        "province_area": "74450",
+        "province_population": "455200",
+        "province_rural": "381392",
+        "province_urban": "73808"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [17.918515625, 29.520703125],
+            [23.20203125, 30.28484375]
+          ],
+          [
+            [17.918515625, 29.520703125],
+            [10.77984375, 29.68765625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 241,
+        "height": 13,
+        "biome": 12,
+        "type": "island",
+        "population": 1194,
+        "state": 11,
+        "province": 71,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [319, 338, 426, 757],
+        "province_name": "Stap",
+        "province_full_name": "Stap Region",
+        "province_form": "Region",
+        "province_state": "Lympster",
+        "province_color": "#b2ff6a",
+        "province_capital": "Grantfield",
+        "province_area": "54825",
+        "province_population": "277829",
+        "province_rural": "245943",
+        "province_urban": "31886"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-55.78765625, 30.51609375],
+            [-65.080351562499999, 26.816523437499995]
+          ],
+          [
+            [-55.78765625, 30.51609375],
+            [-43.083515625, 30.645546875]
+          ],
+          [
+            [-55.78765625, 30.51609375],
+            [-49.642812500000012, 33.2503125]
+          ],
+          [
+            [-55.78765625, 30.51609375],
+            [-58.537558593749999, 15.880253906249999]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 279,
+        "height": 13,
+        "biome": 8,
+        "type": "island",
+        "population": 5961,
+        "state": 12,
+        "province": 36,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [359],
+        "province_name": "Westckerton",
+        "province_full_name": "Westckerton County",
+        "province_form": "County",
+        "province_state": "Chisland",
+        "province_color": "#fff846",
+        "province_capital": "Westckerton",
+        "province_area": "105175",
+        "province_population": "458759",
+        "province_rural": "391701",
+        "province_urban": "67058"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-10.52625, 31.24875],
+            [-20.456171875, 28.038359375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 319,
+        "height": 13,
+        "biome": 12,
+        "type": "island",
+        "population": 2161,
+        "state": 11,
+        "province": 33,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [757],
+        "province_name": "Axbrid",
+        "province_full_name": "Axbrid County",
+        "province_form": "County",
+        "province_state": "Lympster",
+        "province_color": "#adf686",
+        "province_capital": "Axbrid",
+        "province_area": "62000",
+        "province_population": "302240",
+        "province_rural": "252607",
+        "province_urban": "49633"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-65.080351562499999, 26.816523437499995],
+            [-58.537558593749999, 15.880253906249999]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 338,
+        "height": 30,
+        "biome": 12,
+        "type": "island",
+        "population": 1968,
+        "state": 11,
+        "province": 32,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [348, 426, 595, 682, 757, 947],
+        "province_name": "Wigham",
+        "province_full_name": "Wigham Barony",
+        "province_form": "Barony",
+        "province_state": "Lympster",
+        "province_color": "#cdea79",
+        "province_capital": "Wigham",
+        "province_area": "142600",
+        "province_population": "638164",
+        "province_rural": "531698",
+        "province_urban": "106466"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-43.083515625, 30.645546875],
+            [-29.615546875, 30.677109375]
+          ],
+          [
+            [-43.083515625, 30.645546875],
+            [-49.642812500000012, 33.2503125]
+          ],
+          [
+            [-43.083515625, 30.645546875],
+            [-35.3053125, 29.3846875]
+          ],
+          [
+            [-43.083515625, 30.645546875],
+            [-40.534648437500003, 22.098632812499996]
+          ],
+          [
+            [-43.083515625, 30.645546875],
+            [-58.537558593749999, 15.880253906249999]
+          ],
+          [
+            [-43.083515625, 30.645546875],
+            [-38.270019531250007, 8.050839843750001]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 348,
+        "height": 13,
+        "biome": 8,
+        "type": "island",
+        "population": 18086,
+        "state": 12,
+        "province": 37,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [359, 595, 682, 774],
+        "province_name": "Picking",
+        "province_full_name": "Picking Earldom",
+        "province_form": "Earldom",
+        "province_state": "Chisland",
+        "province_color": "#ffff4b",
+        "province_capital": "Clitle",
+        "province_area": "66850",
+        "province_population": "345708",
+        "province_rural": "302265",
+        "province_urban": "43443"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-29.615546875, 30.677109375],
+            [-20.456171875, 28.038359375]
+          ],
+          [
+            [-29.615546875, 30.677109375],
+            [-35.3053125, 29.3846875]
+          ],
+          [
+            [-29.615546875, 30.677109375],
+            [-40.534648437500003, 22.098632812499996]
+          ],
+          [
+            [-29.615546875, 30.677109375],
+            [-25.405234375, 16.460703125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 359,
+        "height": 13,
+        "biome": 8,
+        "type": "island",
+        "population": 11148,
+        "state": 12,
+        "province": 35,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [774],
+        "province_name": "Alton",
+        "province_full_name": "Alton Barony",
+        "province_form": "Barony",
+        "province_state": "Chisland",
+        "province_color": "#fff747",
+        "province_capital": "Alton",
+        "province_area": "98900",
+        "province_population": "515468",
+        "province_rural": "430791",
+        "province_urban": "84677"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-20.456171875, 28.038359375],
+            [-25.405234375, 16.460703125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 426,
+        "height": 30,
+        "biome": 8,
+        "type": "island",
+        "population": 10026,
+        "state": 11,
+        "province": 74,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [757],
+        "province_name": "Holneria",
+        "province_full_name": "Holneria Land",
+        "province_form": "Land",
+        "province_state": "Lympster",
+        "province_color": "#d1eb76",
+        "province_capital": "",
+        "province_area": "14250",
+        "province_population": "76134",
+        "province_rural": "76134",
+        "province_urban": "0"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-49.642812500000012, 33.2503125],
+            [-58.537558593749999, 15.880253906249999]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 475,
+        "height": 30,
+        "biome": 6,
+        "type": "island",
+        "population": 11206,
+        "state": 1,
+        "province": 1,
+        "culture": 2,
+        "religion": 2,
+        "neighbors": null,
+        "province_name": "Southes",
+        "province_full_name": "Southes County",
+        "province_form": "County",
+        "province_state": "Southesia",
+        "province_color": "#64e1b2",
+        "province_capital": "Southes",
+        "province_area": "34750",
+        "province_population": "213791",
+        "province_rural": "194977",
+        "province_urban": "18814"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 543,
+        "height": 82,
+        "biome": 4,
+        "type": "island",
+        "population": 5193,
+        "state": 3,
+        "province": 6,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [616, 1066, 1161],
+        "province_name": "Charmouth",
+        "province_full_name": "Charmouth Shire",
+        "province_form": "Shire",
+        "province_state": "Berham",
+        "province_color": "#b79fd1",
+        "province_capital": "Charmouth",
+        "province_area": "48050",
+        "province_population": "184994",
+        "province_rural": "150177",
+        "province_urban": "34817"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [10.77984375, 29.68765625],
+            [5.14234375, 25.14609375]
+          ],
+          [
+            [10.77984375, 29.68765625],
+            [15.4465625, 19.4515625]
+          ],
+          [
+            [10.77984375, 29.68765625],
+            [12.96953125, 8.04140625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 595,
+        "height": 118,
+        "biome": 6,
+        "type": "island",
+        "population": 10838,
+        "state": 11,
+        "province": 75,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [682],
+        "province_name": "Rocheap",
+        "province_full_name": "Rocheap Territory",
+        "province_form": "Territory",
+        "province_state": "Lympster",
+        "province_color": "#d5f269",
+        "province_capital": "",
+        "province_area": "2000",
+        "province_population": "10839",
+        "province_rural": "10839",
+        "province_urban": "0"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-35.3053125, 29.3846875],
+            [-40.534648437500003, 22.098632812499996]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 616,
+        "height": 118,
+        "biome": 4,
+        "type": "island",
+        "population": 6864,
+        "state": 3,
+        "province": 5,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [1059, 1066],
+        "province_name": "Kilkneth",
+        "province_full_name": "Kilkneth Shire",
+        "province_form": "Shire",
+        "province_state": "Berham",
+        "province_color": "#9b9cdc",
+        "province_capital": "Burton",
+        "province_area": "76400",
+        "province_population": "313629",
+        "province_rural": "295529",
+        "province_urban": "18100"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [5.14234375, 25.14609375],
+            [1.58609375, 16.88453125]
+          ],
+          [
+            [5.14234375, 25.14609375],
+            [15.4465625, 19.4515625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 682,
+        "height": 328,
+        "biome": 4,
+        "type": "island",
+        "population": 2671,
+        "state": 11,
+        "province": 34,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [774, 947],
+        "province_name": "Kingfordia",
+        "province_full_name": "Kingfordia County",
+        "province_form": "County",
+        "province_state": "Lympster",
+        "province_color": "#d5f369",
+        "province_capital": "Knabingra",
+        "province_area": "55800",
+        "province_population": "229868",
+        "province_rural": "182377",
+        "province_urban": "47491"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-40.534648437500003, 22.098632812499996],
+            [-25.405234375, 16.460703125]
+          ],
+          [
+            [-40.534648437500003, 22.098632812499996],
+            [-38.270019531250007, 8.050839843750001]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 728,
+        "height": 30,
+        "biome": 8,
+        "type": "island",
+        "population": 7484,
+        "state": 4,
+        "province": 43,
+        "culture": 9,
+        "religion": 11,
+        "neighbors": [739, 992],
+        "province_name": "Olton",
+        "province_full_name": "Olton Region",
+        "province_form": "Region",
+        "province_state": "Boswestia",
+        "province_color": "#d5a5db",
+        "province_capital": "Axbrid",
+        "province_area": "43675",
+        "province_population": "269488",
+        "province_rural": "242705",
+        "province_urban": "26783"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [50.975078125, 24.998984375],
+            [59.874218750000011, 19.56359375]
+          ],
+          [
+            [50.975078125, 24.998984375],
+            [49.881054687499997, 17.799414062499999]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 739,
+        "height": 13,
+        "biome": 8,
+        "type": "island",
+        "population": 10432,
+        "state": 4,
+        "province": 8,
+        "culture": 9,
+        "religion": 11,
+        "neighbors": [992, 1095, 1383, 1482],
+        "province_name": "Tutheso",
+        "province_full_name": "Tutheso Earldom",
+        "province_form": "Earldom",
+        "province_state": "Boswestia",
+        "province_color": "#f7aebe",
+        "province_capital": "Tutheso",
+        "province_area": "108350",
+        "province_population": "735660",
+        "province_rural": "616064",
+        "province_urban": "119596"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [59.874218750000011, 19.56359375],
+            [49.881054687499997, 17.799414062499999]
+          ],
+          [
+            [59.874218750000011, 19.56359375],
+            [68.423085937500019, 17.737304687500007]
+          ],
+          [
+            [59.874218750000011, 19.56359375],
+            [47.221210937499997, 4.450976562499997]
+          ],
+          [
+            [59.874218750000011, 19.56359375],
+            [59.463671875, 10.949921875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 757,
+        "height": 82,
+        "biome": 4,
+        "type": "island",
+        "population": 3477,
+        "state": 11,
+        "province": 72,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [947, 1608, 2022],
+        "province_name": "Stapton",
+        "province_full_name": "Stapton Area",
+        "province_form": "Area",
+        "province_state": "Lympster",
+        "province_color": "#c3ff69",
+        "province_capital": "Stapton",
+        "province_area": "387300",
+        "province_population": "919243",
+        "province_rural": "851085",
+        "province_urban": "68158"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-58.537558593749999, 15.880253906249999],
+            [-38.270019531250007, 8.050839843750001]
+          ],
+          [
+            [-58.537558593749999, 15.880253906249999],
+            [-68.54345703125, -4.28419921875]
+          ],
+          [
+            [-58.537558593749999, 15.880253906249999],
+            [-44.652128906249992, -17.841855468750001]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 774,
+        "height": 328,
+        "biome": 4,
+        "type": "island",
+        "population": 2864,
+        "state": 12,
+        "province": 77,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [947, 1349, 2022, 2233],
+        "province_name": "Blechboury",
+        "province_full_name": "Blechboury Tribe",
+        "province_form": "Tribe",
+        "province_state": "Chisland",
+        "province_color": "#ffeb5c",
+        "province_capital": "Blechboury",
+        "province_area": "321550",
+        "province_population": "523624",
+        "province_rural": "506570",
+        "province_urban": "17054"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-25.405234375, 16.460703125],
+            [-38.270019531250007, 8.050839843750001]
+          ],
+          [
+            [-25.405234375, 16.460703125],
+            [6.428203125, -4.771640625]
+          ],
+          [
+            [-25.405234375, 16.460703125],
+            [-44.652128906249992, -17.841855468750001]
+          ],
+          [
+            [-25.405234375, 16.460703125],
+            [-12.08109375, -9.38453125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 892,
+        "height": 328,
+        "biome": 6,
+        "type": "island",
+        "population": 13200,
+        "state": 9,
+        "province": 24,
+        "culture": 1,
+        "religion": 11,
+        "neighbors": [900, 1561, 1564],
+        "province_name": "Dudmouth",
+        "province_full_name": "Dudmouth Barony",
+        "province_form": "Barony",
+        "province_state": "Folivia",
+        "province_color": "#93fe90",
+        "province_capital": "Dudmouth",
+        "province_area": "130850",
+        "province_population": "879523",
+        "province_rural": "774080",
+        "province_urban": "105443"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [32.358125, 18.553125],
+            [42.625390624999987, 13.726484375]
+          ],
+          [
+            [32.358125, 18.553125],
+            [21.43578125, 11.15203125]
+          ],
+          [
+            [32.358125, 18.553125],
+            [28.053515625, 8.767421875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 900,
+        "height": 397,
+        "biome": 6,
+        "type": "island",
+        "population": 20598,
+        "state": 9,
+        "province": 27,
+        "culture": 1,
+        "religion": 11,
+        "neighbors": [992, 1383, 1564],
+        "province_name": "Castledigan",
+        "province_full_name": "Castledigan County",
+        "province_form": "County",
+        "province_state": "Folivia",
+        "province_color": "#a2ff83",
+        "province_capital": "Castledigan",
+        "province_area": "90750",
+        "province_population": "552263",
+        "province_rural": "478506",
+        "province_urban": "73757"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [42.625390624999987, 13.726484375],
+            [49.881054687499997, 17.799414062499999]
+          ],
+          [
+            [42.625390624999987, 13.726484375],
+            [47.221210937499997, 4.450976562499997]
+          ],
+          [
+            [42.625390624999987, 13.726484375],
+            [28.053515625, 8.767421875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 947,
+        "height": 554,
+        "biome": 4,
+        "type": "island",
+        "population": 4110,
+        "state": 11,
+        "province": 73,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [2022],
+        "province_name": "Helstedge",
+        "province_full_name": "Helstedge Land",
+        "province_form": "Land",
+        "province_state": "Lympster",
+        "province_color": "#cfeb77",
+        "province_capital": "Helstedge",
+        "province_area": "349375",
+        "province_population": "706990",
+        "province_rural": "660399",
+        "province_urban": "46591"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-38.270019531250007, 8.050839843750001],
+            [-44.652128906249992, -17.841855468750001]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 992,
+        "height": 328,
+        "biome": 6,
+        "type": "island",
+        "population": 13955,
+        "state": 9,
+        "province": 26,
+        "culture": 9,
+        "religion": 11,
+        "neighbors": [1383],
+        "province_name": "Linton",
+        "province_full_name": "Linton Earldom",
+        "province_form": "Earldom",
+        "province_state": "Folivia",
+        "province_color": "#bfda91",
+        "province_capital": "Linton",
+        "province_area": "64425",
+        "province_population": "408781",
+        "province_rural": "352276",
+        "province_urban": "56505"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [49.881054687499997, 17.799414062499999],
+            [47.221210937499997, 4.450976562499997]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1059,
+        "height": 328,
+        "biome": 4,
+        "type": "island",
+        "population": 3871,
+        "state": 8,
+        "province": 23,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [1066, 1161, 1349],
+        "province_name": "Boling",
+        "province_full_name": "Boling Earldom",
+        "province_form": "Earldom",
+        "province_state": "Louth",
+        "province_color": "#ff8b97",
+        "province_capital": "Marlborough",
+        "province_area": "88675",
+        "province_population": "373932",
+        "province_rural": "317348",
+        "province_urban": "56584"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [1.58609375, 16.88453125],
+            [15.4465625, 19.4515625]
+          ],
+          [
+            [1.58609375, 16.88453125],
+            [12.96953125, 8.04140625]
+          ],
+          [
+            [1.58609375, 16.88453125],
+            [6.428203125, -4.771640625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1066,
+        "height": 266,
+        "biome": 4,
+        "type": "island",
+        "population": 4839,
+        "state": 8,
+        "province": 64,
+        "culture": 2,
+        "religion": 2,
+        "neighbors": [1161],
+        "province_name": "Chilsia",
+        "province_full_name": "Chilsia Area",
+        "province_form": "Area",
+        "province_state": "Louth",
+        "province_color": "#fd8b9a",
+        "province_capital": "",
+        "province_area": "6200",
+        "province_population": "9600",
+        "province_rural": "9600",
+        "province_urban": "0"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [15.4465625, 19.4515625],
+            [12.96953125, 8.04140625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1095,
+        "height": 13,
+        "biome": 8,
+        "type": "island",
+        "population": 72305,
+        "state": 4,
+        "province": 7,
+        "culture": 9,
+        "religion": 11,
+        "neighbors": [1300, 1482],
+        "province_name": "Leighbury",
+        "province_full_name": "Leighbury Earldom",
+        "province_form": "Earldom",
+        "province_state": "Boswestia",
+        "province_color": "#fca9ba",
+        "province_capital": "Leighbury",
+        "province_area": "48925",
+        "province_population": "331163",
+        "province_rural": "221550",
+        "province_urban": "109613"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [68.423085937500019, 17.737304687500007],
+            [73.095859375000018, 12.377265625]
+          ],
+          [
+            [68.423085937500019, 17.737304687500007],
+            [59.463671875, 10.949921875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1161,
+        "height": 554,
+        "biome": 4,
+        "type": "island",
+        "population": 4064,
+        "state": 8,
+        "province": 22,
+        "culture": 2,
+        "religion": 2,
+        "neighbors": [1349, 1561, 1564, 1868],
+        "province_name": "Salseavia",
+        "province_full_name": "Salseavia Earldom",
+        "province_form": "Earldom",
+        "province_state": "Louth",
+        "province_color": "#ff9487",
+        "province_capital": "Dunsham",
+        "province_area": "190325",
+        "province_population": "438393",
+        "province_rural": "407430",
+        "province_urban": "30963"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [12.96953125, 8.04140625],
+            [6.428203125, -4.771640625]
+          ],
+          [
+            [12.96953125, 8.04140625],
+            [21.43578125, 11.15203125]
+          ],
+          [
+            [12.96953125, 8.04140625],
+            [28.053515625, 8.767421875]
+          ],
+          [
+            [12.96953125, 8.04140625],
+            [14.389746093749999, -12.329355468750002]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1300,
+        "height": 13,
+        "biome": 12,
+        "type": "island",
+        "population": 2323,
+        "state": 4,
+        "province": 44,
+        "culture": 9,
+        "religion": 11,
+        "neighbors": [1482],
+        "province_name": "Ashetle",
+        "province_full_name": "Ashetle Territory",
+        "province_form": "Territory",
+        "province_state": "Boswestia",
+        "province_color": "#e6b2c2",
+        "province_capital": "Flokburgh",
+        "province_area": "56625",
+        "province_population": "240825",
+        "province_rural": "204254",
+        "province_urban": "36571"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [73.095859375000018, 12.377265625],
+            [59.463671875, 10.949921875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1349,
+        "height": 738,
+        "biome": 4,
+        "type": "island",
+        "population": 5497,
+        "state": 8,
+        "province": 62,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [1868, 2233],
+        "province_name": "Penkburgh",
+        "province_full_name": "Penkburgh Territory",
+        "province_form": "Territory",
+        "province_state": "Louth",
+        "province_color": "#ee96a2",
+        "province_capital": "Yeoburydon",
+        "province_area": "251950",
+        "province_population": "700833",
+        "province_rural": "625748",
+        "province_urban": "75085"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [6.428203125, -4.771640625],
+            [14.389746093749999, -12.329355468750002]
+          ],
+          [
+            [6.428203125, -4.771640625],
+            [-12.08109375, -9.38453125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1383,
+        "height": 472,
+        "biome": 6,
+        "type": "island",
+        "population": 14361,
+        "state": 6,
+        "province": 47,
+        "culture": 9,
+        "religion": 11,
+        "neighbors": [1482, 1564, 1873, 1887, 2271, 2658, 2959, 3048],
+        "province_name": "Dalmond",
+        "province_full_name": "Dalmond Territory",
+        "province_form": "Territory",
+        "province_state": "Axbridenia",
+        "province_color": "#ffeb34",
+        "province_capital": "Dalmond",
+        "province_area": "205700",
+        "province_population": "1222442",
+        "province_rural": "1082448",
+        "province_urban": "139994"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [47.221210937499997, 4.450976562499997],
+            [59.463671875, 10.949921875]
+          ],
+          [
+            [47.221210937499997, 4.450976562499997],
+            [28.053515625, 8.767421875]
+          ],
+          [
+            [47.221210937499997, 4.450976562499997],
+            [35.7825, 0.0975]
+          ],
+          [
+            [47.221210937499997, 4.450976562499997],
+            [58.039414062500001, -1.498867187500002]
+          ],
+          [
+            [47.221210937499997, 4.450976562499997],
+            [58.377265625, -17.479765625]
+          ],
+          [
+            [47.221210937499997, 4.450976562499997],
+            [36.141875, -10.525625]
+          ],
+          [
+            [47.221210937499997, 4.450976562499997],
+            [45.429765625, -16.394296875]
+          ],
+          [
+            [47.221210937499997, 4.450976562499997],
+            [37.4521875, -17.0884375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1482,
+        "height": 397,
+        "biome": 6,
+        "type": "island",
+        "population": 24120,
+        "state": 10,
+        "province": 67,
+        "culture": 9,
+        "religion": 11,
+        "neighbors": [1791, 1887, 2189],
+        "province_name": "Leighesia",
+        "province_full_name": "Leighesia Dependency",
+        "province_form": "Dependency",
+        "province_state": "Draxtedia",
+        "province_color": "#d0dd75",
+        "province_capital": "Wigley",
+        "province_area": "98675",
+        "province_population": "538992",
+        "province_rural": "472236",
+        "province_urban": "66756"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [59.463671875, 10.949921875],
+            [67.5521875, 3.3859375]
+          ],
+          [
+            [59.463671875, 10.949921875],
+            [58.039414062500001, -1.498867187500002]
+          ],
+          [
+            [59.463671875, 10.949921875],
+            [72.846640625, -2.086796875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1561,
+        "height": 1447,
+        "biome": 4,
+        "type": "island",
+        "population": 4297,
+        "state": 9,
+        "province": 66,
+        "culture": 1,
+        "religion": 1,
+        "neighbors": [1564],
+        "province_name": "Chilsia",
+        "province_full_name": "Chilsia Territory",
+        "province_form": "Territory",
+        "province_state": "Folivia",
+        "province_color": "#c5dd89",
+        "province_capital": "",
+        "province_area": "14000",
+        "province_population": "21677",
+        "province_rural": "21677",
+        "province_urban": "0"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [21.43578125, 11.15203125],
+            [28.053515625, 8.767421875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1564,
+        "height": 1184,
+        "biome": 4,
+        "type": "island",
+        "population": 5110,
+        "state": 9,
+        "province": 25,
+        "culture": 1,
+        "religion": 1,
+        "neighbors": [1868, 1873, 1970],
+        "province_name": "Wafordbu",
+        "province_full_name": "Wafordbu Barony",
+        "province_form": "Barony",
+        "province_state": "Folivia",
+        "province_color": "#aad996",
+        "province_capital": "Bacury",
+        "province_area": "77250",
+        "province_population": "365403",
+        "province_rural": "291065",
+        "province_urban": "74338"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [28.053515625, 8.767421875],
+            [14.389746093749999, -12.329355468750002]
+          ],
+          [
+            [28.053515625, 8.767421875],
+            [35.7825, 0.0975]
+          ],
+          [
+            [28.053515625, 8.767421875],
+            [26.1778125, 4.2828125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1608,
+        "height": 30,
+        "biome": 6,
+        "type": "island",
+        "population": 25118,
+        "state": 7,
+        "province": 52,
+        "culture": 8,
+        "religion": 8,
+        "neighbors": [2022, 3174, 3182],
+        "province_name": "Atford",
+        "province_full_name": "Atford Dependency",
+        "province_form": "Dependency",
+        "province_state": "Harleighia",
+        "province_color": "#89f3aa",
+        "province_capital": "Atford",
+        "province_area": "602550",
+        "province_population": "1280184",
+        "province_rural": "1182194",
+        "province_urban": "97990"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-68.54345703125, -4.28419921875],
+            [-44.652128906249992, -17.841855468750001]
+          ],
+          [
+            [-68.54345703125, -4.28419921875],
+            [-75.715703125, -25.996953125]
+          ],
+          [
+            [-68.54345703125, -4.28419921875],
+            [-69.014577217622218, -18.574447956381345]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1791,
+        "height": 266,
+        "biome": 8,
+        "type": "island",
+        "population": 16890,
+        "state": 10,
+        "province": 31,
+        "culture": 4,
+        "religion": 11,
+        "neighbors": [1887, 2189, 2285],
+        "province_name": "Gatnesia",
+        "province_full_name": "Gatnesia County",
+        "province_form": "County",
+        "province_state": "Draxtedia",
+        "province_color": "#cbdf74",
+        "province_capital": "Macke",
+        "province_area": "89300",
+        "province_population": "482881",
+        "province_rural": "409611",
+        "province_urban": "73270"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [67.5521875, 3.3859375],
+            [58.039414062500001, -1.498867187500002]
+          ],
+          [
+            [67.5521875, 3.3859375],
+            [72.846640625, -2.086796875]
+          ],
+          [
+            [67.5521875, 3.3859375],
+            [64.98078125, -9.78609375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1868,
+        "height": 948,
+        "biome": 3,
+        "type": "island",
+        "population": 3968,
+        "state": 8,
+        "province": 63,
+        "culture": 1,
+        "religion": 1,
+        "neighbors": [1970, 2233, 2256, 3041],
+        "province_name": "Skipland",
+        "province_full_name": "Skipland Territory",
+        "province_form": "Territory",
+        "province_state": "Louth",
+        "province_color": "#ffa77d",
+        "province_capital": "Altash",
+        "province_area": "125550",
+        "province_population": "344992",
+        "province_rural": "275472",
+        "province_urban": "69520"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [14.389746093749999, -12.329355468750002],
+            [26.1778125, 4.2828125]
+          ],
+          [
+            [14.389746093749999, -12.329355468750002],
+            [-12.08109375, -9.38453125]
+          ],
+          [
+            [14.389746093749999, -12.329355468750002],
+            [25.255859375, -7.790390625]
+          ],
+          [
+            [14.389746093749999, -12.329355468750002],
+            [20.205234375, -30.781640625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1873,
+        "height": 1063,
+        "biome": 6,
+        "type": "island",
+        "population": 16129,
+        "state": 6,
+        "province": 15,
+        "culture": 3,
+        "religion": 3,
+        "neighbors": [1970, 2256, 2658],
+        "province_name": "Dunswest",
+        "province_full_name": "Dunswest County",
+        "province_form": "County",
+        "province_state": "Axbridenia",
+        "province_color": "#ffe934",
+        "province_capital": "Wargleford",
+        "province_area": "156700",
+        "province_population": "777865",
+        "province_rural": "689198",
+        "province_urban": "88667"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [35.7825, 0.0975],
+            [26.1778125, 4.2828125]
+          ],
+          [
+            [35.7825, 0.0975],
+            [25.255859375, -7.790390625]
+          ],
+          [
+            [35.7825, 0.0975],
+            [36.141875, -10.525625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1887,
+        "height": 840,
+        "biome": 6,
+        "type": "island",
+        "population": 14496,
+        "state": 10,
+        "province": 30,
+        "culture": 4,
+        "religion": 11,
+        "neighbors": [2271, 2285],
+        "province_name": "Yeokewich",
+        "province_full_name": "Yeokewich County",
+        "province_form": "County",
+        "province_state": "Draxtedia",
+        "province_color": "#baf27f",
+        "province_capital": "Yeokewich",
+        "province_area": "135525",
+        "province_population": "771020",
+        "province_rural": "708178",
+        "province_urban": "62842"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [58.039414062500001, -1.498867187500002],
+            [58.377265625, -17.479765625]
+          ],
+          [
+            [58.039414062500001, -1.498867187500002],
+            [64.98078125, -9.78609375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 1970,
+        "height": 1447,
+        "biome": 4,
+        "type": "island",
+        "population": 3948,
+        "state": 6,
+        "province": 51,
+        "culture": 3,
+        "religion": 3,
+        "neighbors": [2256],
+        "province_name": "Norburia",
+        "province_full_name": "Norburia Clan",
+        "province_form": "Clan",
+        "province_state": "Axbridenia",
+        "province_color": "#ffec34",
+        "province_capital": "",
+        "province_area": "15475",
+        "province_population": "19238",
+        "province_rural": "19238",
+        "province_urban": "0"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [26.1778125, 4.2828125],
+            [25.255859375, -7.790390625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2022,
+        "height": 2051,
+        "biome": 4,
+        "type": "island",
+        "population": 3600,
+        "state": 7,
+        "province": 53,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [2233, 2727, 3017, 3174, 3182, 3294, 3461, 3465, 3859],
+        "province_name": "Cockingham",
+        "province_full_name": "Cockingham Land",
+        "province_form": "Land",
+        "province_state": "Harleighia",
+        "province_color": "#90d8be",
+        "province_capital": "Cockingham",
+        "province_area": "740675",
+        "province_population": "1327485",
+        "province_rural": "1292980",
+        "province_urban": "34505"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-44.652128906249992, -17.841855468750001],
+            [-12.08109375, -9.38453125]
+          ],
+          [
+            [-44.652128906249992, -17.841855468750001],
+            [-22.5525, -10.4325]
+          ],
+          [
+            [-44.652128906249992, -17.841855468750001],
+            [-24.5659375, -16.2140625]
+          ],
+          [
+            [-44.652128906249992, -17.841855468750001],
+            [-75.715703125, -25.996953125]
+          ],
+          [
+            [-44.652128906249992, -17.841855468750001],
+            [-69.014577217622218, -18.574447956381345]
+          ],
+          [
+            [-44.652128906249992, -17.841855468750001],
+            [-29.16359375, -27.05828125]
+          ],
+          [
+            [-44.652128906249992, -17.841855468750001],
+            [-70.1578125, -32.88781250000001]
+          ],
+          [
+            [-44.652128906249992, -17.841855468750001],
+            [-58.571015625, -28.277578125]
+          ],
+          [
+            [-44.652128906249992, -17.841855468750001],
+            [-48.744765625, -36.084765625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2189,
+        "height": 30,
+        "biome": 7,
+        "type": "island",
+        "population": 40640,
+        "state": 10,
+        "province": 28,
+        "culture": 4,
+        "religion": 11,
+        "neighbors": [2285],
+        "province_name": "Causcomia",
+        "province_full_name": "Causcomia Shire",
+        "province_form": "Shire",
+        "province_state": "Draxtedia",
+        "province_color": "#e1fa57",
+        "province_capital": "Milsearen",
+        "province_area": "30075",
+        "province_population": "203815",
+        "province_rural": "162951",
+        "province_urban": "40864"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [72.846640625, -2.086796875],
+            [64.98078125, -9.78609375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2233,
+        "height": 1063,
+        "biome": 3,
+        "type": "island",
+        "population": 2813,
+        "state": 5,
+        "province": 45,
+        "culture": 5,
+        "religion": 5,
+        "neighbors": [2727, 3017, 3041, 3215, 3294, 3401, 3503, 3980],
+        "province_name": "Tafordlia",
+        "province_full_name": "Tafordlia Territory",
+        "province_form": "Territory",
+        "province_state": "Axbrigh",
+        "province_color": "#9de47c",
+        "province_capital": "Moutonden",
+        "province_area": "491350",
+        "province_population": "1027321",
+        "province_rural": "957290",
+        "province_urban": "70031"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-12.08109375, -9.38453125],
+            [-22.5525, -10.4325]
+          ],
+          [
+            [-12.08109375, -9.38453125],
+            [-24.5659375, -16.2140625]
+          ],
+          [
+            [-12.08109375, -9.38453125],
+            [20.205234375, -30.781640625]
+          ],
+          [
+            [-12.08109375, -9.38453125],
+            [-10.352421875, -26.436953125]
+          ],
+          [
+            [-12.08109375, -9.38453125],
+            [-29.16359375, -27.05828125]
+          ],
+          [
+            [-12.08109375, -9.38453125],
+            [-0.688476562500001, -29.504257812499993]
+          ],
+          [
+            [-12.08109375, -9.38453125],
+            [10.0328125, -26.3315625]
+          ],
+          [
+            [-12.08109375, -9.38453125],
+            [-12.815703125, -38.173515625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2256,
+        "height": 1063,
+        "biome": 3,
+        "type": "island",
+        "population": 2658,
+        "state": 6,
+        "province": 12,
+        "culture": 3,
+        "religion": 3,
+        "neighbors": [2658, 3041, 3045],
+        "province_name": "Bosham",
+        "province_full_name": "Bosham County",
+        "province_form": "County",
+        "province_state": "Axbridenia",
+        "province_color": "#ffd149",
+        "province_capital": "Bosham",
+        "province_area": "134975",
+        "province_population": "463478",
+        "province_rural": "407694",
+        "province_urban": "55784"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [25.255859375, -7.790390625],
+            [36.141875, -10.525625]
+          ],
+          [
+            [25.255859375, -7.790390625],
+            [20.205234375, -30.781640625]
+          ],
+          [
+            [25.255859375, -7.790390625],
+            [29.2453125, -23.4371875]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2271,
+        "height": 2051,
+        "biome": 6,
+        "type": "island",
+        "population": 6322,
+        "state": 10,
+        "province": 69,
+        "culture": 4,
+        "religion": 4,
+        "neighbors": [2285, 2959, 3335, 3347],
+        "province_name": "Watford",
+        "province_full_name": "Watford Area",
+        "province_form": "Area",
+        "province_state": "Draxtedia",
+        "province_color": "#e3df6f",
+        "province_capital": "Watford",
+        "province_area": "228925",
+        "province_population": "1377785",
+        "province_rural": "1223406",
+        "province_urban": "154379"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [58.377265625, -17.479765625],
+            [64.98078125, -9.78609375]
+          ],
+          [
+            [58.377265625, -17.479765625],
+            [45.429765625, -16.394296875]
+          ],
+          [
+            [58.377265625, -17.479765625],
+            [46.364062500000017, -24.7440625]
+          ],
+          [
+            [58.377265625, -17.479765625],
+            [66.32921875, -22.26140625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2285,
+        "height": 13,
+        "biome": 7,
+        "type": "island",
+        "population": 8903,
+        "state": 10,
+        "province": 68,
+        "culture": 4,
+        "religion": 11,
+        "neighbors": null,
+        "province_name": "Ormsburia",
+        "province_full_name": "Ormsburia Tribe",
+        "province_form": "Tribe",
+        "province_state": "Draxtedia",
+        "province_color": "#c4e47a",
+        "province_capital": "Balmetown",
+        "province_area": "37425",
+        "province_population": "154408",
+        "province_rural": "132081",
+        "province_urban": "22327"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2658,
+        "height": 1184,
+        "biome": 6,
+        "type": "island",
+        "population": 25863,
+        "state": 6,
+        "province": 13,
+        "culture": 3,
+        "religion": 3,
+        "neighbors": [2959, 3045, 3048],
+        "province_name": "Flok",
+        "province_full_name": "Flok County",
+        "province_form": "County",
+        "province_state": "Axbridenia",
+        "province_color": "#ffcf4d",
+        "province_capital": "Walborpor",
+        "province_area": "59450",
+        "province_population": "401611",
+        "province_rural": "319780",
+        "province_urban": "81831"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [36.141875, -10.525625],
+            [45.429765625, -16.394296875]
+          ],
+          [
+            [36.141875, -10.525625],
+            [29.2453125, -23.4371875]
+          ],
+          [
+            [36.141875, -10.525625],
+            [37.4521875, -17.0884375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2727,
+        "height": 1312,
+        "biome": 4,
+        "type": "island",
+        "population": 4606,
+        "state": 7,
+        "province": 58,
+        "culture": 8,
+        "religion": 8,
+        "neighbors": null,
+        "province_name": "Bromyardia",
+        "province_full_name": "Bromyardia Area",
+        "province_form": "Area",
+        "province_state": "Harleighia",
+        "province_color": "#66e5d1",
+        "province_capital": "",
+        "province_area": "2975",
+        "province_population": "4606",
+        "province_rural": "4606",
+        "province_urban": "0"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2959,
+        "height": 643,
+        "biome": 6,
+        "type": "island",
+        "population": 12464,
+        "state": 6,
+        "province": 49,
+        "culture": 4,
+        "religion": 4,
+        "neighbors": [3048, 3335],
+        "province_name": "Kirtonta",
+        "province_full_name": "Kirtonta Clan",
+        "province_form": "Clan",
+        "province_state": "Axbridenia",
+        "province_color": "#ece55b",
+        "province_capital": "Kirtonta",
+        "province_area": "41700",
+        "province_population": "256694",
+        "province_rural": "222854",
+        "province_urban": "33840"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [45.429765625, -16.394296875],
+            [37.4521875, -17.0884375]
+          ],
+          [
+            [45.429765625, -16.394296875],
+            [46.364062500000017, -24.7440625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3017,
+        "height": 2051,
+        "biome": 4,
+        "type": "island",
+        "population": 3290,
+        "state": 7,
+        "province": 59,
+        "culture": 8,
+        "religion": 8,
+        "neighbors": null,
+        "province_name": "Winchia",
+        "province_full_name": "Winchia Territory",
+        "province_form": "Territory",
+        "province_state": "Harleighia",
+        "province_color": "#91daba",
+        "province_capital": "",
+        "province_area": "5125",
+        "province_population": "7935",
+        "province_rural": "7935",
+        "province_urban": "0"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3041,
+        "height": 738,
+        "biome": 4,
+        "type": "island",
+        "population": 3871,
+        "state": 6,
+        "province": 48,
+        "culture": 3,
+        "religion": 3,
+        "neighbors": [3045, 3422, 3503, 3600, 4092, 4180],
+        "province_name": "Witfordford",
+        "province_full_name": "Witfordford Territory",
+        "province_form": "Territory",
+        "province_state": "Axbridenia",
+        "province_color": "#e9ee55",
+        "province_capital": "Witfordford",
+        "province_area": "241575",
+        "province_population": "1050841",
+        "province_rural": "934013",
+        "province_urban": "116828"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [20.205234375, -30.781640625],
+            [29.2453125, -23.4371875]
+          ],
+          [
+            [20.205234375, -30.781640625],
+            [38.65578125, -26.85515625]
+          ],
+          [
+            [20.205234375, -30.781640625],
+            [10.0328125, -26.3315625]
+          ],
+          [
+            [20.205234375, -30.781640625],
+            [6.732070312500003, -32.612773437500003]
+          ],
+          [
+            [20.205234375, -30.781640625],
+            [11.8208203125, -39.8583984375]
+          ],
+          [
+            [20.205234375, -30.781640625],
+            [18.45203125, -39.71078125]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3045,
+        "height": 397,
+        "biome": 6,
+        "type": "island",
+        "population": 16800,
+        "state": 6,
+        "province": 11,
+        "culture": 3,
+        "religion": 3,
+        "neighbors": [3048, 3422],
+        "province_name": "Macles",
+        "province_full_name": "Macles County",
+        "province_form": "County",
+        "province_state": "Axbridenia",
+        "province_color": "#fff43a",
+        "province_capital": "Macles",
+        "province_area": "130750",
+        "province_population": "848944",
+        "province_rural": "775784",
+        "province_urban": "73160"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [29.2453125, -23.4371875],
+            [37.4521875, -17.0884375]
+          ],
+          [
+            [29.2453125, -23.4371875],
+            [38.65578125, -26.85515625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3048,
+        "height": 397,
+        "biome": 6,
+        "type": "island",
+        "population": 11780,
+        "state": 6,
+        "province": 16,
+        "culture": 3,
+        "religion": 3,
+        "neighbors": [3335, 3422],
+        "province_name": "Milceshead",
+        "province_full_name": "Milceshead County",
+        "province_form": "County",
+        "province_state": "Axbridenia",
+        "province_color": "#ece65a",
+        "province_capital": "Milceshead",
+        "province_area": "49025",
+        "province_population": "329547",
+        "province_rural": "263033",
+        "province_urban": "66514"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [37.4521875, -17.0884375],
+            [46.364062500000017, -24.7440625]
+          ],
+          [
+            [37.4521875, -17.0884375],
+            [38.65578125, -26.85515625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3174,
+        "height": 13,
+        "biome": 6,
+        "type": "island",
+        "population": 10305,
+        "state": 7,
+        "province": 54,
+        "culture": 8,
+        "religion": 13,
+        "neighbors": [3182, 3461],
+        "province_name": "Draxtedbia",
+        "province_full_name": "Draxtedbia Territory",
+        "province_form": "Territory",
+        "province_state": "Harleighia",
+        "province_color": "#91dcb8",
+        "province_capital": "Hatbutedine",
+        "province_area": "116850",
+        "province_population": "461584",
+        "province_rural": "410533",
+        "province_urban": "51051"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-75.715703125, -25.996953125],
+            [-69.014577217622218, -18.574447956381345]
+          ],
+          [
+            [-75.715703125, -25.996953125],
+            [-70.1578125, -32.88781250000001]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3182,
+        "height": 643,
+        "biome": 4,
+        "type": "island",
+        "population": 3135,
+        "state": 7,
+        "province": 60,
+        "culture": 8,
+        "religion": 13,
+        "neighbors": null,
+        "province_name": "Kihul",
+        "province_full_name": "Kihul Territory",
+        "province_form": "Territory",
+        "province_state": "Harleighia",
+        "province_color": "#6ae1d0",
+        "province_capital": "",
+        "province_area": "2025",
+        "province_population": "3135",
+        "province_rural": "3135",
+        "province_urban": "0"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3215,
+        "height": 397,
+        "biome": 6,
+        "type": "island",
+        "population": 24761,
+        "state": 5,
+        "province": 9,
+        "culture": 6,
+        "religion": 6,
+        "neighbors": [3401, 3980],
+        "province_name": "Thorn",
+        "province_full_name": "Thorn Shire",
+        "province_form": "Shire",
+        "province_state": "Axbrigh",
+        "province_color": "#cdd85d",
+        "province_capital": "Harkewen",
+        "province_area": "158675",
+        "province_population": "544870",
+        "province_rural": "491164",
+        "province_urban": "53706"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-10.352421875, -26.436953125],
+            [-0.688476562500001, -29.504257812499993]
+          ],
+          [
+            [-10.352421875, -26.436953125],
+            [-12.815703125, -38.173515625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3294,
+        "height": 948,
+        "biome": 4,
+        "type": "island",
+        "population": 3523,
+        "state": 7,
+        "province": 55,
+        "culture": 8,
+        "religion": 8,
+        "neighbors": [3859, 3980],
+        "province_name": "Berbot",
+        "province_full_name": "Berbot Land",
+        "province_form": "Land",
+        "province_state": "Harleighia",
+        "province_color": "#6ae1d0",
+        "province_capital": "Oswesthe",
+        "province_area": "280550",
+        "province_population": "1385533",
+        "province_rural": "1186730",
+        "province_urban": "198803"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-29.16359375, -27.05828125],
+            [-48.744765625, -36.084765625]
+          ],
+          [
+            [-29.16359375, -27.05828125],
+            [-12.815703125, -38.173515625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3335,
+        "height": 328,
+        "biome": 6,
+        "type": "island",
+        "population": 19665,
+        "state": 6,
+        "province": 14,
+        "culture": 3,
+        "religion": 3,
+        "neighbors": [3422],
+        "province_name": "Framping",
+        "province_full_name": "Framping County",
+        "province_form": "County",
+        "province_state": "Axbridenia",
+        "province_color": "#ffe534",
+        "province_capital": "Framping",
+        "province_area": "98775",
+        "province_population": "646701",
+        "province_rural": "573975",
+        "province_urban": "72726"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [46.364062500000017, -24.7440625],
+            [38.65578125, -26.85515625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3347,
+        "height": 52,
+        "biome": 8,
+        "type": "island",
+        "population": 10297,
+        "state": 10,
+        "province": 29,
+        "culture": 4,
+        "religion": 4,
+        "neighbors": null,
+        "province_name": "Northeldock",
+        "province_full_name": "Northeldock County",
+        "province_form": "County",
+        "province_state": "Draxtedia",
+        "province_color": "#e9eb5c",
+        "province_capital": "Northeldock",
+        "province_area": "18575",
+        "province_population": "129580",
+        "province_rural": "101862",
+        "province_urban": "27718"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3401,
+        "height": 948,
+        "biome": 4,
+        "type": "island",
+        "population": 3987,
+        "state": 5,
+        "province": 10,
+        "culture": 6,
+        "religion": 6,
+        "neighbors": [3503, 3600, 3980, 4251],
+        "province_name": "Shifnal",
+        "province_full_name": "Shifnal County",
+        "province_form": "County",
+        "province_state": "Axbrigh",
+        "province_color": "#b3f75f",
+        "province_capital": "Shifnal",
+        "province_area": "78225",
+        "province_population": "292213",
+        "province_rural": "256588",
+        "province_urban": "35625"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-0.688476562500001, -29.504257812499993],
+            [10.0328125, -26.3315625]
+          ],
+          [
+            [-0.688476562500001, -29.504257812499993],
+            [6.732070312500003, -32.612773437500003]
+          ],
+          [
+            [-0.688476562500001, -29.504257812499993],
+            [-12.815703125, -38.173515625]
+          ],
+          [
+            [-0.688476562500001, -29.504257812499993],
+            [-1.44765625, -38.98234375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3422,
+        "height": 210,
+        "biome": 6,
+        "type": "island",
+        "population": 12871,
+        "state": 6,
+        "province": 50,
+        "culture": 3,
+        "religion": 3,
+        "neighbors": null,
+        "province_name": "Lympstable",
+        "province_full_name": "Lympstable Land",
+        "province_form": "Land",
+        "province_state": "Axbridenia",
+        "province_color": "#fdcf50",
+        "province_capital": "Lympstable",
+        "province_area": "44100",
+        "province_population": "279604",
+        "province_rural": "238479",
+        "province_urban": "41125"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3461,
+        "height": 161,
+        "biome": 4,
+        "type": "island",
+        "population": 3432,
+        "state": 7,
+        "province": 56,
+        "culture": 8,
+        "religion": 13,
+        "neighbors": [3465, 3944],
+        "province_name": "Baring",
+        "province_full_name": "Baring Territory",
+        "province_form": "Territory",
+        "province_state": "Harleighia",
+        "province_color": "#91e6ad",
+        "province_capital": "Baring",
+        "province_area": "35275",
+        "province_population": "138646",
+        "province_rural": "132320",
+        "province_urban": "6326"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-70.1578125, -32.88781250000001],
+            [-58.571015625, -28.277578125]
+          ],
+          [
+            [-70.1578125, -32.88781250000001],
+            [-65.545078125, -35.914765625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3465,
+        "height": 266,
+        "biome": 4,
+        "type": "island",
+        "population": 2710,
+        "state": 7,
+        "province": 17,
+        "culture": 8,
+        "religion": 13,
+        "neighbors": [3859, 3944, 4048],
+        "province_name": "Shiford",
+        "province_full_name": "Shiford County",
+        "province_form": "County",
+        "province_state": "Harleighia",
+        "province_color": "#91e2b0",
+        "province_capital": "Shiford",
+        "province_area": "109225",
+        "province_population": "455148",
+        "province_rural": "413940",
+        "province_urban": "41208"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-58.571015625, -28.277578125],
+            [-48.744765625, -36.084765625]
+          ],
+          [
+            [-58.571015625, -28.277578125],
+            [-65.545078125, -35.914765625]
+          ],
+          [
+            [-58.571015625, -28.277578125],
+            [-55.59953125, -39.77015625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3503,
+        "height": 738,
+        "biome": 4,
+        "type": "island",
+        "population": 3639,
+        "state": 2,
+        "province": 40,
+        "culture": 6,
+        "religion": 12,
+        "neighbors": [3600],
+        "province_name": "Newleighes",
+        "province_full_name": "Newleighes Region",
+        "province_form": "Region",
+        "province_state": "Sabinginia",
+        "province_color": "#ffaa63",
+        "province_capital": "Newleighes",
+        "province_area": "23800",
+        "province_population": "77453",
+        "province_rural": "75624",
+        "province_urban": "1829"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [10.0328125, -26.3315625],
+            [6.732070312500003, -32.612773437500003]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3600,
+        "height": 840,
+        "biome": 4,
+        "type": "island",
+        "population": 3755,
+        "state": 2,
+        "province": 4,
+        "culture": 6,
+        "religion": 12,
+        "neighbors": [4092, 4251],
+        "province_name": "Knalia",
+        "province_full_name": "Knalia Parish",
+        "province_form": "Parish",
+        "province_state": "Sabinginia",
+        "province_color": "#ffb36b",
+        "province_capital": "Yeoneyfield",
+        "province_area": "92600",
+        "province_population": "504556",
+        "province_rural": "431462",
+        "province_urban": "73094"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [6.732070312500003, -32.612773437500003],
+            [11.8208203125, -39.8583984375]
+          ],
+          [
+            [6.732070312500003, -32.612773437500003],
+            [-1.44765625, -38.98234375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3859,
+        "height": 472,
+        "biome": 6,
+        "type": "island",
+        "population": 15613,
+        "state": 7,
+        "province": 57,
+        "culture": 8,
+        "religion": 13,
+        "neighbors": [4048],
+        "province_name": "Manchesia",
+        "province_full_name": "Manchesia Land",
+        "province_form": "Land",
+        "province_state": "Harleighia",
+        "province_color": "#63febc",
+        "province_capital": "Gatford",
+        "province_area": "46900",
+        "province_population": "256534",
+        "province_rural": "250124",
+        "province_urban": "6410"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-48.744765625, -36.084765625],
+            [-55.59953125, -39.77015625]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3944,
+        "height": 30,
+        "biome": 8,
+        "type": "island",
+        "population": 15567,
+        "state": 7,
+        "province": 18,
+        "culture": 8,
+        "religion": 13,
+        "neighbors": [4048, 4123, 4282],
+        "province_name": "Albonia",
+        "province_full_name": "Albonia County",
+        "province_form": "County",
+        "province_state": "Harleighia",
+        "province_color": "#62fdbd",
+        "province_capital": "Bridgexe",
+        "province_area": "39025",
+        "province_population": "319030",
+        "province_rural": "229595",
+        "province_urban": "89435"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-65.545078125, -35.914765625],
+            [-55.59953125, -39.77015625]
+          ],
+          [
+            [-65.545078125, -35.914765625],
+            [-60.95125, -37.22125]
+          ],
+          [
+            [-65.545078125, -35.914765625],
+            [-62.195156250000011, -42.396406250000013]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 3980,
+        "height": 210,
+        "biome": 6,
+        "type": "island",
+        "population": 6581,
+        "state": 5,
+        "province": 46,
+        "culture": 7,
+        "religion": 7,
+        "neighbors": [4251],
+        "province_name": "Perswest",
+        "province_full_name": "Perswest Territory",
+        "province_form": "Territory",
+        "province_state": "Axbrigh",
+        "province_color": "#bbf65f",
+        "province_capital": "Tutham",
+        "province_area": "88200",
+        "province_population": "556784",
+        "province_rural": "491454",
+        "province_urban": "65330"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-12.815703125, -38.173515625],
+            [-1.44765625, -38.98234375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4048,
+        "height": 82,
+        "biome": 8,
+        "type": "island",
+        "population": 11451,
+        "state": 7,
+        "province": 19,
+        "culture": 8,
+        "religion": 13,
+        "neighbors": [4123, 4282],
+        "province_name": "Castfordley",
+        "province_full_name": "Castfordley Earldom",
+        "province_form": "Earldom",
+        "province_state": "Harleighia",
+        "province_color": "#86f7ad",
+        "province_capital": "Castfordley",
+        "province_area": "39225",
+        "province_population": "308303",
+        "province_rural": "205886",
+        "province_urban": "102417"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [-55.59953125, -39.77015625],
+            [-60.95125, -37.22125]
+          ],
+          [
+            [-55.59953125, -39.77015625],
+            [-62.195156250000011, -42.396406250000013]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4092,
+        "height": 210,
+        "biome": 4,
+        "type": "island",
+        "population": 2593,
+        "state": 2,
+        "province": 3,
+        "culture": 6,
+        "religion": 12,
+        "neighbors": [4180, 4251],
+        "province_name": "Sorough",
+        "province_full_name": "Sorough Parish",
+        "province_form": "Parish",
+        "province_state": "Sabinginia",
+        "province_color": "#ffa562",
+        "province_capital": "Sabingin",
+        "province_area": "74875",
+        "province_population": "505843",
+        "province_rural": "414520",
+        "province_urban": "91323"
+      },
+      "geometry": {
+        "type": "MultiLineString",
+        "coordinates": [
+          [
+            [11.8208203125, -39.8583984375],
+            [18.45203125, -39.71078125]
+          ],
+          [
+            [11.8208203125, -39.8583984375],
+            [-1.44765625, -38.98234375]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4123,
+        "height": 30,
+        "biome": 12,
+        "type": "island",
+        "population": 33985,
+        "state": 7,
+        "province": 21,
+        "culture": 8,
+        "religion": 13,
+        "neighbors": null,
+        "province_name": "Framptonbu",
+        "province_full_name": "Framptonbu County",
+        "province_form": "County",
+        "province_state": "Harleighia",
+        "province_color": "#80fdb2",
+        "province_capital": "Framptonbu",
+        "province_area": "1150",
+        "province_population": "33985",
+        "province_rural": "9497",
+        "province_urban": "24488"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4180,
+        "height": 82,
+        "biome": 4,
+        "type": "island",
+        "population": 5103,
+        "state": 2,
+        "province": 42,
+        "culture": 6,
+        "religion": 12,
+        "neighbors": null,
+        "province_name": "Dalworth",
+        "province_full_name": "Dalworth Region",
+        "province_form": "Region",
+        "province_state": "Sabinginia",
+        "province_color": "#ff8c79",
+        "province_capital": "Dalworth",
+        "province_area": "37825",
+        "province_population": "183664",
+        "province_rural": "167454",
+        "province_urban": "16210"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4251,
+        "height": 13,
+        "biome": 6,
+        "type": "island",
+        "population": 12032,
+        "state": 2,
+        "province": 41,
+        "culture": 6,
+        "religion": 12,
+        "neighbors": null,
+        "province_name": "Flokleia",
+        "province_full_name": "Flokleia Land",
+        "province_form": "Land",
+        "province_state": "Sabinginia",
+        "province_color": "#ff9f63",
+        "province_capital": "Bridfordge",
+        "province_area": "4950",
+        "province_population": "31567",
+        "province_rural": "28761",
+        "province_urban": "2806"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4282,
+        "height": 13,
+        "biome": 8,
+        "type": "island",
+        "population": 7258,
+        "state": 7,
+        "province": 20,
+        "culture": 8,
+        "religion": 13,
+        "neighbors": null,
+        "province_name": "Chilton",
+        "province_full_name": "Chilton Barony",
+        "province_form": "Barony",
+        "province_state": "Harleighia",
+        "province_color": "#91e3af",
+        "province_capital": "Chilton",
+        "province_area": "33075",
+        "province_population": "169412",
+        "province_rural": "129572",
+        "province_urban": "39840"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4455,
+        "height": 13,
+        "biome": 12,
+        "type": "island",
+        "population": 2161,
+        "state": 7,
+        "province": 61,
+        "culture": 8,
+        "religion": 8,
+        "neighbors": null,
+        "province_name": "Pilmondia",
+        "province_full_name": "Pilmondia Island",
+        "province_form": "Island",
+        "province_state": "Harleighia",
+        "province_color": "#5df6c8",
+        "province_capital": "",
+        "province_area": "1675",
+        "province_population": "2161",
+        "province_rural": "2161",
+        "province_urban": "0"
+      },
+      "geometry": { "type": "LineString", "coordinates": [] }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+@if (notification) {
+  @switch (notification.type) {
+    @case ('message') {
+      <spaceribs-notification-message
+        [notification]="notification"
+      ></spaceribs-notification-message>
+    }
+  }
+}

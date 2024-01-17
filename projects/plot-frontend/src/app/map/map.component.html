@@ -1,0 +1,17 @@
+<as-split direction="horizontal">
+  <as-split-area [size]="70">
+    <div #mapContainer fxFill></div>
+  </as-split-area>
+  <as-split-area [size]="30" *ngIf="showDetails">
+    <spaceribs-map-details
+      [province]="focusedProvince"
+      [state]="focusedState"
+      (hideDetails)="showDetails = false"
+    ></spaceribs-map-details>
+  </as-split-area>
+</as-split>
+<spaceribs-states [focused]="focusedState"></spaceribs-states>
+<spaceribs-provinces
+  (showDetails)="showDetails = true"
+  [focused]="focusedProvince"
+></spaceribs-provinces>

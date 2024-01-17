@@ -1,0 +1,99 @@
+{
+  "name": "plot-frontend",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "spaceribs",
+  "sourceRoot": "projects/plot-frontend/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/projects/plot-frontend",
+        "index": "projects/plot-frontend/src/index.html",
+        "browser": "projects/plot-frontend/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "projects/plot-frontend/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "projects/plot-frontend/src/favicon.ico",
+          "projects/plot-frontend/src/assets",
+          {
+            "glob": "**/*",
+            "input": "node_modules/@fontsource-variable/ibarra-real-nova/files",
+            "output": "assets/fonts/ibarra-real-nova/"
+          },
+          {
+            "glob": "**/*",
+            "input": "node_modules/@fontsource-variable/material-symbols-sharp/files",
+            "output": "assets/fonts/material-symbols-sharp/"
+          },
+          {
+            "glob": "**/*",
+            "input": "node_modules/@fontsource-variable/caveat/files",
+            "output": "assets/fonts/caveat/"
+          }
+        ],
+        "styles": [
+          "node_modules/ol/ol.css",
+          "projects/plot-frontend/src/theme/theme.scss",
+          "projects/plot-frontend/src/styles.scss"
+        ],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "plot-frontend:build:production"
+        },
+        "development": {
+          "buildTarget": "plot-frontend:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "plot-frontend:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "projects/plot-frontend/jest.config.ts"
+      }
+    }
+  }
+}

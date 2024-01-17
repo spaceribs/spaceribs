@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameState Reducer valid GameState actions loadGameStateSuccess should return the list of known GameState 1`] = `
+Object {
+  "round": Object {
+    "end_time": "2024-01-13T23:30:50.167Z",
+  },
+  "system": Object {
+    "time": "2024-01-13T20:30:50.167Z",
+  },
+  "user": null,
+}
+`;

@@ -1,0 +1,81 @@
+@use '@angular/material' as mat;
+
+@import 'fonts';
+
+$typography-config: mat.define-typography-config(
+  $font-family: '"Ibarra Real Nova Variable", serif',
+  $headline-1:
+    mat.define-typography-level(200px, 200px, 300, $letter-spacing: -0.02em),
+);
+
+@include mat.typography-hierarchy($typography-config);
+@include mat.core();
+
+// Light Theme
+$dark-primary-text: rgba(black, 0.87);
+$light-primary-text: white;
+$theme-purple: (
+  0: #fffbfe,
+  100: #f6edff,
+  200: #eaddff,
+  300: #d0bcff,
+  400: #b69df8,
+  500: #9a82db,
+  600: #7f67be,
+  700: #6750a4,
+  800: #4f378b,
+  900: #381e72,
+  1000: #21005d,
+  1100: #000000,
+  contrast: (
+    0: $dark-primary-text,
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    1000: $light-primary-text,
+    1100: $light-primary-text,
+  ),
+);
+
+$light-primary: mat.define-palette($theme-purple, 400);
+$light-accent: mat.define-palette(mat.$amber-palette, 300);
+$light-warn: mat.define-palette(mat.$red-palette, 300);
+$light-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $light-primary,
+      accent: $light-accent,
+      warn: $light-warn,
+    ),
+    typography: $typography-config,
+    density: 0,
+  )
+);
+
+$dark-primary: mat.define-palette($theme-purple, 800);
+$dark-accent: mat.define-palette(mat.$amber-palette, 700);
+$dark-warn: mat.define-palette(mat.$red-palette, 700);
+$dark-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $dark-primary,
+      accent: $dark-accent,
+      warn: $dark-warn,
+    ),
+    typography: $typography-config,
+    density: 0,
+  )
+);
+
+@include mat.all-component-themes($light-theme);
+
+[data-theme='dark'] {
+  @include mat.all-component-colors($dark-theme);
+}

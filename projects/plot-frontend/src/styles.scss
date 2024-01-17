@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+strong {
+  font-weight: 900;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.mat-icon.mat-mdc-card-avatar {
+  font-size: 40px;
+  text-align: center;
+}
+
+.caret-bottom {
+  margin-bottom: 15px;
+  &::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 14px solid white;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    position: absolute;
+    bottom: -14px;
+    margin-left: -14px;
+    left: 50%;
+  }
+}
+
+.handwriting {
+  font-family: 'Caveat Variable', cursive;
+  margin-left: -0.2em;
+}

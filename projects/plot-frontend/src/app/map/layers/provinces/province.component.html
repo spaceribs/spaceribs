@@ -1,0 +1,14 @@
+<ng-template #tooltip>
+  <mat-card class="caret-bottom">
+    <mat-card-header>
+      <mat-card-title>
+        {{ feature?.get('province_name') }}
+      </mat-card-title>
+      <mat-card-subtitle>Nation: Butter</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions align="start">
+      <button mat-button (click)="showDetails.emit()">Details</button>
+      <button mat-button (click)="showActions()">Actions</button>
+    </mat-card-actions>
+  </mat-card>
+</ng-template>

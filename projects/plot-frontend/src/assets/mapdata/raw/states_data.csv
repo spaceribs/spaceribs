@@ -1,0 +1,13 @@
+id,name,full_name,form,color,capital,culture,type,expansionism,cells,burgs,area,population,rural,urban
+7,Harleighia,Harleighian Empire,Empire,#63e1b3,Shiford,Solester,Generic,4.3,874,80,2056300,6153682,5461209,692473
+6,Axbridenia,Axbridenian Empire,Empire,#ffd92f,Macles,Moury,River,4.5,467,99,1178225,6296966,5526497,770469
+11,Lympster,Kingdom of Lympster,Kingdom,#aff75f,Wigham,Bretford,Generic,2,465,36,1102775,3322390,2969169,353221
+12,Chisland,Kingdom of Chisland,Kingdom,#fdf83e,Alton,Bretford,Generic,1.9,404,37,992475,2959526,2670079,289447
+5,Axbrigh,Kingdom of Axbrigh,Kingdom,#a6d854,Harkewen,Watch,River,4,323,25,816450,2421188,2196496,224692
+8,Louth,Principality of Louth,Principality,#f88d80,Dunsham,Stansin,River,4.3,253,23,662700,1867750,1635598,232152
+10,Draxtedia,Principality of Draxtedia,Principality,#c5ea56,Milsearen,Betonbury,River,2.9,281,56,638500,3658481,3210325,448156
+9,Folivia,Principality of Folivia,Principality,#9de47c,Dudmouth,Kigan,River,4.5,241,52,601925,3400099,2975892,424207
+4,Boswestia,Grand Duchy of Boswestia,Grand Duchy,#e78ac3,Leighbury,Flok,Naval,1.5,128,26,257575,1577135,1284572,292563
+2,Sabinginia,Sabinginian Theocracy,Theocracy,#fc8d62,Sabingin,Watch,River,3.6,102,14,234050,1303083,1117821,185262
+1,Southesia,Duchy of Southesia,Duchy,#66c2a5,Southes,Newcester,Naval,2.2,64,9,141475,718102,623458,94644
+3,Berham,Duchy of Berham,Duchy,#8da0cb,Burton,Bretford,Generic,1.1,47,4,124450,498623,445706,52917

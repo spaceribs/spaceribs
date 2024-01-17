@@ -1,0 +1,29 @@
+<mat-card class="mat-typography mat-elevation-z4">
+  <mat-card-header>
+    <mat-icon mat-card-avatar class="example-header-image">mail</mat-icon>
+    <mat-card-title
+      >Subject:
+      <span class="handwriting">{{
+        notification?.subject
+      }}</span></mat-card-title
+    >
+    <mat-card-subtitle
+      >Author:
+      <span class="handwriting">{{
+        notification?.author
+      }}</span></mat-card-subtitle
+    >
+  </mat-card-header>
+  <mat-divider></mat-divider>
+  <mat-card-content>
+    <div class="message mat-headline-5">
+      {{ notification?.message }}
+    </div>
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <mat-card-actions align="end">
+    <button mat-button>Report</button>
+    <button mat-button>Reply</button>
+    <button mat-button>Archive</button>
+  </mat-card-actions>
+</mat-card>

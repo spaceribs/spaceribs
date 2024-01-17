@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GameStateFacade used in NgModule loadAll() should return empty list with loaded == true 1`] = `null`;
+
+exports[`GameStateFacade used in NgModule loadAll() should return gamestate with loaded == true 1`] = `null`;

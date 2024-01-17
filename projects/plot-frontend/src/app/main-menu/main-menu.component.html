@@ -1,0 +1,27 @@
+<mat-nav-list>
+  <a mat-list-item routerLink="map" [activated]="isActive('map')">
+    <mat-icon matListItemIcon>map</mat-icon>
+    <span matListItemTitle>Map</span>
+  </a>
+  <a mat-list-item routerLink="nations" [activated]="isActive('nations')">
+    <mat-icon matListItemIcon>flag</mat-icon>
+    <span matListItemTitle>Nations</span>
+  </a>
+  <a mat-list-item routerLink="states" [activated]="isActive('states')">
+    <mat-icon matListItemIcon>landscape</mat-icon>
+    <span matListItemTitle>States</span>
+  </a>
+  <a
+    mat-list-item
+    routerLink="federations"
+    [activated]="isActive('federations')"
+  >
+    <mat-icon matListItemIcon>linked_services</mat-icon>
+    <span matListItemTitle>Federations</span>
+  </a>
+  <mat-divider></mat-divider>
+  <a mat-list-item routerLink="settings" [activated]="isActive('settings')">
+    <mat-icon matListItemIcon>settings</mat-icon>
+    <span matListItemTitle>Settings</span>
+  </a>
+</mat-nav-list>
