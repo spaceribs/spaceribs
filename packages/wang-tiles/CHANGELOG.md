@@ -2,6 +2,17 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.0.0](https://github.com/spaceribs/spaceribs/compare/wang-tiles-1.0.2...wang-tiles-2.0.0) (2024-04-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Requires Nx 18.x
+
+### Build System
+
+* **deps:** upgrade node to 20 and nx to 18 ([4339d76](https://github.com/spaceribs/spaceribs/commit/4339d76c0742f05862ce1d814035ce9abb885ded)), closes [#261](https://github.com/spaceribs/spaceribs/issues/261)
+
 ## [1.0.2](https://github.com/spaceribs/spaceribs/compare/wang-tiles-1.0.1...wang-tiles-1.0.2) (2023-12-16)
 
 ## [1.0.1](https://github.com/spaceribs/spaceribs/compare/wang-tiles-1.0.0...wang-tiles-1.0.1) (2023-12-03)
