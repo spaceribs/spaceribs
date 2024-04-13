@@ -2,6 +2,17 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [3.0.0](https://github.com/spaceribs/spaceribs/compare/nx-betterer-2.0.2...nx-betterer-3.0.0) (2024-04-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Requires Nx 18.x
+
+### Build System
+
+* **deps:** upgrade node to 20 and nx to 18 ([4339d76](https://github.com/spaceribs/spaceribs/commit/4339d76c0742f05862ce1d814035ce9abb885ded)), closes [#261](https://github.com/spaceribs/spaceribs/issues/261)
+
 ## [2.0.2](https://github.com/spaceribs/spaceribs/compare/nx-betterer-2.0.1...nx-betterer-2.0.2) (2023-12-16)
 
 ## [2.0.1](https://github.com/spaceribs/spaceribs/compare/nx-betterer-2.0.0...nx-betterer-2.0.1) (2023-12-03)
