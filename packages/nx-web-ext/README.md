@@ -8,6 +8,7 @@
 
 | Package Version | Nx Version | Supported          |
 | --------------- | ---------- | ------------------ |
+| 4.x             | 18.x       | :white_check_mark: |
 | 3.x             | 17.x       | :white_check_mark: |
 | 2.x             | 16.x       | :white_check_mark: |
 | 1.x             | 15.x       | :white_check_mark: |
