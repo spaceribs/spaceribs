@@ -21,7 +21,7 @@ exports[`stricter compilation`] = {
       [83, 13, 3, "Parameter \'res\' implicitly has an \'any\' type.", "193432417"],
       [100, 14, 3, "Parameter \'err\' implicitly has an \'any\' type.", "193405824"]
     ],
-    "src/generators/application/sub-generators/angular/index.ts:2129950512": [
+    "src/generators/application/sub-generators/angular/index.ts:4275226085": [
       [34, 6, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [35, 4, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [40, 2, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
@@ -99,8 +99,8 @@ exports[`increase per-file test coverage`] = {
     "branches": 0
   },
   "src/generators/application/sub-generators/angular/index.ts": {
-    "lines": 21,
-    "statements": 23,
+    "lines": 19,
+    "statements": 21,
     "functions": 2,
     "branches": 1
   },
@@ -146,7 +146,7 @@ exports[`increase per-file test coverage`] = {
 
 exports[`increase total test coverage`] = {
   value: `{
-  "total": { "lines": 129, "statements": 146, "functions": 27, "branches": 17 }
+  "total": { "lines": 127, "statements": 144, "functions": 27, "branches": 17 }
 }
 `
 };
@@ -162,7 +162,7 @@ exports[`no unsafe`] = {
       [73, 4, 21, "Unsafe call of an \`any\` typed value.", "546868757"],
       [95, 8, 39, "Unsafe call of an \`any\` typed value.", "2688033796"]
     ],
-    "src/generators/application/sub-generators/angular/index.ts:2129950512": [
+    "src/generators/application/sub-generators/angular/index.ts:4275226085": [
       [34, 6, 44, "Unsafe call of an \`any\` typed value.", "1991309353"],
       [35, 4, 40, "Unsafe call of an \`any\` typed value.", "2889352408"]
     ],

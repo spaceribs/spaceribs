@@ -1,8 +1,9 @@
+import configNxScopes from '@commitlint/config-nx-scopes';
 const {
   utils: { getProjects },
-} = require('@commitlint/config-nx-scopes');
+} = configNxScopes;
 
-module.exports = {
+export default {
   extends: ['@commitlint/config-conventional', '@commitlint/config-nx-scopes'],
   rules: {
     'body-max-line-length': [0, 'always', Infinity],
@@ -12,10 +13,7 @@ module.exports = {
       [
         'deps',
         'deps-dev',
-        ...(await getProjects(
-          ctx,
-          ({ name, projectType }) => !name.includes('e2e'),
-        )),
+        ...getProjects(ctx, ({ name }) => !name.includes('e2e')),
       ],
     ],
   },

@@ -5,10 +5,6 @@
     }
   },
   "targetDefaults": {
-    "lint": {
-      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
-      "cache": true
-    },
     "betterer": {
       "dependsOn": ["test"],
       "outputs": [
@@ -38,14 +34,15 @@
           "codeCoverage": true
         }
       }
+    },
+    "@nx/eslint:lint": {
+      "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
+      "cache": true
     }
   },
   "workspaceLayout": {
     "appsDir": "projects",
     "libsDir": "packages"
-  },
-  "affected": {
-    "defaultBase": "main"
   },
   "generators": {
     "@nx/angular:application": {
@@ -80,5 +77,7 @@
   "defaultProject": "angular-example",
   "extends": "nx/presets/npm.json",
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "nxCloudAccessToken": "MGIzZTU2OGYtMGQyYS00NzMyLWE5NTgtOTAyNTYwYWNkODhifHJlYWQ="
+  "nxCloudAccessToken": "MGIzZTU2OGYtMGQyYS00NzMyLWE5NTgtOTAyNTYwYWNkODhifHJlYWQ=",
+  "useInferencePlugins": false,
+  "defaultBase": "main"
 }
