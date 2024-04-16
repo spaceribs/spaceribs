@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [3.0.1](https://github.com/spaceribs/spaceribs/compare/nx-betterer-3.0.0...nx-betterer-3.0.1) (2024-04-16)
+
+
+### Bug Fixes
+
+* **nx-betterer:** remove custom hasher ([e27b79d](https://github.com/spaceribs/spaceribs/commit/e27b79da33b82d44be53b1e86db4c02f4210c2cd)), closes [#264](https://github.com/spaceribs/spaceribs/issues/264) [#263](https://github.com/spaceribs/spaceribs/issues/263)
+
 ## [3.0.0](https://github.com/spaceribs/spaceribs/compare/nx-betterer-2.0.2...nx-betterer-3.0.0) (2024-04-13)
 
 
