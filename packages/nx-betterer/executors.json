@@ -4,8 +4,7 @@
     "betterer": {
       "implementation": "./src/executors/betterer/executor",
       "schema": "./src/executors/betterer/schema.json",
-      "description": "Run betterer against the project",
-      "hasher": "./src/executors/betterer/hasher"
+      "description": "Run betterer against the project"
     }
   }
 }
