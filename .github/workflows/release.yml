@@ -32,6 +32,15 @@ jobs:
       - name: NPM Install
         run: npm ci
 
+      - name: Betterer Bump
+        shell: bash
+        continue-on-error: true
+        run: |
+          npm run affected:betterer
+          git add --all
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Version
         shell: bash
         run: npx nx affected --base=last-release --parallel=1 --target=version --push

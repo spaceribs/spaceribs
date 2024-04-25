@@ -4,29 +4,19 @@
 export type BettererExecutorSchema =
   | BettererExecutorSchemaBase
   | BettererExecutorSchemaWatch
-  | BettererExecutorSchemaUpdate
-  | BettererExecutorSchemaPrecommit;
+  | BettererExecutorSchemaUpdate;
 
 interface BettererExecutorSchemaBase {
   watch?: false;
-  update?: false;
-  precommit?: false;
+  forceUpdate?: false;
 }
 
 interface BettererExecutorSchemaWatch {
   watch: true;
-  update?: false;
-  precommit?: false;
+  forceUpdate?: false;
 }
 
 interface BettererExecutorSchemaUpdate {
   watch?: false;
-  update: true;
-  precommit?: false;
-}
-
-interface BettererExecutorSchemaPrecommit {
-  watch?: false;
-  update?: false;
-  precommit: true;
+  forceUpdate: true;
 }

@@ -8,10 +8,7 @@
     "watch": {
       "type": "boolean"
     },
-    "update": {
-      "type": "boolean"
-    },
-    "precommit": {
+    "forceUpdate": {
       "type": "boolean"
     }
   },

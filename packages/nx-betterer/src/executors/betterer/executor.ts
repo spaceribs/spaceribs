@@ -1,16 +1,26 @@
-import { BettererExecutorSchema } from './schema';
 import {
-  betterer,
-  watch,
+  BettererOptionsStart,
   BettererOptionsWatch,
   BettererRunner,
-  BettererOptionsStartCI,
-  BettererOptionsStartUpdate,
-  BettererOptionsStartPrecommit,
+  BettererSuiteSummary,
+  betterer,
+  watch,
 } from '@betterer/betterer';
-import { lastValueFrom, Observable } from 'rxjs';
-import { ExecutorContext } from '@nx/devkit';
+import { ExecutorContext } from '@nrwl/devkit';
 import * as path from 'path';
+import { Observable, firstValueFrom } from 'rxjs';
+import { BettererExecutorSchema } from './schema';
+
+const checkFail = (result: BettererSuiteSummary) => {
+  if (
+    (result.failed && result.failed.length > 0) ||
+    (result.worse && result.worse.length > 0)
+  ) {
+    throw new Error(
+      `Betterer failed for ${result.failed.length} tests and got worse for ${result.worse.length} tests.`,
+    );
+  }
+};
 
 /**
  * Use nx-betterer to measure previously defined code standards
@@ -18,10 +28,10 @@ import * as path from 'path';
  * @param context - Information about the project being assessed.
  * @returns An object indicating success or failure.
  */
-export default async function runExecutor(
+export default async (
   options: BettererExecutorSchema,
   context: ExecutorContext,
-) {
+) => {
   if (context.projectName == null) {
     throw new Error('No project name specified.');
   }
@@ -35,19 +45,21 @@ export default async function runExecutor(
     '.betterer.cache',
   );
 
-  const ciConfig: BettererOptionsStartCI = {
-    ci: true,
+  const defaultConfig: BettererOptionsStart = {
     cwd: projectRoot,
     tsconfigPath: './tsconfig.json',
     cache: true,
     cachePath,
+    strict: true,
+    update: false,
+    watch: false,
   };
 
-  const updateConfig: BettererOptionsStartUpdate = {
+  const forceUpdateConfig: BettererOptionsStart = {
     cwd: projectRoot,
     tsconfigPath: './tsconfig.json',
     update: true,
-    cachePath,
+    cache: false,
   };
 
   const watchConfig: BettererOptionsWatch = {
@@ -58,15 +70,8 @@ export default async function runExecutor(
     cachePath,
   };
 
-  const precommitConfig: BettererOptionsStartPrecommit = {
-    cwd: projectRoot,
-    tsconfigPath: './tsconfig.json',
-    precommit: true,
-    cachePath,
-  };
-
   if (options.watch === true) {
-    const bettererWatch = new Observable((observe) => {
+    const bettererWatch$ = new Observable((observe) => {
       let runner: BettererRunner;
 
       watch(watchConfig)
@@ -80,42 +85,20 @@ export default async function runExecutor(
 
       return () => {
         if (runner != null) {
-          runner.stop(true);
+          void runner.stop(true);
         }
       };
     });
 
-    await lastValueFrom(bettererWatch);
-  } else if (options.precommit === true) {
-    await betterer(precommitConfig);
-  } else if (options.update === true) {
-    await betterer(updateConfig);
+    await firstValueFrom(bettererWatch$);
+  } else if (options.forceUpdate === true) {
+    await betterer(forceUpdateConfig);
   } else {
-    const result = await betterer(ciConfig);
-    if (result.changed.length) {
-      throw new Error(
-        `Betterer failed due to ${result.changed.join(
-          ', ',
-        )} not being up to date, please run precommit`,
-      );
-    }
-    const anyNew = result.runSummaries.find((summary) => summary.isComplete);
-    if (anyNew != null && anyNew.isComplete !== true) {
-      throw new Error(
-        `Betterer failed due to ${anyNew.name} not being complete, please run update.`,
-      );
-    }
-    if (
-      (result.failed && result.failed.length > 0) ||
-      (result.worse && result.worse.length > 0)
-    ) {
-      throw new Error(
-        `Betterer failed for ${result.failed.length} tests and got worse for ${result.worse.length} tests.`,
-      );
-    }
+    const result = await betterer(defaultConfig);
+    checkFail(result);
   }
 
   return {
     success: true,
   };
-}
+};
