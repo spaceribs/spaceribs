@@ -36,7 +36,7 @@ jobs:
         shell: bash
         continue-on-error: true
         run: |
-          npm run affected:betterer
+          npx nx affected --base=last-release --parallel=1 --target=betterer
           git add --all
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
