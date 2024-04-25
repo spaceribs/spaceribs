@@ -58,7 +58,28 @@ This library was generated with [Nx](https://nx.dev).
 NOTE: Keep in mind that due to a lack of ESModule support in NxNrwl, you'll
 need to use CommonJS syntax.
 
+## Check Results
+
+If you wish to check your results, run the following on your pull request job:
+
+```bash
+nx run my-project:betterer
+```
+
 ## Update Results
+
+If you wish to update results automatically, run the following on your release job:
+
+```bash
+nx run my-project:betterer
+git add --all
+git commit -m 'chore: update betterer results'
+git push
+```
+
+Ignore errors as not all changes will generate changes.
+
+## Force Update Results
 
 If you wish to update all of your results, overriding failures, you can run the following:
 
