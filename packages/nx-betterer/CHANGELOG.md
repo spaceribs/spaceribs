@@ -4,6 +4,8 @@ This file was generated using [@jscutlery/semver](https://github.com/jscutlery/s
 
 ## [3.0.3](https://github.com/spaceribs/spaceribs/compare/nx-betterer-3.0.2...nx-betterer-3.0.3) (2024-04-25)
 
+## [3.0.3](https://github.com/spaceribs/spaceribs/compare/nx-betterer-3.0.2...nx-betterer-3.0.3) (2024-04-25)
+
 ## [3.0.2](https://github.com/spaceribs/spaceribs/compare/nx-betterer-3.0.1...nx-betterer-3.0.2) (2024-04-25)
 
 
