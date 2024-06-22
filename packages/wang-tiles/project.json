@@ -45,7 +45,8 @@
       "options": {
         "access": "public",
         "distFolderPath": "dist/packages/wang-tiles"
-      }
+      },
+      "dependsOn": ["build"]
     },
     "typedoc": {
       "executor": "@enio.ai/typedoc:typedoc",

@@ -67,7 +67,8 @@
       "options": {
         "access": "public",
         "distFolderPath": "dist/packages/nx-web-ext"
-      }
+      },
+      "dependsOn": ["build"]
     },
     "betterer": {
       "executor": "@spaceribs/nx-betterer:betterer"
