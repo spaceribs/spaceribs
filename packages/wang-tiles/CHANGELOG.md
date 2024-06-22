@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.0.2](https://github.com/spaceribs/spaceribs/compare/wang-tiles-2.0.1...wang-tiles-2.0.2) (2024-06-22)
+
+
+### Bug Fixes
+
+* add depend on build job to npm deploy ([0a34ab3](https://github.com/spaceribs/spaceribs/commit/0a34ab34299e5e0370c854b6a47f1962c991372d))
+
 ## [2.0.1](https://github.com/spaceribs/spaceribs/compare/wang-tiles-2.0.0...wang-tiles-2.0.1) (2024-06-22)
 
 
