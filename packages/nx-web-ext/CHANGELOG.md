@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [5.0.1](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-5.0.0...nx-web-ext-5.0.1) (2024-06-22)
+
+
+### Bug Fixes
+
+* add distFolderPath option to npm publish ([175c0ab](https://github.com/spaceribs/spaceribs/commit/175c0abbc07a8c049dd0c1a0a3c4c0e7c83df8ee))
+
 ## [5.0.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-4.0.0...nx-web-ext-5.0.0) (2024-06-22)
 
 
