@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.4](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-1.0.3...betterer-eslint-warnings-1.0.4) (2024-06-22)
+
+
+### Bug Fixes
+
+* add depend on build job to npm deploy ([0a34ab3](https://github.com/spaceribs/spaceribs/commit/0a34ab34299e5e0370c854b6a47f1962c991372d))
+
 ## [1.0.3](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-1.0.2...betterer-eslint-warnings-1.0.3) (2024-06-22)
 
 
