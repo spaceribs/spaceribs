@@ -8,10 +8,11 @@
 
 | Package Version | Nx Version | Supported          |
 | --------------- | ---------- | ------------------ |
+| 5.x             | 19.x       | :white_check_mark: |
 | 4.x             | 18.x       | :white_check_mark: |
 | 3.x             | 17.x       | :white_check_mark: |
 | 2.x             | 16.x       | :white_check_mark: |
-| 1.x             | 15.x       | :white_check_mark: |
+| 1.x             | 15.x       | :x:                |
 | 0.x             | 14.x       | :x:                |
 
 This library was generated with [Nx](https://nx.dev).

@@ -5,8 +5,8 @@
   "generators": "./generators.json",
   "executors": "./executors.json",
   "peerDependencies": {
-    "@nx/devkit": "^18.2.4",
-    "@nx/js": "^18.2.4"
+    "@nx/devkit": "^19.0.0",
+    "@nx/js": "^19.0.0"
   },
   "dependencies": {
     "tslib": "~2.5.0",

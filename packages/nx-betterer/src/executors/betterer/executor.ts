@@ -6,7 +6,7 @@ import {
   betterer,
   watch,
 } from '@betterer/betterer';
-import { ExecutorContext } from '@nrwl/devkit';
+import { ExecutorContext } from '@nx/devkit';
 import * as path from 'path';
 import { Observable, firstValueFrom } from 'rxjs';
 import { BettererExecutorSchema } from './schema';
