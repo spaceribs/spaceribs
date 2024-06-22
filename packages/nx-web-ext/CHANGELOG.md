@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [5.0.3](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-5.0.2...nx-web-ext-5.0.3) (2024-06-22)
+
+
+### Bug Fixes
+
+* add build step to semver post targets ([8a46853](https://github.com/spaceribs/spaceribs/commit/8a468530a03c6fcdbcdec116a48514984bd05221))
+
 ## [5.0.2](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-5.0.1...nx-web-ext-5.0.2) (2024-06-22)
 
 
