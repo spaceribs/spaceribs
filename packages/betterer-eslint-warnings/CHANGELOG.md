@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.5](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-1.0.4...betterer-eslint-warnings-1.0.5) (2024-06-22)
+
+
+### Bug Fixes
+
+* add build step to semver post targets ([8a46853](https://github.com/spaceribs/spaceribs/commit/8a468530a03c6fcdbcdec116a48514984bd05221))
+
 ## [1.0.4](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-1.0.3...betterer-eslint-warnings-1.0.4) (2024-06-22)
 
 
