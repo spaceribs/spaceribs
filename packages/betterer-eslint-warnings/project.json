@@ -31,6 +31,7 @@
       "options": {
         "preset": "conventional",
         "postTargets": [
+          "betterer-eslint-warnings:build",
           "betterer-eslint-warnings:github",
           "betterer-eslint-warnings:npm"
         ]

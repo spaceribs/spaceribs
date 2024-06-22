@@ -30,7 +30,11 @@
       "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "conventional",
-        "postTargets": ["wang-tiles:github", "wang-tiles:npm"]
+        "postTargets": [
+          "wang-tiles:build",
+          "wang-tiles:github",
+          "wang-tiles:npm"
+        ]
       }
     },
     "github": {

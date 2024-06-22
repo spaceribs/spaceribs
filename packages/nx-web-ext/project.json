@@ -52,7 +52,11 @@
       "executor": "@jscutlery/semver:version",
       "options": {
         "preset": "conventional",
-        "postTargets": ["nx-web-ext:github", "nx-web-ext:npm"]
+        "postTargets": [
+          "nx-web-ext:build",
+          "nx-web-ext:github",
+          "nx-web-ext:npm"
+        ]
       }
     },
     "github": {
