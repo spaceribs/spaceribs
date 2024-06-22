@@ -16,9 +16,9 @@
     "web-ext"
   ],
   "peerDependencies": {
-    "@nx/devkit": "^18.2.4",
-    "@nx/eslint": "^18.2.4",
-    "nx": "^18.2.4",
+    "@nx/devkit": "^19.0.0",
+    "@nx/eslint": "^19.0.0",
+    "nx": "^19.0.0",
     "rxjs": ">= 6.6.3 < 8",
     "tslib": "~2.5.0",
     "typescript": ">= 4.8.2 < 6"
@@ -33,8 +33,8 @@
     "web-ext": "^6.8.0"
   },
   "optionalDependencies": {
-    "@nx/react": "^18.2.4",
-    "@nx/angular": "^18.2.4"
+    "@nx/react": "^19.0.0",
+    "@nx/angular": "^19.0.0"
   },
   "author": "Spaceribs",
   "license": "MIT",
