@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.3](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-1.0.2...betterer-eslint-warnings-1.0.3) (2024-06-22)
+
+
+### Bug Fixes
+
+* add distFolderPath option to npm publish ([175c0ab](https://github.com/spaceribs/spaceribs/commit/175c0abbc07a8c049dd0c1a0a3c4c0e7c83df8ee))
+
 ## [1.0.2](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-1.0.1...betterer-eslint-warnings-1.0.2) (2023-12-16)
 
 ## [1.0.1](https://github.com/spaceribs/spaceribs/compare/betterer-eslint-warnings-1.0.0...betterer-eslint-warnings-1.0.1) (2023-12-03)
