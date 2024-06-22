@@ -3,6 +3,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/nx-betterer/src",
   "projectType": "library",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
@@ -67,7 +68,8 @@
       "options": {
         "access": "public",
         "distFolderPath": "dist/packages/nx-betterer"
-      }
+      },
+      "dependsOn": ["build"]
     },
     "betterer": {
       "executor": "@spaceribs/nx-betterer:betterer"
@@ -80,6 +82,5 @@
       },
       "configurations": {}
     }
-  },
-  "tags": []
+  }
 }
