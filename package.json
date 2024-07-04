@@ -27,7 +27,7 @@
     "rxjs": "^7.8.1",
     "three": "^0.150.0",
     "three-gpu-pathtracer": "^0.0.13",
-    "tslib": "~2.5.0",
+    "tslib": "~2.6.3",
     "zone.js": "0.14.4"
   },
   "devDependencies": {
