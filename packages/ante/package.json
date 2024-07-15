@@ -1,0 +1,26 @@
+{
+  "name": "@spaceribs/nx-betterer",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "lit": "^2.8.0",
+    "@storybook/web-components": "^7.5.3"
+  },
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "typings": "./index.d.ts",
+  "description": "This nx-plugin allows you to run betterer on a per-project basis.",
+  "generators": "./generators.json",
+  "executors": "./executors.json",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spaceribs/spaceribs.git"
+  },
+  "author": "Spaceribs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spaceribs/spaceribs/issues"
+  },
+  "homepage": "https://spaceribs.tech/packages/nx-betterer/"
+}

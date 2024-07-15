@@ -1,2 +1,3 @@
 node_modules
 .betterer.ts
+**/.storybook/**

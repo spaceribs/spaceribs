@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@spaceribs/ante": ["packages/ante/src/index.ts"],
       "@spaceribs/betterer-eslint-warnings": [
         "packages/betterer-eslint-warnings/src/index.ts"
       ],
