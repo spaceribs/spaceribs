@@ -13,7 +13,7 @@
     "@angular/platform-browser-dynamic": "18.0.4",
     "@angular/router": "18.0.4",
     "@betterer/betterer": "^5.4.0",
-    "@commitlint/config-conventional": "^19.1.0",
+    "@commitlint/config-conventional": "^19.4.1",
     "@scullyio/ng-lib": "^2.1.41",
     "@scullyio/scully": "^2.1.41",
     "@scullyio/scully-plugin-playwright": "^2.1.41",
