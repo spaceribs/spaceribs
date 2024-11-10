@@ -18,7 +18,6 @@ export function eslintWarnings(): BettererFileTest {
     await Promise.all(
       filePaths.map(async (filePath) => {
         const runner = new ESLint({
-          useEslintrc: true,
           cwd: baseDirectory,
         });
 
