@@ -1,4 +1,4 @@
 export interface BuildExecutorSchema {
-  watch: boolean
-  options: string
+  watch: boolean;
+  options: string;
 }
