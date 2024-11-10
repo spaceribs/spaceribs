@@ -24,7 +24,7 @@
     {
       "files": ["*.ts", "*.tsx"],
       "extends": [
-        "plugin:@nrwl/nx/typescript",
+        "plugin:@nx/typescript",
         "plugin:@typescript-eslint/recommended",
         "plugin:jsdoc/recommended-typescript-error"
       ],
