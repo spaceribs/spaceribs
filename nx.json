@@ -38,6 +38,9 @@
     "@nx/eslint:lint": {
       "inputs": ["default", "{workspaceRoot}/.eslintrc.json"],
       "cache": true
+    },
+    "server": {
+      "cache": true
     }
   },
   "workspaceLayout": {
