@@ -1,6 +1,6 @@
 {
   "name": "@spaceribs/typedoc",
-  "version": "2.0.0",
+  "version": "0.1.0",
   "description": "Generator to setup Nx projects with documentation automation using typedoc",
   "license": "MIT",
   "authors": [

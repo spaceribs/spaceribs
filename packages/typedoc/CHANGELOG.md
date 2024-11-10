@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## 0.1.0 (2024-11-10)
+
+
+### Features
+
+* **typedoc:** fork [@enio](https://github.com/enio).ai/typedoc to local plugin ([921d816](https://github.com/spaceribs/spaceribs/commit/921d816b954a35780c3a2e03fd4931c80e062b95))
+
 ## [1.0.8](https://github.com/enio-ireland/enio/compare/typedoc-1.0.7...typedoc-1.0.8) (2023-03-05)
 
 
