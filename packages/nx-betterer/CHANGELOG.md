@@ -2,6 +2,13 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [4.1.0](https://github.com/spaceribs/spaceribs/compare/nx-betterer-4.0.3...nx-betterer-4.1.0) (2024-11-10)
+
+
+### Features
+
+* **typedoc:** fork [@enio](https://github.com/enio).ai/typedoc to local plugin ([921d816](https://github.com/spaceribs/spaceribs/commit/921d816b954a35780c3a2e03fd4931c80e062b95))
+
 ## [4.0.3](https://github.com/spaceribs/spaceribs/compare/nx-betterer-4.0.2...nx-betterer-4.0.3) (2024-06-22)
 
 
