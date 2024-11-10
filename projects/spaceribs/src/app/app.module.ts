@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
-
-import { ScullyLibModule } from '@scullyio/ng-lib';
 
 import { Route } from '@angular/router';
 
@@ -24,9 +25,8 @@ export const appRoutes: Route[] = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
-    ScullyLibModule,
   ],
-  providers: [],
+  providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

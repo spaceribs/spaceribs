@@ -44,9 +44,5 @@ Thumbs.db
 
 #Project Docs
 docs
-.scully
-scully.log
-scully/**/*.js
-scully/**/*.js.map
 .nx/cache
 .nx/workspace-data

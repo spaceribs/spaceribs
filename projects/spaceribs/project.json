@@ -4,6 +4,7 @@
   "projectType": "application",
   "sourceRoot": "projects/spaceribs/src",
   "prefix": "spaceribs",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-builders/custom-webpack:browser",
@@ -12,10 +13,11 @@
         "customWebpackConfig": {
           "path": "projects/spaceribs/webpack.config.js"
         },
-        "outputPath": "dist/projects/spaceribs",
+        "outputPath": "docs",
         "index": "projects/spaceribs/src/index.html",
         "main": "projects/spaceribs/src/main.ts",
         "polyfills": ["zone.js"],
+        "deleteOutputPath": false,
         "tsConfig": "projects/spaceribs/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
         "assets": [
@@ -53,17 +55,32 @@
       },
       "defaultConfiguration": "production"
     },
+
     "serve": {
-      "executor": "@angular-builders/custom-webpack:dev-server",
+      "dependsOn": ["build"],
+      "executor": "@nx/angular:webpack-server",
+      "options": {
+        "customWebpackConfig": {
+          "path": "projects/spaceribs/webpack.config.js"
+        },
+        "outputPath": "dist/projects/spaceribs",
+        "main": "projects/spaceribs/server.ts",
+        "tsConfig": "projects/spaceribs/tsconfig.server.json",
+        "inlineStyleLanguage": "scss"
+      },
       "configurations": {
         "production": {
-          "browserTarget": "spaceribs:build:production"
+          "outputHashing": "media"
         },
         "development": {
-          "browserTarget": "spaceribs:build:development"
+          "buildOptimizer": false,
+          "optimization": false,
+          "sourceMap": true,
+          "extractLicenses": false,
+          "vendorChunk": true
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "production"
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -81,7 +98,37 @@
       "options": {
         "jestConfig": "projects/spaceribs/jest.config.ts"
       }
+    },
+    "serve-ssr": {
+      "executor": "@angular-devkit/build-angular:ssr-dev-server",
+      "configurations": {
+        "development": {
+          "browserTarget": "spaceribs:build:development",
+          "serverTarget": "spaceribs:serve:development"
+        },
+        "production": {
+          "browserTarget": "spaceribs:build:production",
+          "serverTarget": "spaceribs:serve:production"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "prerender": {
+      "executor": "@angular-devkit/build-angular:prerender",
+      "options": {
+        "routes": ["/"]
+      },
+      "configurations": {
+        "development": {
+          "browserTarget": "spaceribs:build:development",
+          "serverTarget": "spaceribs:serve:development"
+        },
+        "production": {
+          "browserTarget": "spaceribs:build:production",
+          "serverTarget": "spaceribs:serve:production"
+        }
+      },
+      "defaultConfiguration": "production"
     }
-  },
-  "tags": []
+  }
 }
