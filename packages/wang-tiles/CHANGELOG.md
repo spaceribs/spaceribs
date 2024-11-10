@@ -2,6 +2,14 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [2.1.0](https://github.com/spaceribs/spaceribs/compare/wang-tiles-2.0.3...wang-tiles-2.1.0) (2024-11-10)
+
+
+### Features
+
+* **spaceribs:** replace scully with angular-ssr ([dfb6078](https://github.com/spaceribs/spaceribs/commit/dfb60789ce0d88ab42a403d6066be97a3ee9dbf0))
+* **typedoc:** fork [@enio](https://github.com/enio).ai/typedoc to local plugin ([921d816](https://github.com/spaceribs/spaceribs/commit/921d816b954a35780c3a2e03fd4931c80e062b95))
+
 ## [2.0.3](https://github.com/spaceribs/spaceribs/compare/wang-tiles-2.0.2...wang-tiles-2.0.3) (2024-06-22)
 
 
