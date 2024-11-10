@@ -8,6 +8,12 @@ import {
 } from './process';
 import { getGeneratorExecutionParams } from './utils';
 
+/**
+ *
+ * @param tree
+ * @param root0
+ * @param root0.project
+ */
 export default async function (
   tree: Tree,
   { project }: TypedocGeneratorSchema,

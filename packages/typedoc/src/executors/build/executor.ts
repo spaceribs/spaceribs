@@ -4,15 +4,22 @@ import { name } from '../../../project.json';
 import { toArguments } from './process';
 import { spawn } from 'child_process';
 
+/**
+ *
+ * @param options
+ * @param context
+ */
 export default async function runExecutor(
   options: BuildExecutorSchema,
   context: ExecutorContext,
 ) {
-  const config = context.workspace.projects[context.projectName];
+  const config = context.projectsConfigurations.projects[context.projectName];
   const command = `${getPackageManagerCommand().exec} ${name}`;
   const args = toArguments(options);
   const processOpts = { cwd: config.root || context.root, shell: true };
-  return new Promise<{ success: boolean }>((resolve) => {
+  return new Promise<{
+    success: boolean;
+  }>((resolve) => {
     console.log({ command, args, processOpts });
     const childProcess = spawn(command, args, processOpts);
     process.on('exit', () => childProcess.kill());

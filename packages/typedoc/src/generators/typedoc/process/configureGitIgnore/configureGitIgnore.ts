@@ -1,6 +1,11 @@
 import { Tree } from '@nx/devkit';
 import { GeneratorExecutionParams } from '../../utils';
 
+/**
+ *
+ * @param tree
+ * @param outputDir
+ */
 export const configureGitIgnore = (
   tree: Tree,
   outputDir: GeneratorExecutionParams['outputDir'],

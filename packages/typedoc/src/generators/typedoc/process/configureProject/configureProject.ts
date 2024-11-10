@@ -4,6 +4,13 @@ import { getExecutorName } from './getExecutorName';
 import { name } from '../../../../../project.json';
 import { GeneratorExecutionParams } from '../../utils';
 
+/**
+ *
+ * @param tree
+ * @param config
+ * @param projectName
+ * @param outputDir
+ */
 export const configureProject = (
   tree: Tree,
   config: GeneratorExecutionParams['projectConfig'],

@@ -4,6 +4,10 @@ export interface NxWebExtGeneratorSchema {
    */
   name: string;
   /**
+   * Path of the new web extension
+   */
+  path: string;
+  /**
    * Description of what the web extension does.
    */
   description?: string;

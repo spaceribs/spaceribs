@@ -2,6 +2,13 @@ import { Tree, generateFiles, ProjectConfiguration } from '@nx/devkit';
 import { resolve } from 'path';
 import { getConfigDefaults } from './getConfigDefaults';
 
+/**
+ *
+ * @param tree
+ * @param root
+ * @param projectType
+ * @param name
+ */
 export const configureTypedoc = (
   tree: Tree,
   root: ProjectConfiguration['root'],

@@ -12,7 +12,11 @@ export interface NormalizedSchema extends NxWebExtGeneratorSchema {
   /**
    * The name of the new project.
    */
-  projectName: string;
+  name: string;
+  /**
+   * The name of the new project.
+   */
+  path: string;
   /**
    * The description of the new web extension.
    */
@@ -30,7 +34,8 @@ function normalizeOptions(options: NxWebExtGeneratorSchema): NormalizedSchema {
   return {
     ...options,
     description: options.description || '',
-    projectName,
+    name: projectName,
+    path: options.path,
   };
 }
 

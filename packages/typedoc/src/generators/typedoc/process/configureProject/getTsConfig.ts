@@ -1,6 +1,12 @@
 import { ProjectConfiguration, Tree } from '@nx/devkit';
 import { join } from 'path';
 
+/**
+ *
+ * @param projectType
+ * @param root
+ * @param tree
+ */
 export const getTsConfig = (
   projectType: ProjectConfiguration['projectType'],
   root: ProjectConfiguration['root'],

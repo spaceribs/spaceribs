@@ -12,6 +12,14 @@
         "index": 0
       }
     },
+    "path": {
+      "type": "string",
+      "description": "The path of the project.",
+      "$default": {
+        "$source": "argv",
+        "index": 1
+      }
+    },
     "framework": {
       "type": "string",
       "default": "angular",
@@ -24,5 +32,5 @@
       "description": "A description of the extension."
     }
   },
-  "required": ["name", "framework"]
+  "required": ["name", "path", "framework"]
 }

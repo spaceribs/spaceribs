@@ -17,6 +17,7 @@ import { replaceFiles } from './replace-files';
  */
 export const angularApp = async (tree: Tree, options: NormalizedSchema) => {
   await applicationGenerator(tree, {
+    directory: options.path,
     name: options.name,
     routing: false,
     standalone: false,

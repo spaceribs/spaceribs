@@ -4,11 +4,11 @@ import { componentGenerator } from '@nx/react';
 /**
  * Add a browser action popup to the extension.
  * @param tree - The file tree to modify.
- * @param project - Name of the project to add the action module to.
+ * @param path - Path of the project to add the action module to.
  */
-export const addAction = async (tree: Tree, project: string) => {
+export const addAction = async (tree: Tree, path: string) => {
   await componentGenerator(tree, {
-    project,
+    path,
     name: 'action',
     routing: true,
     style: 'scss',
