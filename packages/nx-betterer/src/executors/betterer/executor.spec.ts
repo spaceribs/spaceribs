@@ -29,7 +29,7 @@ describe('Betterer Executor', () => {
     const output = await executor(options, {
       projectName: 'test',
       root: '',
-      workspace: {
+      projectsConfigurations: {
         version: 2,
         projects: {
           test: {
@@ -39,6 +39,8 @@ describe('Betterer Executor', () => {
       },
       cwd: '',
       isVerbose: false,
+      nxJsonConfiguration: undefined,
+      projectGraph: undefined,
     });
     expect(mockBetterer).toHaveBeenCalled();
     expect(output.success).toBe(true);

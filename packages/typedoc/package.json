@@ -16,7 +16,7 @@
   "executors": "./executors.json",
   "private": false,
   "dependencies": {
-    "@nx/devkit": "^19.8.9",
+    "@nx/devkit": "20.0.12",
     "tslib": "^2.3.0"
   },
   "peerDependencies": {

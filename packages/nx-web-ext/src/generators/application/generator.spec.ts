@@ -17,6 +17,7 @@ import { reactApp } from './sub-generators/react';
 describe('nx-web-ext generator', () => {
   let appTree: Tree;
   const options: NxWebExtGeneratorSchema = {
+    path: 'test',
     name: 'test',
     framework: 'angular',
   };

@@ -9,7 +9,7 @@ describe('add generator', () => {
 
   beforeEach(async () => {
     appTree = createTreeWithEmptyWorkspace();
-    await applicationGenerator(appTree, { name: 'test' });
+    await applicationGenerator(appTree, { name: 'test', directory: 'test' });
     await generator(appTree, { projectName: 'test' });
     appTree.write('package.json', '{}');
   });

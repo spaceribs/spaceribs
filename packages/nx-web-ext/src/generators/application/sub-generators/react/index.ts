@@ -19,6 +19,7 @@ import { resolve } from 'path';
  */
 export const reactApp = async (tree: Tree, options: NormalizedSchema) => {
   await applicationGenerator(tree, {
+    directory: options.path,
     name: options.name,
     routing: true,
     e2eTestRunner: 'none',

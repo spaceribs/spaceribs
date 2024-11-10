@@ -7,7 +7,7 @@
     {
       "type": "node",
       "name": "vscode-jest-tests.v2",
-      "runtimeVersion": "20",
+      "runtimeVersion": "22",
       "request": "launch",
       "args": [
         "--runInBand",

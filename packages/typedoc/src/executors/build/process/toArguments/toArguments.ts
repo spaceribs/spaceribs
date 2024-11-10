@@ -1,5 +1,9 @@
 import { BuildExecutorSchema } from '../../schema';
 
+/**
+ *
+ * @param options
+ */
 export const toArguments = (options: BuildExecutorSchema): string[] =>
   Object.entries(options)
     .filter(([, value]) => !!value)

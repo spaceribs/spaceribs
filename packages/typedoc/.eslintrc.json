@@ -5,7 +5,10 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
-        "jsdoc/require-jsdoc": ["warn"]
+        "jsdoc/require-jsdoc": ["warn"],
+        "jsdoc/require-description": ["warn"],
+        "jsdoc/require-returns": ["warn"],
+        "jsdoc/require-param-description": ["warn"]
       }
     },
     {

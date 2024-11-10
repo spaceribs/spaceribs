@@ -90,5 +90,6 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "nxCloudAccessToken": "MGIzZTU2OGYtMGQyYS00NzMyLWE5NTgtOTAyNTYwYWNkODhifHJlYWQ=",
   "useInferencePlugins": false,
-  "defaultBase": "main"
+  "defaultBase": "main",
+  "useLegacyCache": true
 }

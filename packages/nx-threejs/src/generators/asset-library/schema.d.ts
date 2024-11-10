@@ -1,4 +1,4 @@
-import type { LibraryGeneratorSchema } from '@nx/js/src/utils/schema';
+import type { LibraryGeneratorSchema } from '@nx/js/src/generators/library/schema';
 
 export interface AssetLibraryGeneratorSchema extends LibraryGeneratorSchema {
   /**

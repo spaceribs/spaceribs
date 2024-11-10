@@ -36,7 +36,7 @@ export default async (
     throw new Error('No project name specified.');
   }
 
-  const project = context.workspace.projects[context.projectName];
+  const project = context.projectsConfigurations.projects[context.projectName];
   const projectRoot = path.resolve(context.root, project.root);
   const cachePath = path.resolve(
     context.root,

@@ -12,6 +12,11 @@ import {
   reviewNxVersion,
 } from './getGeneratorExecutionParams.utils';
 
+/**
+ *
+ * @param tree
+ * @param project
+ */
 export const getGeneratorExecutionParams = (
   tree: Tree,
   project: TypedocGeneratorSchema['project'],
