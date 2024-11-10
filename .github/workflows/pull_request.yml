@@ -21,12 +21,11 @@ jobs:
     uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.14.0
     with:
       number-of-agents: 3
-      parallel-commands: |
-        npx nx-cloud record -- npx nx format:check
       parallel-commands-on-agents: |
         npx nx affected --target=lint --parallel=3
         npx nx affected --target=test --parallel=3 --ci --code-coverage && npx nx affected --target=betterer --parallel=3 --ci
         npx nx affected --target=build --parallel=3
+        npx nx affected --target=typedoc --parallel=3
         npx nx affected --target=e2e --parallel=1
 
   agents:

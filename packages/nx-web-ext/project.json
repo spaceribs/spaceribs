@@ -79,7 +79,7 @@
       "executor": "@spaceribs/nx-betterer:betterer"
     },
     "typedoc": {
-      "executor": "@enio.ai/typedoc:typedoc",
+      "executor": "@spaceribs/typedoc:typedoc",
       "outputs": ["{workspaceRoot}/docs/packages/nx-web-ext"],
       "options": {
         "options": "typedoc.json"

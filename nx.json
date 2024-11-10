@@ -16,6 +16,9 @@
     "build": {
       "cache": true
     },
+    "lint": {
+      "cache": true
+    },
     "typedoc": {
       "cache": true
     },
@@ -41,6 +44,11 @@
     },
     "server": {
       "cache": true
+    },
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["default", "^default"]
     }
   },
   "workspaceLayout": {

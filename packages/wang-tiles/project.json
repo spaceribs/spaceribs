@@ -54,7 +54,7 @@
       "dependsOn": ["build"]
     },
     "typedoc": {
-      "executor": "@enio.ai/typedoc:typedoc",
+      "executor": "@spaceribs/typedoc:typedoc",
       "outputs": ["{workspaceRoot}/docs/packages/wang-tiles"],
       "options": {
         "options": "typedoc.json"

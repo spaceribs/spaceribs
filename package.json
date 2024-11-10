@@ -50,7 +50,6 @@
     "@commitlint/cli": "19.2.1",
     "@commitlint/config-nx-scopes": "19.3.1",
     "@commitlint/cz-commitlint": "19.2.0",
-    "@enio.ai/typedoc": "^1.0.8",
     "@jscutlery/semver": "5.2.2",
     "@nx/angular": "19.8.9",
     "@nx/devkit": "19.8.9",
@@ -129,11 +128,6 @@
   "overrides": {
     "@jscutlery/semver": {
       "@nx/devkit": "19.8.9"
-    },
-    "@enio.ai/typedoc": {
-      "typedoc-theme-hierarchy": "^5.0.3",
-      "typedoc-plugin-rename-defaults": "^0.7.1",
-      "typedoc": "^0.26.11"
     }
   },
   "nx": {
