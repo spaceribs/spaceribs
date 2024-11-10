@@ -154,12 +154,12 @@ exports[`increase total test coverage`] = {
 exports[`no unsafe`] = {
   value: `{
     "src/executors/package/executor.ts:3538560643": [
-      [23, 8, 16, "Unsafe call of an \`any\` typed value.", "121467136"]
+      [23, 8, 16, "Unsafe call of an \`error\` type typed value.", "121467136"]
     ],
     "src/executors/serve/executor.ts:3966915080": [
-      [73, 4, 713, "Unsafe call of an \`any\` typed value.", "3034072692"],
-      [73, 4, 189, "Unsafe call of an \`any\` typed value.", "1892108857"],
-      [73, 4, 21, "Unsafe call of an \`any\` typed value.", "546868757"],
+      [73, 4, 713, "Unsafe call of an \`error\` type typed value.", "3034072692"],
+      [73, 4, 189, "Unsafe call of an \`error\` type typed value.", "1892108857"],
+      [73, 4, 21, "Unsafe call of an \`error\` type typed value.", "546868757"],
       [95, 8, 39, "Unsafe call of an \`any\` typed value.", "2688033796"]
     ],
     "src/generators/application/sub-generators/angular/index.ts:4275226085": [
