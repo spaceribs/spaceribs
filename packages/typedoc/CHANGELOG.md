@@ -2,6 +2,17 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [1.0.0](https://github.com/spaceribs/spaceribs/compare/typedoc-0.1.0...typedoc-1.0.0) (2024-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update to nx v20
+
+### Build System
+
+* update node to v22 and nx to v20 ([3d0da66](https://github.com/spaceribs/spaceribs/commit/3d0da66c46cfb54c1bec0262761853b77a0b69d4))
+
 ## 0.1.0 (2024-11-10)
 
 
