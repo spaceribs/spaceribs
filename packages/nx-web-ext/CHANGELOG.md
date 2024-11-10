@@ -2,6 +2,17 @@
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
 
+## [6.0.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-5.1.0...nx-web-ext-6.0.0) (2024-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update to nx v20
+
+### Build System
+
+* update node to v22 and nx to v20 ([3d0da66](https://github.com/spaceribs/spaceribs/commit/3d0da66c46cfb54c1bec0262761853b77a0b69d4))
+
 ## [5.1.0](https://github.com/spaceribs/spaceribs/compare/nx-web-ext-5.0.3...nx-web-ext-5.1.0) (2024-11-10)
 
 
