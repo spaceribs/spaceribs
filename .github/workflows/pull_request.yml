@@ -10,26 +10,27 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - name: Setup toolchain
+        uses: moonrepo/setup-toolchain@v0
         with:
-          node-version: '22'
-      - run: npm ci
+          auto-install: true
+      - run: pnpm install --frozen-lockfile
       - uses: wagoid/commitlint-github-action@v6
 
   main:
     name: Nx Cloud - Main Job
-    uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.14.0
+    uses: nrwl/ci/.github/workflows/nx-cloud-main.yml@v0.15.0
     with:
       number-of-agents: 3
       parallel-commands-on-agents: |
-        npx nx affected --target=lint --parallel=3
-        npx nx affected --target=test --parallel=3 --ci --code-coverage && npx nx affected --target=betterer --parallel=3 --ci
-        npx nx affected --target=build --parallel=3
-        npx nx affected --target=typedoc --parallel=3
-        npx nx affected --target=e2e --parallel=1
+        pnpm exec nx affected --target=lint --parallel=3
+        pnpm exec nx affected --target=test --parallel=3 --ci --code-coverage && pnpm exec nx affected --target=betterer --parallel=3 --ci
+        pnpm exec nx affected --target=build --parallel=3
+        pnpm exec nx affected --target=typedoc --parallel=3
+        pnpm exec nx affected --target=e2e --parallel=1
 
   agents:
     name: Nx Cloud - Agents
-    uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.14.0
+    uses: nrwl/ci/.github/workflows/nx-cloud-agents.yml@v0.15.0
     with:
       number-of-agents: 3

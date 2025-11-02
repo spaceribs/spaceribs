@@ -22,6 +22,8 @@ This library was generated with [Nx](https://nx.dev).
 1. Add `@spaceribs/nx-betterer` to your project:
 
    ```bash
+   $ pnpm add @spaceribs/nx-betterer --save-dev
+   # or
    $ npm install @spaceribs/nx-betterer --save-dev
    # or
    $ yarn add @spaceribs/nx-betterer --dev

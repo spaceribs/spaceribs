@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
+  "packageManager": "pnpm@10.0.0",
   "dependencies": {
     "@angular/animations": "18.2.11",
     "@angular/common": "18.2.11",
@@ -118,6 +119,7 @@
     "webextension-polyfill": "^0.10.0"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "commit": "git-cz"
   },
   "config": {

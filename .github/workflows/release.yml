@@ -14,10 +14,10 @@ jobs:
           ref: main
           token: ${{ secrets.GH_TOKEN }}
 
-      - name: Use Node.js
-        uses: actions/setup-node@v3
+      - name: Setup toolchain
+        uses: moonrepo/setup-toolchain@v0
         with:
-          node-version: '22'
+          auto-install: true
 
       - name: Setup Git
         run: |
@@ -29,21 +29,21 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
 
-      - name: NPM Install
-        run: npm ci
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Betterer Bump
         shell: bash
         continue-on-error: true
         run: |
-          npx nx affected --base=last-release --parallel=1 --target=betterer
+          pnpm exec nx affected --base=last-release --parallel=1 --target=betterer
           git add --all
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Version
         shell: bash
-        run: npx nx affected --base=last-release --parallel=1 --target=version --push
+        run: pnpm exec nx affected --base=last-release --parallel=1 --target=version --push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
