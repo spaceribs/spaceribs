@@ -6,6 +6,7 @@ export * from './lib/tile-set';
 export * from './lib/tile';
 export * from './lib/world';
 
+export type * from './lib/chunk.models';
 export type * from './lib/constraint.models';
 export type * from './lib/coord-map.models';
 export type * from './lib/edge';
