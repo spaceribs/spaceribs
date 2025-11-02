@@ -65,7 +65,7 @@ describe('CoordMap', () => {
       const callback = jest.fn();
       coordMap4D.forEach(callback, 'test');
 
-      expect(callback).toBeCalledTimes(2);
+      expect(callback).toHaveBeenCalledTimes(2);
       expect(callback).toHaveBeenNthCalledWith(
         1,
         'Origin',
@@ -150,18 +150,7 @@ describe('CoordMap', () => {
         [0, 0, 0],
         [2, 2, 2],
       );
-      expect(coordMap3D).toMatchInlineSnapshot(`
-        Object {
-          "0,0,0": "0 0 0",
-          "0,0,1": "0 0 1",
-          "0,1,0": "0 1 0",
-          "0,1,1": "0 1 1",
-          "1,0,0": "1 0 0",
-          "1,0,1": "1 0 1",
-          "1,1,0": "1 1 0",
-          "1,1,1": "1 1 1",
-        }
-      `);
+      expect(coordMap3D).toMatchSnapshot();
     });
   });
 
@@ -180,9 +169,7 @@ describe('CoordMap', () => {
       coordMap2D.set([1, 2], 'Origin');
       coordMap2D.set([2, 2], 'Test');
       const result = JSON.stringify(coordMap2D);
-      expect(result).toMatchInlineSnapshot(
-        `"{\\"1,2\\":\\"Origin\\",\\"2,2\\":\\"Test\\"}"`,
-      );
+      expect(result).toMatchSnapshot();
     });
   });
 });

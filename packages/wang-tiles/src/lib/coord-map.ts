@@ -16,13 +16,13 @@ export class CoordMap<D extends number[], V = unknown> implements Map<D, V> {
     }
   }
 
-  [Symbol.toStringTag] = `[object CoordMap]`;
+  [Symbol.toStringTag] = '[object CoordMap]';
 
   /**
    * Get the number of set coordinates.
    * @returns the number of items.
    */
-  public get size() {
+  public get size(): number {
     return this.coords.size;
   }
 
@@ -49,7 +49,7 @@ export class CoordMap<D extends number[], V = unknown> implements Map<D, V> {
    */
   private decodeCoordinate(key: string): D {
     const split = key.split(',');
-    return split.map((val) => parseInt(val), 10) as D;
+    return split.map((val) => parseInt(val, 10)) as D;
   }
 
   /**
@@ -207,7 +207,7 @@ export class CoordMap<D extends number[], V = unknown> implements Map<D, V> {
     start: D,
     end: D,
     state: number[] = [],
-  ) {
+  ): void {
     if (start.length === 0) {
       const val = generator(state as D);
       this.set(state as D, val);
@@ -215,8 +215,8 @@ export class CoordMap<D extends number[], V = unknown> implements Map<D, V> {
       const newStart = [...start] as D;
       const newEnd = [...end] as D;
 
-      const startIndex = newStart.shift() || 0;
-      const endIndex = newEnd.shift() || 0;
+      const startIndex = newStart.shift() ?? 0;
+      const endIndex = newEnd.shift() ?? 0;
 
       for (let index = startIndex; index < endIndex; index++) {
         this.recurseFill(generator, newStart, newEnd, [...state, index]);

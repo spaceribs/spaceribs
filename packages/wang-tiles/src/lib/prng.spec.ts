@@ -4,10 +4,10 @@ describe('RandomGenerator', () => {
   describe('next', () => {
     it('should convert seeds into a pseudorandom number.', () => {
       const rand = new RandomGenerator('testing');
-      expect(rand.next().value).toMatchInlineSnapshot(`0.41248386655934155`);
-      expect(rand.next().value).toMatchInlineSnapshot(`0.289362900191918`);
-      expect(rand.next().value).toMatchInlineSnapshot(`0.30122436326928437`);
-      expect(rand.next().value).toMatchInlineSnapshot(`0.3438316425308585`);
+      expect(rand.next().value).toBe(0.41248386655934155);
+      expect(rand.next().value).toBe(0.289362900191918);
+      expect(rand.next().value).toBe(0.30122436326928437);
+      expect(rand.next().value).toBe(0.3438316425308585);
     });
   });
 
@@ -24,9 +24,9 @@ describe('RandomGenerator', () => {
       const result1 = rand.weightedRandom(elemSet);
       const result2 = rand.weightedRandom(elemSet);
       const result3 = rand.weightedRandom(elemSet);
-      expect(result1).toMatchInlineSnapshot(`"bat"`);
-      expect(result2).toMatchInlineSnapshot(`"bat"`);
-      expect(result3).toMatchInlineSnapshot(`"boo"`);
+      expect(result1).toBe('bat');
+      expect(result2).toBe('bat');
+      expect(result3).toBe('boo');
     });
 
     it('can pick only the most likely.', () => {
@@ -41,9 +41,9 @@ describe('RandomGenerator', () => {
       const result1 = rand.weightedRandom(elemSet);
       const result2 = rand.weightedRandom(elemSet);
       const result3 = rand.weightedRandom(elemSet);
-      expect(result1).toMatchInlineSnapshot(`"far"`);
-      expect(result2).toMatchInlineSnapshot(`"far"`);
-      expect(result3).toMatchInlineSnapshot(`"far"`);
+      expect(result1).toBe('far');
+      expect(result2).toBe('far');
+      expect(result3).toBe('far');
     });
 
     it('can return an error if no element in array.', () => {
@@ -51,7 +51,7 @@ describe('RandomGenerator', () => {
       const elemSet: WeightedArray = [];
       expect(() => {
         rand.weightedRandom(elemSet);
-      }).toThrowErrorMatchingInlineSnapshot(`"Possible elements are empty."`);
+      }).toThrow('Possible elements are empty.');
     });
   });
 });

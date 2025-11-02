@@ -25,12 +25,13 @@ export class RandomGenerator implements IterableIterator<number> {
    */
   private xmur3(str: string): () => number {
     let h = 1779033703 ^ str.length;
-    for (let i = 0; i < str.length; i++)
-      (h = Math.imul(h ^ str.charCodeAt(i), 3432918353)),
-        (h = (h << 13) | (h >>> 19));
+    for (let i = 0; i < str.length; i++) {
+      h = Math.imul(h ^ str.charCodeAt(i), 3432918353);
+      h = (h << 13) | (h >>> 19);
+    }
     return () => {
-      (h = Math.imul(h ^ (h >>> 16), 2246822507)),
-        (h = Math.imul(h ^ (h >>> 13), 3266489909));
+      h = Math.imul(h ^ (h >>> 16), 2246822507);
+      h = Math.imul(h ^ (h >>> 13), 3266489909);
       return (h ^= h >>> 16) >>> 0;
     };
   }
@@ -46,15 +47,24 @@ export class RandomGenerator implements IterableIterator<number> {
    */
   private sfc32(a: number, b: number, c: number, d: number): () => number {
     return function () {
+      // eslint-disable-next-line no-param-reassign
       a |= 0;
+      // eslint-disable-next-line no-param-reassign
       b |= 0;
+      // eslint-disable-next-line no-param-reassign
       c |= 0;
+      // eslint-disable-next-line no-param-reassign
       d |= 0;
       const t = (((a + b) | 0) + d) | 0;
+      // eslint-disable-next-line no-param-reassign
       d = (d + 1) | 0;
+      // eslint-disable-next-line no-param-reassign
       a = b ^ (b >>> 9);
+      // eslint-disable-next-line no-param-reassign
       b = (c + (c << 3)) | 0;
+      // eslint-disable-next-line no-param-reassign
       c = (c << 21) | (c >>> 11);
+      // eslint-disable-next-line no-param-reassign
       c = (c + t) | 0;
       return (t >>> 0) / 4294967296;
     };
@@ -95,13 +105,13 @@ export class RandomGenerator implements IterableIterator<number> {
     const match = possibleElements.find(([weight]) => {
       if (pick <= weight) {
         return true;
-      } else {
-        pick -= weight;
-        return false;
       }
+      pick -= weight;
+      return false;
+
     });
 
-    if (match == null) {
+    if (match === null || match === undefined) {
       throw new Error('No match found.');
     }
 

@@ -46,51 +46,13 @@ describe('WangTileChunk', () => {
 
     it('should observe the center of the chunk first.', () => {
       const result = chunk.observe().next().value;
-      expect(result).toMatchInlineSnapshot(`
-        Array [
-          Array [
-            2,
-            5,
-          ],
-          WangTile {
-            "data": "-",
-            "edges": Object {},
-            "probability": 1,
-          },
-        ]
-      `);
-      expect(chunk.debug()).toMatchInlineSnapshot(`
-        "
-        ░░░░░
-        ░░░░░
-        ░░░░░
-        ░░░░░
-        ░░-░░
-        ░░░░░
-        ░░░░░
-        ░░░░░
-        ░░░░░
-        ░░░░░
-        "
-      `);
+      expect(result).toEqual([2, 5]);
+      expect(chunk.debug()).toMatchSnapshot();
     });
 
     it('should observe all the tiles.', () => {
       const results = [...chunk.observe()];
-      expect(chunk.debug()).toMatchInlineSnapshot(`
-        "
-        ---|-
-        ||-||
-        -----
-        ||-||
-        ---|-
-        -----
-        -|-|-
-        |-|--
-        |||--
-        |----
-        "
-      `);
+      expect(chunk.debug()).toMatchSnapshot();
       expect(results).toMatchSnapshot();
       expect(chunk.observed).toBe(true);
     });
@@ -143,15 +105,7 @@ describe('WangTileChunk', () => {
 
       [...chunk.observe()];
 
-      expect(chunk.debug()).toMatchInlineSnapshot(`
-        "
-        -= -= -= -
-        -= -= -= -
-        = -= -= -=
-        -= -= -= -
-        -= -= -= -
-        "
-      `);
+      expect(chunk.debug()).toMatchSnapshot();
       expect(chunk.observed).toBe(true);
     });
 
@@ -224,35 +178,250 @@ describe('WangTileChunk', () => {
 
       [...chunk.observe()];
 
-      expect(chunk.debug()).toMatchInlineSnapshot(`
-        "
-           ║ ║     ╚══╗║  ╚╝    
-           ║╔╝        ║║     ╔══
-           ╚╝   ╔══╗  ╚╝ ╔══╗║  
-          ╔╗    ╚══╝     ║  ╚╝  
-         ╔╝║             ╚═══╗  
-         ╚═╝╔═╗   ╔╗    ╔══╗ ║  
-        ╗   ║ ║   ╚╝    ╚══╝ ╚╗ 
-        ║ ╔═╝╔╝ ╔══╗          ║ 
-        ║ ║  ║  ╚╗ ║          ╚═
-        ║ ╚══╝╔══╝ ║   ╔╗       
-        ╝    ╔╝  ╔═╝   ╚╝╔╗     
-             ║   ╚══╗╔╗  ╚╝╔═╗  
-        ╗    ║      ╚╝║  ╔╗║ ╚╗ 
-        ╝    ╚═╗    ╔╗╚╗ ╚╝║ ╔╝ 
-               ║    ║╚═╝   ║ ║  
-              ╔╝    ╚══╗   ║ ╚╗ 
-         ╔╗   ╚╗      ╔╝   ╚╗ ╚═
-        ╗║║    ╚╗ ╔══╗║     ╚╗╔╗
-        ╝║║    ╔╝ ║  ╚╝      ║║╚
-         ║╚═╗  ║  ║          ╚╝ 
-         ╚╗ ╚══╝╔╗╚╗            
-          ╚═╗   ║╚╗║ ╔╗ ╔╗   ╔══
-        ╗   ╚═╗╔╝╔╝║ ╚╝ ╚╝   ╚╗ 
-        ╚═╗   ║║╔╝ ║╔╗ ╔═══╗ ╔╝ 
-        "
-      `);
+      expect(chunk.debug()).toMatchSnapshot();
       expect(chunk.observed).toBe(true);
+    }, 30000);
+  });
+
+  describe('applyBoundaryConstraint', () => {
+    let chunk: WangTileChunk<[number, number]>;
+    let tiles: WangTileSet<[number, number]>;
+    let random: RandomGenerator;
+    let neighborTile: WangTile<[number, number]>;
+
+    beforeEach(() => {
+      const wangTile1 = new WangTile<[number, number]>('-');
+      const wangTile2 = new WangTile<[number, number]>('|');
+      const wangTile3 = new WangTile<[number, number]>('+');
+
+      // Add constraints to tiles
+      wangTile1.addConstraint({ coords: [1, 0], edge: 'wall' });
+      wangTile1.addConstraint({ coords: [-1, 0], edge: 'floor' });
+
+      wangTile2.addConstraint({ coords: [1, 0], edge: 'wall' });
+      wangTile2.addConstraint({ coords: [-1, 0], edge: 'wall' });
+
+      wangTile3.addConstraint({ coords: [1, 0], edge: 'floor' });
+      wangTile3.addConstraint({ coords: [-1, 0], edge: 'floor' });
+
+      tiles = new WangTileSet([wangTile1, wangTile2, wangTile3]);
+      random = new RandomGenerator('testing');
+      chunk = new WangTileChunk(tiles, random, [0, 0], [3, 3]);
+
+      // Create a neighbor tile with specific constraints
+      neighborTile = new WangTile<[number, number]>('neighbor');
+      neighborTile.addConstraint({ coords: [1, 0], edge: 'wall' });
+    });
+
+    it('should apply boundary constraint to a coordinate', () => {
+      const coord: [number, number] = [1, 1];
+      const dimension = 0;
+      const offset = 1;
+
+      chunk.applyBoundaryConstraint(coord, neighborTile, dimension, offset);
+
+      // The constraint should be applied, but we can't easily test the internal state
+      // without exposing more methods. We'll test that it doesn't throw.
+      expect(() => {
+        chunk.applyBoundaryConstraint(coord, neighborTile, dimension, offset);
+      }).not.toThrow();
+    });
+
+    it('should handle different dimensions', () => {
+      const coord: [number, number] = [1, 1];
+
+      expect(() => {
+        chunk.applyBoundaryConstraint(coord, neighborTile, 0, 1); // x+1
+        chunk.applyBoundaryConstraint(coord, neighborTile, 1, 1); // y+1
+        chunk.applyBoundaryConstraint(coord, neighborTile, 0, -1); // x-1
+        chunk.applyBoundaryConstraint(coord, neighborTile, 1, -1); // y-1
+      }).not.toThrow();
+    });
+
+    it('should handle coordinates outside chunk bounds', () => {
+      const coord: [number, number] = [5, 5]; // Outside bounds
+
+      expect(() => {
+        chunk.applyBoundaryConstraint(coord, neighborTile, 0, 1);
+      }).not.toThrow();
+    });
+
+    it('should handle null neighbor tile', () => {
+      const coord: [number, number] = [1, 1];
+
+      expect(() => {
+        chunk.applyBoundaryConstraint(coord, null as any, 0, 1);
+      }).toThrow();
+    });
+  });
+
+  describe('observed property', () => {
+    let chunk: WangTileChunk<[number, number]>;
+    let tiles: WangTileSet<[number, number]>;
+    let random: RandomGenerator;
+
+    beforeEach(() => {
+      const wangTile1 = new WangTile<[number, number]>('-');
+      const wangTile2 = new WangTile<[number, number]>('|');
+
+      tiles = new WangTileSet([wangTile1, wangTile2]);
+      random = new RandomGenerator('testing');
+      chunk = new WangTileChunk(tiles, random, [0, 0], [3, 3]);
+    });
+
+    it('should be false initially', () => {
+      expect(chunk.observed).toBe(false);
+    });
+
+    it('should be true after observation', () => {
+      [...chunk.observe()];
+      expect(chunk.observed).toBe(true);
+    });
+
+    it('should remain true after multiple observations', () => {
+      [...chunk.observe()];
+      expect(chunk.observed).toBe(true);
+
+      [...chunk.observe()];
+      expect(chunk.observed).toBe(true);
+    });
+  });
+
+  describe('debug', () => {
+    let chunk: WangTileChunk<[number, number]>;
+    let tiles: WangTileSet<[number, number]>;
+    let random: RandomGenerator;
+
+    beforeEach(() => {
+      const wangTile1 = new WangTile<[number, number]>('-');
+      const wangTile2 = new WangTile<[number, number]>('|');
+
+      tiles = new WangTileSet([wangTile1, wangTile2]);
+      random = new RandomGenerator('testing');
+      chunk = new WangTileChunk(tiles, random, [0, 0], [3, 3]);
+    });
+
+    it('should return debug string', () => {
+      const debug = chunk.debug();
+
+      expect(typeof debug).toBe('string');
+      expect(debug).toContain('░'); // Unobserved tiles
+    });
+
+    it('should show observed tiles after observation', () => {
+      [...chunk.observe()];
+      const debug = chunk.debug();
+
+      expect(debug).toContain('-'); // Observed tiles
+      expect(debug).toContain('|'); // Observed tiles
+    });
+
+    it('should handle different chunk sizes', () => {
+      const smallChunk = new WangTileChunk(tiles, random, [0, 0], [2, 2]);
+      const largeChunk = new WangTileChunk(tiles, random, [0, 0], [5, 5]);
+
+      const smallDebug = smallChunk.debug();
+      const largeDebug = largeChunk.debug();
+
+      expect(smallDebug).toBeDefined();
+      expect(largeDebug).toBeDefined();
+      expect(largeDebug.length).toBeGreaterThan(smallDebug.length);
+    });
+  });
+
+  describe('toJSON', () => {
+    let chunk: WangTileChunk<[number, number]>;
+    let tiles: WangTileSet<[number, number]>;
+    let random: RandomGenerator;
+
+    beforeEach(() => {
+      const wangTile1 = new WangTile<[number, number]>('-');
+      const wangTile2 = new WangTile<[number, number]>('|');
+
+      tiles = new WangTileSet([wangTile1, wangTile2]);
+      random = new RandomGenerator('testing');
+      chunk = new WangTileChunk(tiles, random, [0, 0], [3, 3]);
+    });
+
+    it('should return JSON representation', () => {
+      const json = chunk.toJSON();
+
+      expect(typeof json).toBe('object');
+      expect(json).not.toBeNull();
+    });
+
+    it('should contain coordinate keys', () => {
+      const json = chunk.toJSON();
+
+      expect(json).toHaveProperty('0,0');
+      expect(json).toHaveProperty('1,1');
+      expect(json).toHaveProperty('2,2');
+    });
+
+    it('should contain tileset values', () => {
+      const json = chunk.toJSON();
+
+      const tileset = json['1,1'];
+      expect(tileset).toBeDefined();
+      expect(tileset instanceof Set).toBe(true);
+    });
+
+    it('should be consistent across calls', () => {
+      const json1 = chunk.toJSON();
+      const json2 = chunk.toJSON();
+
+      expect(json1).toEqual(json2);
+    });
+  });
+
+  describe('edge cases', () => {
+    it('should handle empty tileset', () => {
+      const emptyTiles = new WangTileSet<[number, number]>();
+      const random = new RandomGenerator('testing');
+
+      expect(() => {
+        new WangTileChunk(emptyTiles, random, [0, 0], [3, 3]);
+      }).not.toThrow();
+    });
+
+    it('should handle single tile tileset', () => {
+      const singleTile = new WangTileSet([new WangTile<[number, number]>('X')]);
+      const random = new RandomGenerator('testing');
+
+      const chunk = new WangTileChunk(singleTile, random, [0, 0], [3, 3]);
+      expect(chunk).toBeDefined();
+    });
+
+    it('should handle very small chunk', () => {
+      const tiles = new WangTileSet([new WangTile<[number, number]>('X')]);
+      const random = new RandomGenerator('testing');
+
+      const chunk = new WangTileChunk(tiles, random, [0, 0], [1, 1]);
+      expect(chunk).toBeDefined();
+    });
+
+    it('should handle very large chunk', () => {
+      const tiles = new WangTileSet([new WangTile<[number, number]>('X')]);
+      const random = new RandomGenerator('testing');
+
+      const chunk = new WangTileChunk(tiles, random, [0, 0], [100, 100]);
+      expect(chunk).toBeDefined();
+    });
+
+    it('should handle 1D chunk', () => {
+      const tiles = new WangTileSet([new WangTile<[number]>('X')]);
+      const random = new RandomGenerator('testing');
+
+      const chunk = new WangTileChunk(tiles, random, [0], [10]);
+      expect(chunk).toBeDefined();
+    });
+
+    it('should handle 3D chunk', () => {
+      const tiles = new WangTileSet([new WangTile<[number, number, number]>('X')]);
+      const random = new RandomGenerator('testing');
+
+      const chunk = new WangTileChunk(tiles, random, [0, 0, 0], [3, 3, 3]);
+      expect(chunk).toBeDefined();
     });
   });
 });

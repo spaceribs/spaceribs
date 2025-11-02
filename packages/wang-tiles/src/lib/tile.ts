@@ -17,7 +17,7 @@ export class WangTile<D extends number[], DataType = unknown> {
    * Add an additional constraint to the tile's placement rules.
    * @param constraint - A new constraint.
    */
-  public addConstraint(constraint: Constraint<D>) {
+  public addConstraint(constraint: Constraint<D>): void {
     this.edges.set(constraint.coords, constraint.edge);
   }
 
@@ -26,8 +26,8 @@ export class WangTile<D extends number[], DataType = unknown> {
    * @returns a string representation of the data or undefined.
    */
   toString(): string {
-    if (this.data != null) {
-      return this.data.toString();
+    if (this.data !== null) {
+      return this.data?.toString() ?? 'undefined';
     }
     return 'undefined';
   }

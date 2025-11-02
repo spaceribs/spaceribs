@@ -290,6 +290,19 @@ Object {
 }
 `;
 
+exports[`CoordMap fill() can fill a 3D cube. 1`] = `
+Object {
+  "0,0,0": "0 0 0",
+  "0,0,1": "0 0 1",
+  "0,1,0": "0 1 0",
+  "0,1,1": "0 1 1",
+  "1,0,0": "1 0 0",
+  "1,0,1": "1 0 1",
+  "1,1,0": "1 1 0",
+  "1,1,1": "1 1 1",
+}
+`;
+
 exports[`CoordMap getNeighbors() can get the neighbors of a coordinate. 1`] = `
 Array [
   Array [
@@ -348,3 +361,5 @@ Array [
   ],
 ]
 `;
+
+exports[`CoordMap toJSON() can return a JSON serialized version. 1`] = `"{\\"1,2\\":\\"Origin\\",\\"2,2\\":\\"Test\\"}"`;
