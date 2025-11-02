@@ -1,3 +1,3 @@
 #!/bin/zsh
 source ~/.zshrc
-nvm run $*
+proto run node "$@"

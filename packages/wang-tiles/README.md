@@ -11,6 +11,8 @@ This library was generated with [Nx](https://nx.dev).
 1. Add `@spaceribs/nx-web-ext` to your project:
 
    ```bash
+   $ pnpm add @spaceribs/nx-web-ext --save-dev
+   # or
    $ npm install @spaceribs/nx-web-ext --save-dev
    # or
    $ yarn add @spaceribs/nx-web-ext --dev
