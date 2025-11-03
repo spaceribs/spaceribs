@@ -65,7 +65,7 @@
     "@nx/workspace": "20.0.12",
     "@phenomnomnominal/tsquery": "5.0.1",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
-    "@schematics/angular": "18.2.9",
+    "@schematics/angular": "18.2.21",
     "@svgr/webpack": "^6.1.2",
     "@swc-node/register": "1.9.2",
     "@swc/cli": "0.3.14",
