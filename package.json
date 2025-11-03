@@ -63,7 +63,7 @@
     "@nx/web": "20.0.12",
     "@nx/webpack": "20.0.12",
     "@nx/workspace": "20.0.12",
-    "@phenomnomnominal/tsquery": "5.0.1",
+    "@phenomnomnominal/tsquery": "6.1.3",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
     "@schematics/angular": "18.2.9",
     "@svgr/webpack": "^6.1.2",
