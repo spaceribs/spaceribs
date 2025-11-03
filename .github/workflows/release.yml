@@ -23,11 +23,6 @@ jobs:
           git config user.name "GitHub Bot"
           git config user.email "gituser@example.com"
 
-      - name: NPM Token
-        uses: filipstefansson/set-npm-token-action@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
@@ -44,6 +39,7 @@ jobs:
         shell: bash
         run: pnpm exec nx affected --base=last-release --parallel=1 --target=version --push
         env:
+          NPM_CONFIG_PROVENANCE: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Tag last-release
