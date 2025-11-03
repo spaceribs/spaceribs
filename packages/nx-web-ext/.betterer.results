@@ -6,10 +6,10 @@
 exports[`stricter compilation`] = {
   value: `{
     "src/executors/package/executor.ts:3538560643": [
-      [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"]
+      [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/.pnpm/web-ext@6.8.0_@types+download@8.0.1_body-parser@1.20.3_download@8.0.0_express@4.18.3_safe-compare@1.1.4/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"]
     ],
     "src/executors/serve/executor.ts:3966915080": [
-      [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"],
+      [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/.pnpm/web-ext@6.8.0_@types+download@8.0.1_body-parser@1.20.3_download@8.0.0_express@4.18.3_safe-compare@1.1.4/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"],
       [35, 6, 7, "Variable \'project\' is used before being assigned.", "1804496816"],
       [35, 15, 6, "Variable \'target\' is used before being assigned.", "1741960948"],
       [35, 23, 13, "Variable \'configuration\' is used before being assigned.", "806380341"],
