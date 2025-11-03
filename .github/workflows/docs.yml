@@ -20,7 +20,6 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
-          token: ${{ secrets.GH_TOKEN }}
 
       - name: Setup toolchain
         uses: moonrepo/setup-toolchain@v0
