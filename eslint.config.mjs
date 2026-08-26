@@ -78,6 +78,9 @@ export default [
         ],
         // Was ratcheted by betterer; enforced outright now that it is clean.
         'no-debugger': 'error',
+        // On in @eslint/js@10's recommended set, which nothing here extends, so
+        // pin it rather than let it resolve differently in CI than it does locally.
+        'no-useless-assignment': 'error',
         // The TypeScript preset disables the other require-*-type rules because
         // the types already live in the signature; @yields is no different.
         'jsdoc/require-yields-type': 'off',
