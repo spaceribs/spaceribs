@@ -10,7 +10,7 @@ export class CoordMap<D extends number[], V = unknown> implements Map<D, V> {
    * Allow CoordMap to be iterated on.
    * @yields
    */
-  *[Symbol.iterator](): IterableIterator<[D, V]> {
+  *[Symbol.iterator](): MapIterator<[D, V]> {
     for (const coord of this.coords) {
       yield [this.decodeCoordinate(coord[0]), coord[1]];
     }
@@ -95,7 +95,7 @@ export class CoordMap<D extends number[], V = unknown> implements Map<D, V> {
    * Returns an iterable of key, value pairs for every entry in the map.
    * @yields
    */
-  *entries(): IterableIterator<[D, V]> {
+  *entries(): MapIterator<[D, V]> {
     for (const coord of this.coords) {
       yield [this.decodeCoordinate(coord[0]), coord[1]];
     }
@@ -105,7 +105,7 @@ export class CoordMap<D extends number[], V = unknown> implements Map<D, V> {
    * Returns an iterable of key for every entry in the map.
    * @yields
    */
-  *keys(): IterableIterator<D> {
+  *keys(): MapIterator<D> {
     for (const coord of this.coords) {
       yield this.decodeCoordinate(coord[0]);
     }
@@ -115,7 +115,7 @@ export class CoordMap<D extends number[], V = unknown> implements Map<D, V> {
    * Returns an iterable of values for every entry in the map.
    * @yields
    */
-  *values(): IterableIterator<V> {
+  *values(): MapIterator<V> {
     for (const coord of this.coords) {
       yield coord[1];
     }

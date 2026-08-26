@@ -65,7 +65,7 @@ describe('CoordMap', () => {
       const callback = jest.fn();
       coordMap4D.forEach(callback, 'test');
 
-      expect(callback).toBeCalledTimes(2);
+      expect(callback).toHaveBeenCalledTimes(2);
       expect(callback).toHaveBeenNthCalledWith(
         1,
         'Origin',

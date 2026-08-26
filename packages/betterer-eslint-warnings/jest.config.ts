@@ -1,5 +1,5 @@
 /* eslint-disable */
-export default {
+module.exports = {
   displayName: 'betterer-eslint-warnings',
   preset: '../../jest.preset.js',
   testEnvironment: 'node',
