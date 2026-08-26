@@ -139,5 +139,21 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "nxCloudAccessToken": "MGIzZTU2OGYtMGQyYS00NzMyLWE5NTgtOTAyNTYwYWNkODhifHJlYWQ=",
   "useInferencePlugins": false,
-  "defaultBase": "main"
+  "defaultBase": "main",
+  "release": {
+    "projects": ["nx-web-ext", "wang-tiles", "typedoc"],
+    "projectsRelationship": "independent",
+    "releaseTag": {
+      "pattern": "{projectName}-{version}"
+    },
+    "version": {
+      "conventionalCommits": true
+    },
+    "changelog": {
+      "workspaceChangelog": false,
+      "projectChangelogs": {
+        "createRelease": "github"
+      }
+    }
+  }
 }
