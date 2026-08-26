@@ -7,7 +7,11 @@ jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
+      # @jscutlery/semver pushes the release commits and tags.
       contents: write
+      # Mints the OIDC token npm exchanges for publish rights, and signs the
+      # provenance attestation. Publishing fails without it.
+      id-token: write
     steps:
       - name: checkout
         uses: actions/checkout@v3
@@ -20,6 +24,20 @@ jobs:
         with:
           auto-install: true
 
+      # Trusted publishing needs npm >= 11.5.1 and node 22 bundles 10.x, so the
+      # npm version is pinned in .prototools. Fail here with a clear message
+      # rather than deep inside the publish if that ever stops taking effect.
+      - name: Verify npm supports trusted publishing
+        shell: bash
+        run: |
+          required=11.5.1
+          current="$(npm --version)"
+          echo "npm $current"
+          if [ "$(printf '%s\n%s\n' "$required" "$current" | sort -V | head -1)" != "$required" ]; then
+            echo "::error::npm >= $required is required for trusted publishing, found $current"
+            exit 1
+          fi
+
       - name: Setup Git
         run: |
           git config user.name "GitHub Bot"
@@ -28,6 +46,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # No npm token: each package authenticates through the trusted publisher
+      # configured for it on npmjs.com, which must name this repository and
+      # this workflow file.
       - name: Version
         shell: bash
         run: pnpm exec nx affected --base=last-release --parallel=1 --target=version --push
