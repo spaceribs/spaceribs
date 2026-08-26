@@ -28,15 +28,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Betterer Bump
-        shell: bash
-        continue-on-error: true
-        run: |
-          pnpm exec nx affected --base=last-release --parallel=1 --target=betterer
-          git add --all
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Version
         shell: bash
         run: pnpm exec nx affected --base=last-release --parallel=1 --target=version --push

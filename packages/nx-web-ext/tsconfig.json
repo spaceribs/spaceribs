@@ -1,6 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "strict": true,
     "module": "commonjs",
     "ignoreDeprecations": "6.0"
   },
