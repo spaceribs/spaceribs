@@ -1,4 +1,3 @@
-/* eslint-disable */
 module.exports = {
   displayName: 'typedoc',
   preset: '../../jest.preset.js',

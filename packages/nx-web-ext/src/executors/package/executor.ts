@@ -1,5 +1,4 @@
 import { PackageExecutorSchema, WebExtBuilderSchema } from './schema';
-import * as webExt from 'web-ext';
 import { ExecutorContext } from '@nx/devkit';
 
 /**
@@ -21,7 +20,9 @@ export default async function runExecutor(
     overwriteDest: true,
   };
 
-  await webExt.cmd.build(webExtOptions);
+  const { cmd } = await import('web-ext');
+
+  await cmd.build(webExtOptions);
 
   return {
     success: true,

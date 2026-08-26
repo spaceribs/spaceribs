@@ -47,11 +47,11 @@
     },
     "npm": {
       "executor": "ngx-deploy-npm:deploy",
+      "dependsOn": ["build"],
       "options": {
         "access": "public",
         "distFolderPath": "dist/packages/betterer-eslint-warnings"
-      },
-      "dependsOn": ["build"]
+      }
     },
     "typedoc": {
       "executor": "@spaceribs/typedoc:typedoc",

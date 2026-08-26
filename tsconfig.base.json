@@ -24,7 +24,12 @@
       "@spaceribs/nx-web-ext": ["packages/nx-web-ext/src/index.ts"],
       "@spaceribs/typedoc": ["packages/typedoc/src/index.ts"],
       "@spaceribs/wang-tiles": ["packages/wang-tiles/src/index.ts"]
-    }
+    },
+    "strict": false,
+    "noUncheckedSideEffectImports": false,
+    "types": ["*"],
+    "esModuleInterop": false,
+    "ignoreDeprecations": "6.0"
   },
   "exclude": ["node_modules", "tmp"]
 }

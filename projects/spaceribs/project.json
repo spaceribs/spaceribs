@@ -9,6 +9,7 @@
     "build": {
       "executor": "@angular-builders/custom-webpack:browser",
       "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
       "options": {
         "customWebpackConfig": {
           "path": "projects/spaceribs/webpack.config.js"
@@ -52,12 +53,12 @@
           "sourceMap": true,
           "namedChunks": true
         }
-      },
-      "defaultConfiguration": "production"
+      }
     },
     "serve": {
       "dependsOn": ["build"],
       "executor": "@nx/angular:webpack-server",
+      "defaultConfiguration": "production",
       "options": {
         "customWebpackConfig": {
           "path": "projects/spaceribs/webpack.config.js"
@@ -78,8 +79,7 @@
           "extractLicenses": false,
           "vendorChunk": true
         }
-      },
-      "defaultConfiguration": "production"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
@@ -101,6 +101,8 @@
     },
     "serve-ssr": {
       "executor": "@angular-devkit/build-angular:ssr-dev-server",
+      "defaultConfiguration": "development",
+      "continuous": true,
       "configurations": {
         "development": {
           "browserTarget": "spaceribs:build:development",
@@ -110,12 +112,11 @@
           "browserTarget": "spaceribs:build:production",
           "serverTarget": "spaceribs:serve:production"
         }
-      },
-      "defaultConfiguration": "development",
-      "continuous": true
+      }
     },
     "prerender": {
       "executor": "@angular-devkit/build-angular:prerender",
+      "defaultConfiguration": "production",
       "options": {
         "routes": ["/"]
       },
@@ -128,8 +129,7 @@
           "browserTarget": "spaceribs:build:production",
           "serverTarget": "spaceribs:serve:production"
         }
-      },
-      "defaultConfiguration": "production"
+      }
     }
   }
 }

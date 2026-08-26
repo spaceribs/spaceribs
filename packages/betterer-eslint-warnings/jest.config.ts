@@ -1,4 +1,3 @@
-/* eslint-disable */
 module.exports = {
   displayName: 'betterer-eslint-warnings',
   preset: '../../jest.preset.js',

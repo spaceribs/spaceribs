@@ -141,7 +141,7 @@ describe('WangTileChunk', () => {
 
       chunk = new WangTileChunk(tiles, random, [0, 0], [10, 5]);
 
-      [...chunk.observe()];
+      Array.from(chunk.observe());
 
       expect(chunk.debug()).toMatchInlineSnapshot(`
         "
@@ -222,7 +222,7 @@ describe('WangTileChunk', () => {
 
       chunk = new WangTileChunk(tiles, random, [0, 0], [24, 24]);
 
-      [...chunk.observe()];
+      Array.from(chunk.observe());
 
       expect(chunk.debug()).toMatchInlineSnapshot(`
         "

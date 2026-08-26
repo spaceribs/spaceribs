@@ -16,8 +16,7 @@
   "homepage": "https://spaceribs.tech/packages/betterer-eslint-warnings/",
   "dependencies": {
     "@betterer/betterer": "^5.4.0",
-    "@betterer/errors": "^5.3.0",
-    "tslib": "^2.3.1"
+    "tslib": "^2.8.1"
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"

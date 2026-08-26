@@ -1,4 +1,3 @@
-/* eslint-disable */
 module.exports = {
   displayName: 'nx-threejs',
   preset: '../../jest.preset.js',

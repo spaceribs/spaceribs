@@ -69,12 +69,12 @@ export default async function (tree: Tree, options: NxWebExtGeneratorSchema) {
 
   switch (normalizedOptions.framework) {
     case 'angular': {
-      const { angularApp } = await import('./sub-generators/angular');
+      const { angularApp } = await import('./sub-generators/angular/index.js');
       await angularApp(tree, normalizedOptions);
       break;
     }
     case 'react': {
-      const { reactApp } = await import('./sub-generators/react');
+      const { reactApp } = await import('./sub-generators/react/index.js');
       await reactApp(tree, normalizedOptions);
       break;
     }
