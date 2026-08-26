@@ -4,6 +4,7 @@ import {
   ElementRef,
   NgZone,
   ViewChild,
+  inject,
 } from '@angular/core';
 
 import * as THREE from 'three';
@@ -21,7 +22,7 @@ import { glb } from '@spaceribs/buildings';
   standalone: false,
 })
 export class HomeComponent implements AfterViewInit {
-  constructor(private zone: NgZone) {}
+  private readonly zone = inject(NgZone);
 
   @ViewChild('renderBox') private readonly renderBox?: ElementRef;
 
