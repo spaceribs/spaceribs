@@ -3,13 +3,9 @@
   "version": "1.0.0",
   "description": "Generator to setup Nx projects with documentation automation using typedoc",
   "license": "MIT",
-  "authors": [
-    "Enio Authors",
-    "Spaceribs"
-  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/enio-ireland/enio/tree/develop/packages/typedoc"
+    "url": "git+https://github.com/spaceribs/spaceribs.git"
   },
   "main": "src/index.js",
   "generators": "./generators.json",
@@ -23,16 +19,11 @@
     "typedoc": "^0.28.20"
   },
   "contributors": [
+    "Enio Authors",
     {
       "name": "Andrew Redican",
       "email": "andrew.redican.mejia@gmail.com",
       "url": "https://github.com/AndrewRedican/"
-    }
-  ],
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/orgs/enio-ireland/dashboard"
     }
   ],
   "keywords": [
@@ -48,5 +39,10 @@
     "tsc",
     "typedoc-theme-hierarchy",
     "andrew.redican"
-  ]
+  ],
+  "author": "Spaceribs",
+  "bugs": {
+    "url": "https://github.com/spaceribs/spaceribs/issues"
+  },
+  "homepage": "https://spaceribs.tech/packages/typedoc/"
 }
