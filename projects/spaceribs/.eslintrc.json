@@ -21,7 +21,8 @@
             "style": "kebab-case"
           }
         ],
-        "jsdoc/require-jsdoc": "off"
+        "jsdoc/require-jsdoc": "off",
+        "@angular-eslint/prefer-standalone": "off"
       },
       "extends": [
         "plugin:@nx/angular",

@@ -184,7 +184,7 @@ export class WangTileChunk<
 
     // Return if the set only has one possibility.
     if (elem.size <= 1) {
-      return elem.values().next().value;
+      return elem.values().next().value as V;
     }
 
     const neighbors = this.coordMap.getNeighbors(coord);

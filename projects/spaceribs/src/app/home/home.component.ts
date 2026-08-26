@@ -18,6 +18,7 @@ import { glb } from '@spaceribs/buildings';
   selector: 'spaceribs-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  standalone: false,
 })
 export class HomeComponent implements AfterViewInit {
   constructor(private zone: NgZone) {}
