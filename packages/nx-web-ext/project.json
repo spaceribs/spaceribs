@@ -75,9 +75,6 @@
         "distFolderPath": "dist/packages/nx-web-ext"
       }
     },
-    "betterer": {
-      "executor": "@spaceribs/nx-betterer:betterer"
-    },
     "typedoc": {
       "executor": "@spaceribs/typedoc:typedoc",
       "outputs": ["{workspaceRoot}/docs/packages/nx-web-ext"],

@@ -7,7 +7,12 @@ import { Tree } from '@nx/devkit';
  */
 export const appRouterUseHash = (tree: Tree, root: string) => {
   const mainFilePath = `${root}/src/main.tsx`;
-  const main = tree.read(mainFilePath).toString();
+  const main = tree.read(mainFilePath, 'utf-8');
+
+  if (main == null) {
+    throw new Error(`Could not read ${mainFilePath}.`);
+  }
+
   const newContents = main.replace(
     new RegExp('BrowserRouter', 'g'),
     'HashRouter',

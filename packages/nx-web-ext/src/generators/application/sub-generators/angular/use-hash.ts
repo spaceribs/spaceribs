@@ -9,7 +9,12 @@ import { ObjectLiteralExpression } from 'typescript';
  */
 export const appRouterUseHash = (tree: Tree, root: string) => {
   const appModuleFilePath = `${root}/src/app/app.module.ts`;
-  const appModule = tree.read(appModuleFilePath).toString();
+  const appModule = tree.read(appModuleFilePath, 'utf-8');
+
+  if (appModule == null) {
+    throw new Error(`Could not read ${appModuleFilePath}.`);
+  }
+
   const newContents = tsquery.replace(
     appModule,
     'CallExpression:has(Identifier[name=RouterModule]) ArrayLiteralExpression ~ ObjectLiteralExpression',

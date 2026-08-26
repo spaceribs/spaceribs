@@ -5,14 +5,6 @@
     }
   },
   "targetDefaults": {
-    "betterer": {
-      "dependsOn": ["test"],
-      "outputs": [
-        "{projectRoot}/.betterer.results",
-        "{workspaceRoot}/tmp/{projectRoot}/.betterer.cache"
-      ],
-      "cache": true
-    },
     "build": {
       "cache": true
     },

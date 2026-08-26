@@ -19,27 +19,33 @@ const runServe = async (
   options: WebExtServeSchema,
   context: ExecutorContext,
 ) => {
-  let project: string;
-  let target: string;
-  let configuration: string;
+  const target = options.browserTarget ?? options.buildTarget;
 
-  if (options.browserTarget != null) {
-    [project, target, configuration] = options.browserTarget.split(':');
-  } else if (options.buildTarget != null) {
-    [project, target, configuration] = options.buildTarget.split(':');
+  if (target == null) {
+    throw new Error('Either browserTarget or buildTarget must be set.');
   }
 
-  let runnerSub: Subscription;
+  const [targetProject, targetName, targetConfiguration] = target.split(':');
+
+  let runnerSub: Subscription | null = null;
 
   for await (const s of await runExecutor<BuildTargetResult>(
-    { project, target, configuration },
+    {
+      project: targetProject,
+      target: targetName,
+      configuration: targetConfiguration,
+    },
     { watch: true },
     context,
   )) {
     if (s.success === true) {
       logger.info('Application built successfully.');
 
-      const outputPath = s.outputPath || s.outfile.replace('main.js', '');
+      const outputPath = s.outputPath || s.outfile?.replace('main.js', '');
+
+      if (outputPath == null) {
+        throw new Error('The build target reported no output path.');
+      }
 
       if (runnerSub == null) {
         runnerSub = startWebExt(options.webExtOptions, outputPath).subscribe(

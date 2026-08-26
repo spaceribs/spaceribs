@@ -76,6 +76,8 @@ export default [
             },
           },
         ],
+        // Was ratcheted by betterer; enforced outright now that it is clean.
+        'no-debugger': 'error',
         // The TypeScript preset disables the other require-*-type rules because
         // the types already live in the signature; @yields is no different.
         'jsdoc/require-yields-type': 'off',
@@ -131,7 +133,6 @@ export default [
         'error',
         {
           checkObsoleteDependencies: false,
-          ignoredFiles: ['**/.betterer.ts'],
         },
       ],
     },
@@ -140,18 +141,9 @@ export default [
     },
   },
   {
-    files: ['**/.betterer.ts'],
-    rules: {
-      '@typescript-eslint/no-var-requires': 'off',
-    },
-  },
-  {
     files: ['**/*.ts'],
     rules: {
       '@angular-eslint/prefer-standalone': 'off',
     },
-  },
-  {
-    ignores: ['**/.betterer.ts'],
   },
 ];

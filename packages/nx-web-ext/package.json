@@ -23,11 +23,6 @@
     "tslib": "^2.8.1",
     "typescript": ">= 5.0.0 < 7"
   },
-  "devDependencies": {
-    "@betterer/typescript": "^5.4.0",
-    "@betterer/coverage": "^5.4.0",
-    "@betterer/eslint": "^5.4.0"
-  },
   "dependencies": {
     "@phenomnomnominal/tsquery": "^6.2.0",
     "web-ext": "^10.6.0"

@@ -10,8 +10,10 @@ export default [
   },
   {
     files: ['**/*.ts', '**/*.tsx'],
-    // Override or add rules here
-    rules: {},
+    rules: {
+      // Was ratcheted by betterer; enforced outright now that it is clean.
+      '@typescript-eslint/no-unsafe-call': 'error',
+    },
     languageOptions: {
       parserOptions: {
         project: ['packages/nx-web-ext/tsconfig.*?.json'],
