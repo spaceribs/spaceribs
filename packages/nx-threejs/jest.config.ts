@@ -1,5 +1,5 @@
 /* eslint-disable */
-export default {
+module.exports = {
   displayName: 'nx-threejs',
   preset: '../../jest.preset.js',
   globals: {},

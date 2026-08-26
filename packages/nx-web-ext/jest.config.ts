@@ -1,5 +1,5 @@
 /* eslint-disable */
-export default {
+module.exports = {
   displayName: 'nx-web-ext',
   preset: '../../jest.preset.js',
   globals: {},
