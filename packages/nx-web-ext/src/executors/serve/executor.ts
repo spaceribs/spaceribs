@@ -65,7 +65,6 @@ const runServe = async (
       logger.error(s);
       if (runnerSub != null) {
         runnerSub.unsubscribe();
-        runnerSub = null;
       }
       throw new Error('Application failed to build.');
     }

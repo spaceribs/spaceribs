@@ -34,7 +34,7 @@ export class WangTileChunk<
       const diff = end - start;
       return start + Math.floor(diff / 2);
     }) as D;
-    this.iter = this.center.reduce((memo, vec) => (memo *= vec), 1);
+    this.iter = this.center.reduce((memo, vec) => memo * vec, 1);
   }
 
   /**
