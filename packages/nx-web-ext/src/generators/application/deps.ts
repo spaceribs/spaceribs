@@ -17,7 +17,7 @@ export const addWebExtDeps = async (tree: Tree) => {
     {
       '@types/firefox-webext-browser': 'latest',
       '@types/webextension-polyfill': 'latest',
-      'web-ext': '6.8.0',
+      'web-ext': '^10.6.0',
       'web-ext-types': 'latest',
     },
   );

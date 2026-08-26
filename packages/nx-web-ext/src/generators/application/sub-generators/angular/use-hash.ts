@@ -16,11 +16,10 @@ export const appRouterUseHash = (tree: Tree, root: string) => {
     (node) => {
       console.log(node);
       const routerConfig = node as ObjectLiteralExpression;
-      routerConfig.properties;
       if (routerConfig.properties) {
         return routerConfig.getText().replace('{', '{ useHash: true,');
       }
-      return undefined;
+      return null;
     },
   );
   tree.write(appModuleFilePath, newContents);

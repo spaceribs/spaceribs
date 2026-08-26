@@ -16,12 +16,12 @@
     "web-ext"
   ],
   "peerDependencies": {
-    "@nx/devkit": "20.0.12",
-    "@nx/eslint": "^20.0.12",
-    "nx": "20.0.12",
+    "@nx/devkit": "^23.0.0",
+    "@nx/eslint": "^23.0.0",
+    "nx": "^23.0.0",
     "rxjs": ">= 6.6.3 < 8",
-    "tslib": "~2.5.0",
-    "typescript": ">= 4.8.2 < 6"
+    "tslib": "^2.8.1",
+    "typescript": ">= 5.0.0 < 7"
   },
   "devDependencies": {
     "@betterer/typescript": "^5.4.0",
@@ -29,12 +29,12 @@
     "@betterer/eslint": "^5.4.0"
   },
   "dependencies": {
-    "@phenomnomnominal/tsquery": "^5.0.0",
-    "web-ext": "^6.8.0"
+    "@phenomnomnominal/tsquery": "^6.2.0",
+    "web-ext": "^10.6.0"
   },
   "optionalDependencies": {
-    "@nx/react": "20.0.12",
-    "@nx/angular": "20.0.12"
+    "@nx/react": "^23.0.0",
+    "@nx/angular": "^23.0.0"
   },
   "author": "Spaceribs",
   "license": "MIT",

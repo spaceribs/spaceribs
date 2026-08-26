@@ -5,21 +5,19 @@
 //
 exports[`stricter compilation`] = {
   value: `{
-    "src/executors/package/executor.ts:3538560643": [
-      [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/.pnpm/web-ext@6.8.0_@types+download@8.0.1_body-parser@1.20.3_download@8.0.0_express@4.18.3_safe-compare@1.1.4/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"]
+    "src/executors/package/executor.ts:2849589814": [
+      [22, 31, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/.pnpm/web-ext@10.6.0_express@5.2.1_jiti@2.7.0_safe-compare@1.1.4/node_modules/web-ext/index.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"]
     ],
-    "src/executors/serve/executor.ts:3966915080": [
-      [1, 24, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/.pnpm/web-ext@6.8.0_@types+download@8.0.1_body-parser@1.20.3_download@8.0.0_express@4.18.3_safe-compare@1.1.4/node_modules/web-ext/dist/web-ext.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"],
-      [35, 6, 7, "Variable \'project\' is used before being assigned.", "1804496816"],
-      [35, 15, 6, "Variable \'target\' is used before being assigned.", "1741960948"],
-      [35, 23, 13, "Variable \'configuration\' is used before being assigned.", "806380341"],
-      [42, 41, 9, "\'s.outfile\' is possibly \'undefined\'.", "316899760"],
-      [44, 10, 9, "Variable \'runnerSub\' is used before being assigned.", "3220025905"],
-      [50, 12, 9, "Type \'null\' is not assignable to type \'Subscription\'.", "3220025905"],
-      [60, 10, 9, "Variable \'runnerSub\' is used before being assigned.", "3220025905"],
-      [62, 8, 9, "Type \'null\' is not assignable to type \'Subscription\'.", "3220025905"],
-      [83, 13, 3, "Parameter \'res\' implicitly has an \'any\' type.", "193432417"],
-      [100, 14, 3, "Parameter \'err\' implicitly has an \'any\' type.", "193405824"]
+    "src/executors/serve/executor.ts:416380450": [
+      [34, 6, 7, "Variable \'project\' is used before being assigned.", "1804496816"],
+      [34, 15, 6, "Variable \'target\' is used before being assigned.", "1741960948"],
+      [34, 23, 13, "Variable \'configuration\' is used before being assigned.", "806380341"],
+      [41, 41, 9, "\'s.outfile\' is possibly \'undefined\'.", "316899760"],
+      [43, 10, 9, "Variable \'runnerSub\' is used before being assigned.", "3220025905"],
+      [49, 12, 9, "Type \'null\' is not assignable to type \'Subscription\'.", "3220025905"],
+      [59, 10, 9, "Variable \'runnerSub\' is used before being assigned.", "3220025905"],
+      [61, 8, 9, "Type \'null\' is not assignable to type \'Subscription\'.", "3220025905"],
+      [72, 11, 9, "Could not find a declaration file for module \'web-ext\'. \'spaceribs/node_modules/.pnpm/web-ext@10.6.0_express@5.2.1_jiti@2.7.0_safe-compare@1.1.4/node_modules/web-ext/index.js\' implicitly has an \'any\' type.\\n  Try \`npm i --save-dev @types/web-ext\` if it exists or add a new declaration (.d.ts) file containing \`declare module \'web-ext\';\`", "944130961"]
     ],
     "src/generators/application/sub-generators/angular/index.ts:2633463907": [
       [35, 6, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
@@ -30,7 +28,7 @@ exports[`stricter compilation`] = {
       [48, 17, 14, "\'config.targets\' is possibly \'undefined\'.", "998857859"],
       [55, 35, 11, "Argument of type \'string | undefined\' is not assignable to parameter of type \'string\'.\\n  Type \'undefined\' is not assignable to type \'string\'.", "868338854"]
     ],
-    "src/generators/application/sub-generators/angular/use-hash.ts:417407512": [
+    "src/generators/application/sub-generators/angular/use-hash.ts:2793020454": [
       [11, 20, 28, "Object is possibly \'null\'.", "2958527246"]
     ],
     "src/generators/application/sub-generators/react/index.ts:1040554181": [
@@ -53,8 +51,8 @@ exports[`increase per-file test coverage`] = {
   "src/executors/package/executor.ts": {
     "lines": 7,
     "statements": 7,
-    "functions": 1,
-    "branches": 1
+    "functions": 2,
+    "branches": 2
   },
   "src/executors/package/schema.d.ts": {
     "lines": 0,
@@ -64,9 +62,9 @@ exports[`increase per-file test coverage`] = {
   },
   "src/executors/serve/executor.ts": {
     "lines": 38,
-    "statements": 41,
-    "functions": 10,
-    "branches": 13
+    "statements": 42,
+    "functions": 12,
+    "branches": 18
   },
   "src/executors/serve/schema.d.ts": {
     "lines": 0,
@@ -102,7 +100,7 @@ exports[`increase per-file test coverage`] = {
     "lines": 19,
     "statements": 21,
     "functions": 2,
-    "branches": 1
+    "branches": 2
   },
   "src/generators/application/sub-generators/angular/replace-files.ts": {
     "lines": 6,
@@ -111,10 +109,10 @@ exports[`increase per-file test coverage`] = {
     "branches": 0
   },
   "src/generators/application/sub-generators/angular/use-hash.ts": {
-    "lines": 12,
-    "statements": 13,
+    "lines": 11,
+    "statements": 12,
     "functions": 2,
-    "branches": 1
+    "branches": 2
   },
   "src/generators/application/sub-generators/react/add-action.ts": {
     "lines": 3,
@@ -126,7 +124,7 @@ exports[`increase per-file test coverage`] = {
     "lines": 22,
     "statements": 24,
     "functions": 2,
-    "branches": 1
+    "branches": 2
   },
   "src/generators/application/sub-generators/react/replace-files.ts": {
     "lines": 5,
@@ -146,7 +144,7 @@ exports[`increase per-file test coverage`] = {
 
 exports[`increase total test coverage`] = {
   value: `{
-  "total": { "lines": 127, "statements": 144, "functions": 27, "branches": 17 }
+  "total": { "lines": 126, "statements": 144, "functions": 30, "branches": 26 }
 }
 `
 };

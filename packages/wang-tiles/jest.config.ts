@@ -1,4 +1,3 @@
-/* eslint-disable */
 module.exports = {
   displayName: 'wang-tiles',
   preset: '../../jest.preset.js',

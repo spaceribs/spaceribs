@@ -1,5 +1,8 @@
 import { joinPathFragments, ProjectConfiguration, Tree } from '@nx/devkit';
-import { TypeDocOptions } from 'typedoc';
+// typedoc is ESM-only from v0.28; this import is erased at compile time.
+import type { TypeDocOptions } from 'typedoc' with {
+  'resolution-mode': 'import',
+};
 import { getTsConfig } from '../configureProject/getTsConfig';
 import { outputFolder } from '../../utils';
 

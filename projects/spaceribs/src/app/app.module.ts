@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import {
   BrowserModule,
   provideClientHydration,
+  withNoIncrementalHydration,
 } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -26,7 +27,7 @@ export const appRoutes: Route[] = [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
   ],
-  providers: [provideClientHydration()],
+  providers: [provideClientHydration(withNoIncrementalHydration())],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

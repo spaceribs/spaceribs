@@ -8,11 +8,11 @@
     "e2e": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "dependsOn": ["^build"],
       "options": {
         "jestConfig": "projects/nx-web-ext-e2e/jest.config.ts",
         "runInBand": true
-      },
-      "dependsOn": ["^build"]
+      }
     },
     "lint": {
       "executor": "@nx/eslint:lint",

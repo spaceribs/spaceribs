@@ -5,20 +5,22 @@ import {
   NgZone,
   ViewChild,
   inject,
+  ChangeDetectionStrategy,
 } from '@angular/core';
 
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer';
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
-import { RenderPixelatedPass } from 'three/examples/jsm/postprocessing/RenderPixelatedPass';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { RenderPixelatedPass } from 'three/addons/postprocessing/RenderPixelatedPass.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { glb } from '@spaceribs/buildings';
 
 @Component({
   selector: 'spaceribs-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   standalone: false,
 })
 export class HomeComponent implements AfterViewInit {
@@ -74,7 +76,7 @@ export class HomeComponent implements AfterViewInit {
       antialias: true,
       powerPreference: 'low-power',
     });
-    renderer.outputEncoding = THREE.sRGBEncoding;
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.shadowMap.enabled = true;
     renderer.shadowMap.type = THREE.VSMShadowMap;

@@ -65,7 +65,7 @@ function addFiles(tree: Tree, options: NormalizedSchema) {
 }
 
 /**
- * Replace the "build" task with one that uses @spaceribs/nx-threejs:build
+ * Replace the "build" task with one that uses `@spaceribs/nx-threejs:build`
  * @param tree - File tree to modify
  * @param options - Options normalized by normalizeOptions()
  */

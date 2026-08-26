@@ -1,5 +1,4 @@
 import { WebExtRunOptions, WebExtServeSchema } from './schema';
-import * as webExt from 'web-ext';
 import { resolve } from 'path';
 import { Observable, Subscription } from 'rxjs';
 import { ExecutorContext, logger, runExecutor } from '@nx/devkit';
@@ -71,15 +70,17 @@ const runServe = async (
 
 const startWebExt = (webExtOptions: WebExtRunOptions, sourceDir: string) => {
   return new Observable((observer) => {
-    webExt.cmd
-      .run(
-        {
-          ...webExtOptions,
-          sourceDir: resolve(sourceDir),
-        },
-        {
-          shouldExitProgram: false,
-        },
+    import('web-ext')
+      .then(({ cmd }) =>
+        cmd.run(
+          {
+            ...webExtOptions,
+            sourceDir: resolve(sourceDir),
+          },
+          {
+            shouldExitProgram: false,
+          },
+        ),
       )
       .then((res) => {
         if (res.extensionRunners && res.extensionRunners.length <= 0) {

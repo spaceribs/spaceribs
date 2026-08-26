@@ -1,4 +1,3 @@
-/* eslint-disable */
 module.exports = {
   displayName: 'spaceribs',
   preset: '../../jest.preset.js',
