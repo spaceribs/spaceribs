@@ -7,7 +7,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
-      # @jscutlery/semver pushes the release commits and tags.
+      # nx release pushes the version commits and tags, and creates the
+      # GitHub releases.
       contents: write
       # Mints the OIDC token npm exchanges for publish rights, and signs the
       # provenance attestation. Publishing fails without it.
@@ -16,6 +17,8 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
         with:
+          # nx release resolves each package's current version from its release
+          # tag, so the full history and all tags have to be present.
           fetch-depth: 0
           ref: main
 
@@ -46,18 +49,22 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # No npm token: each package authenticates through the trusted publisher
-      # configured for it on npmjs.com, which must name this repository and
-      # this workflow file.
-      - name: Version
+      # Versions from conventional commits, writes the changelogs, then commits,
+      # tags, pushes and opens the GitHub releases. Publishing is a separate
+      # step so it keeps going through `npm publish` rather than `pnpm publish`,
+      # which nx release would use and which does not carry npm's OIDC flow.
+      - name: Version and changelog
         shell: bash
-        run: pnpm exec nx affected --base=last-release --parallel=1 --target=version --push
+        run: pnpm exec nx release --yes --skip-publish
         env:
-          NPM_CONFIG_PROVENANCE: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Tag last-release
+      # No npm token: each package authenticates through the trusted publisher
+      # configured for it on npmjs.com, which must name this repository and
+      # this workflow file. Packages whose version is already on the registry
+      # are skipped by the executor's checkExisting option.
+      - name: Publish
         shell: bash
-        run: |
-          git tag -f last-release
-          git push origin last-release --force
+        run: pnpm exec nx run-many --target=npm --parallel=1
+        env:
+          NPM_CONFIG_PROVENANCE: true
