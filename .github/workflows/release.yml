@@ -35,20 +35,6 @@ jobs:
         with:
           auto-install: true
 
-      # Trusted publishing needs npm >= 11.5.1 and node 22 bundles 10.x, so the
-      # npm version is pinned in .prototools. Fail here with a clear message
-      # rather than deep inside the publish if that ever stops taking effect.
-      - name: Verify npm supports trusted publishing
-        shell: bash
-        run: |
-          required=11.5.1
-          current="$(npm --version)"
-          echo "npm $current"
-          if [ "$(printf '%s\n%s\n' "$required" "$current" | sort -V | head -1)" != "$required" ]; then
-            echo "::error::npm >= $required is required for trusted publishing, found $current"
-            exit 1
-          fi
-
       - name: Setup Git
         run: |
           git config user.name "GitHub Bot"
@@ -73,7 +59,29 @@ jobs:
       # are skipped by the executor's checkExisting option.
       - name: Publish
         shell: bash
-        run: pnpm exec nx run-many --target=npm --parallel=1
+        run: |
+          # ngx-deploy-npm spawns a bare `npm`, and that does not resolve to
+          # the npm 11 pinned in .prototools: under `pnpm exec` the running
+          # node's own bin directory wins, giving the npm bundled with node.
+          # npm 10 has no OIDC support at all, so publishing failed with
+          # ENEEDAUTH and no diagnostics. Put proto's shims first so the
+          # pinned npm wins in the child too.
+          export PATH="$HOME/.proto/shims:$HOME/.proto/bin:$PATH"
+
+          # Gate on the npm the publish will really use, resolved exactly the
+          # way nx resolves it. The previous check ran in a plain step, where
+          # `npm` resolves differently, so it passed while the publish used a
+          # version that cannot authenticate.
+          required=11.5.1
+          resolved="$(pnpm exec bash -c 'command -v npm')"
+          current="$(pnpm exec bash -c 'npm --version')"
+          echo "publish will use $resolved ($current)"
+          if [ "$(printf '%s\n%s\n' "$required" "$current" | sort -V | head -1)" != "$required" ]; then
+            echo "::error::npm >= $required is required for trusted publishing, but nx will spawn $resolved ($current)"
+            exit 1
+          fi
+
+          pnpm exec nx run-many --target=npm --parallel=1
         env:
           NPM_CONFIG_PROVENANCE: true
           # npm swallows a failed OIDC exchange and falls back to ordinary
