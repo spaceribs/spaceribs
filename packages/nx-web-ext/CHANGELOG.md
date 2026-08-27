@@ -1,3 +1,17 @@
+## 6.1.0 (2026-08-27)
+
+### 🚀 Features
+
+- **nx-web-ext:** support Nx 20 through 23 ([a7024ff](https://github.com/spaceribs/spaceribs/commit/a7024ff))
+
+### 🩹 Fixes
+
+- remove two dead assignments and pin no-useless-assignment ([e14bb37](https://github.com/spaceribs/spaceribs/commit/e14bb37))
+
+### ❤️ Thank You
+
+- Spaceribs
+
 # Changelog
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).

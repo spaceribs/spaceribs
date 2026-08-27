@@ -1,3 +1,13 @@
+## 2.1.2 (2026-08-27)
+
+### 🩹 Fixes
+
+- remove two dead assignments and pin no-useless-assignment ([e14bb37](https://github.com/spaceribs/spaceribs/commit/e14bb37))
+
+### ❤️ Thank You
+
+- Spaceribs
+
 # Changelog
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).

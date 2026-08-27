@@ -1,3 +1,18 @@
+## 1.1.0 (2026-08-27)
+
+### 🚀 Features
+
+- **typedoc:** publish @spaceribs/typedoc from the release workflow ([1279e89](https://github.com/spaceribs/spaceribs/commit/1279e89))
+- **nx-web-ext:** support Nx 20 through 23 ([a7024ff](https://github.com/spaceribs/spaceribs/commit/a7024ff))
+
+### 🩹 Fixes
+
+- **typedoc:** resolve the typedoc binary from the workspace root ([5671cf2](https://github.com/spaceribs/spaceribs/commit/5671cf2))
+
+### ❤️ Thank You
+
+- Spaceribs
+
 # Changelog
 
 This file was generated using [@jscutlery/semver](https://github.com/jscutlery/semver).
