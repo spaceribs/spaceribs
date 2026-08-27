@@ -76,3 +76,10 @@ jobs:
         run: pnpm exec nx run-many --target=npm --parallel=1
         env:
           NPM_CONFIG_PROVENANCE: true
+          # npm swallows a failed OIDC exchange and falls back to ordinary
+          # auth, so a mismatched trusted publisher surfaces only as ENEEDAUTH
+          # with no reason given. npm logs the registry's own explanation at
+          # verbose ("Failed token exchange request with body message: ..."),
+          # so keep this step verbose: an auth failure here is otherwise
+          # undiagnosable from the run log.
+          NPM_CONFIG_LOGLEVEL: verbose
