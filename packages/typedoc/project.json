@@ -7,7 +7,9 @@
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/packages/typedoc",
         "main": "packages/typedoc/src/index.ts",
@@ -39,7 +41,9 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
         "lintFilePatterns": [
           "packages/typedoc/**/*.ts",
@@ -47,15 +51,6 @@
           "packages/typedoc/executors.json",
           "packages/typedoc/package.json"
         ]
-      }
-    },
-    "npm": {
-      "executor": "ngx-deploy-npm:deploy",
-      "dependsOn": ["build"],
-      "options": {
-        "access": "public",
-        "distFolderPath": "dist/packages/typedoc",
-        "checkExisting": "skip"
       }
     }
   }
