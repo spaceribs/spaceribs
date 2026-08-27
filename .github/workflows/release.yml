@@ -60,36 +60,20 @@ jobs:
       - name: Publish
         shell: bash
         run: |
-          # ngx-deploy-npm spawns a bare `npm`, which resolves to the npm
-          # bundled with node (10.x), not the npm 11 pinned in .prototools.
-          # npm 10 has no OIDC support at all, so the publish failed with
-          # ENEEDAUTH and no diagnostics while a gate in a plain step reported
-          # 11.x -- the two were reading different binaries.
+          # ngx-deploy-npm spawns a bare `npm`, and under `pnpm exec` that
+          # resolves to the npm bundled with node rather than any separately
+          # pinned one. node 24 bundles npm 11.19, so the binary that actually
+          # publishes supports OIDC trusted publishing; node 22 bundled 10.9,
+          # which has no OIDC support and failed with a bare ENEEDAUTH.
           #
-          # Install npm 11 into its own prefix and put that first. Upgrading
-          # the resolved npm in place is not an option: npm removes its own
-          # dependencies partway through replacing itself and dies with
-          # MODULE_NOT_FOUND. A separate prefix is an ordinary install.
-          required=11.5.1
-          resolve() { pnpm exec bash -c 'command -v npm'; }
-          version() { pnpm exec bash -c 'npm --version'; }
-
-          npm_path="$(resolve)"
-          npm_version="$(version)"
-          echo "publish will use $npm_path ($npm_version)"
-
-          if [ "$(printf '%s\n%s\n' "$required" "$npm_version" | sort -V | head -1)" != "$required" ]; then
-            echo "npm $npm_version predates OIDC trusted publishing; installing npm 11"
-            npm install -g --prefix "$RUNNER_TEMP/npm11" npm@11
-            export PATH="$RUNNER_TEMP/npm11/bin:$PATH"
-            npm_path="$(resolve)"
-            npm_version="$(version)"
-            echo "publish will now use $npm_path ($npm_version)"
-          fi
-
           # Resolved the same way nx resolves it, so this measures the binary
-          # that actually publishes rather than whatever the step's own PATH
-          # happens to offer.
+          # that publishes rather than whatever the step's own PATH offers --
+          # the earlier check read a different npm and passed while the
+          # publish could not authenticate.
+          required=11.5.1
+          npm_path="$(pnpm exec bash -c 'command -v npm')"
+          npm_version="$(pnpm exec bash -c 'npm --version')"
+          echo "publish will use $npm_path ($npm_version)"
           if [ "$(printf '%s\n%s\n' "$required" "$npm_version" | sort -V | head -1)" != "$required" ]; then
             echo "::error::npm >= $required is required for trusted publishing, but nx will spawn $npm_path ($npm_version)"
             exit 1
