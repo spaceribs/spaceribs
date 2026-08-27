@@ -1,0 +1,54 @@
+schema: spec-driven
+
+context: |
+  Nx 23 monorepo, pnpm workspaces, node 24 (pinned in .prototools via proto).
+  Angular 22, TypeScript 6.0 (strict where already clean), ESLint 10 flat
+  config (eslint.config.mjs), Jest 30, Prettier.
+
+  Projects: spaceribs (Angular site), buildings, nx-web-ext and nx-threejs
+  (Nx plugins), wang-tiles (library), typedoc (internal Nx plugin), plus
+  nx-web-ext-e2e and nx-threejs-e2e.
+
+  Published to npm: @spaceribs/nx-web-ext and @spaceribs/wang-tiles only.
+  @spaceribs/typedoc is versioned and tagged but deliberately not published.
+
+  Conventional commits, enforced by commitlint. Scopes are restricted to Nx
+  project names plus deps/deps-dev, so unscoped types are the norm for
+  repo-wide changes.
+
+  Releases run from .github/workflows/release.yml on workflow_dispatch:
+  nx release handles versioning, changelogs, tags and GitHub Releases, then
+  ngx-deploy-npm publishes via npm OIDC trusted publishing with provenance.
+  No npm tokens. Coverage is pinned with negative Jest coverageThreshold
+  values, which act as a ratchet on uncovered entities rather than a floor.
+
+# Project context (optional)
+# This is shown to AI when creating artifacts.
+# Add your tech stack, conventions, style guides, domain knowledge, etc.
+# Example:
+#   context: |
+#     Tech stack: TypeScript, React, Node.js
+#     We use conventional commits
+#     Domain: e-commerce platform
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
