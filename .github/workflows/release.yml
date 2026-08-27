@@ -21,6 +21,14 @@ jobs:
           # tag, so the full history and all tags have to be present.
           fetch-depth: 0
           ref: main
+          # Push over SSH as the release deploy key. A ruleset protects main
+          # and github-actions[bot] cannot be granted a bypass, so a push
+          # carrying the default GITHUB_TOKEN is rejected with GH013. Deploy
+          # keys can be bypass actors, and this key is in that list. Setting it
+          # here makes checkout point origin at the SSH remote and persist a
+          # core.sshCommand using this key, so the push nx release makes later
+          # in the job authenticates as the deploy key rather than the bot.
+          ssh-key: ${{ secrets.RELEASE_DEPLOY_KEY }}
 
       - name: Setup toolchain
         uses: moonrepo/setup-toolchain@v0
