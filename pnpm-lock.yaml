@@ -177,8 +177,8 @@ importers:
         specifier: 6.2.0
         version: 6.2.0(typescript@6.0.3)
       '@pmmmwh/react-refresh-webpack-plugin':
-        specifier: ^0.6.2
-        version: 0.6.2(react-refresh@0.18.0)(type-fest@4.41.0)(webpack-dev-server@5.2.6)(webpack@5.109.2)
+        specifier: ^0.6.3
+        version: 0.6.3(react-refresh@0.18.0)(type-fest@4.41.0)(webpack-dev-server@5.2.6)(webpack@5.109.2)
       '@schematics/angular':
         specifier: 22.1.6
         version: 22.1.6(chokidar@5.0.0)
@@ -4054,8 +4054,8 @@ packages:
     resolution: {integrity: sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  '@pmmmwh/react-refresh-webpack-plugin@0.6.2':
-    resolution: {integrity: sha512-IhIAD5n4XvGHuL9nAgWfsBR0TdxtjrUWETYKCBHxauYXEv+b+ctEbs9neEgPC7Ecgzv4bpZTBwesAoGDeFymzA==}
+  '@pmmmwh/react-refresh-webpack-plugin@0.6.3':
+    resolution: {integrity: sha512-k1EEmFS9K7685tqJM55DCA3sYlTNZb7aFj1M3HNFwMqH+fGgMEvemIQ5kurIzKc9wYRSmfKpSZN3WUyY/GHlvg==}
     engines: {node: '>=18.12'}
     peerDependencies:
       '@types/webpack': 5.x
@@ -4063,7 +4063,7 @@ packages:
       sockjs-client: ^1.4.0
       type-fest: '>=0.17.0 <6.0.0'
       webpack: ^5.0.0
-      webpack-dev-server: ^4.8.0 || 5.x
+      webpack-dev-server: ^4.8.0 || 5.x || 6.x
       webpack-hot-middleware: 2.x
       webpack-plugin-serve: 1.x
     peerDependenciesMeta:
@@ -6455,8 +6455,8 @@ packages:
     resolution: {integrity: sha512-XGpFGbMLHwSt74YLTKho7Ib242qi6O8MSX+sRokV4oz7iKXvQWGYZthjIhjRGMxjzVkAubBO512dKGYcefmX3Q==}
     engines: {node: '>=6.4.0'}
 
-  core-js-pure@3.36.1:
-    resolution: {integrity: sha512-NXCvHvSVYSrewP0L5OhltzXeWFJLo2AL2TYnj6iLV3Bw8mM62wAQMNgUCRI6EBu6hVVpbCxmOPlxh1Ikw2PfUA==}
+  core-js-pure@3.50.0:
+    resolution: {integrity: sha512-6GP3Pxz4IKyWjAfa747vIu/jilB5z29JWROLqH/b+pXVcpgh6tM06ZIBwSuglgVqzDYURhOK6oEzTrG0bCHitA==}
 
   core-js@3.50.0:
     resolution: {integrity: sha512-BRWgOLKkFeCgRudR6zrs8p9XJZcE14grzKMMssoYrk6krtuEZ7MTKPIY5RzOnqsEKIR9kst7wNzphttraT+Yqw==}
@@ -16762,10 +16762,10 @@ snapshots:
 
   '@pkgr/core@0.3.6': {}
 
-  '@pmmmwh/react-refresh-webpack-plugin@0.6.2(react-refresh@0.18.0)(type-fest@4.41.0)(webpack-dev-server@5.2.6)(webpack@5.109.2)':
+  '@pmmmwh/react-refresh-webpack-plugin@0.6.3(react-refresh@0.18.0)(type-fest@4.41.0)(webpack-dev-server@5.2.6)(webpack@5.109.2)':
     dependencies:
       anser: 2.3.5
-      core-js-pure: 3.36.1
+      core-js-pure: 3.50.0
       error-stack-parser: 2.1.4
       html-entities: 2.6.0
       react-refresh: 0.18.0
@@ -19337,7 +19337,7 @@ snapshots:
     dependencies:
       browserslist: 4.28.8
 
-  core-js-pure@3.36.1: {}
+  core-js-pure@3.50.0: {}
 
   core-js@3.50.0: {}
 
