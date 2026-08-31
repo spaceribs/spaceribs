@@ -49,7 +49,7 @@
     "@eslint/eslintrc": "3.3.6",
     "@eslint/js": "10.0.1",
     "@nx/angular": "23.1.1",
-    "@nx/devkit": "23.1.1",
+    "@nx/devkit": "23.1.2",
     "@nx/eslint": "23.1.1",
     "@nx/eslint-plugin": "23.1.1",
     "@nx/jest": "23.1.1",
