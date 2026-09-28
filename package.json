@@ -100,7 +100,7 @@
     "jest-preset-angular": "17.0.0",
     "jsonc-eslint-parser": "3.3.0",
     "ngx-deploy-npm": "9.2.1",
-    "nx": "23.1.1",
+    "nx": "23.2.1",
     "playwright": "^1.62.1",
     "prettier": "^3.9.6",
     "react-refresh": "^0.18.0",
